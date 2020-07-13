@@ -16,7 +16,7 @@ after_success:
  - docker build -t swaroopsalvi/multi-worker ./worker
  
 # Login in to docker CLI
- - echo "$DOCKER_PASSWORD" | docker login -u "DOCKER_ID" --password-stdin
+ - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_ID" --password-stdin
 # Take those images and push them to docker hub
  - docker push swaroopsalvi/multi-client
  - docker push swaroopsalvi/multi-nginx
