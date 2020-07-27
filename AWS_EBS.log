@@ -1,0 +1,1051 @@
+-------------------------------------
+/var/log/containers/nginx-proxy/access.log
+-------------------------------------
+156.96.156.142 - - [27/Jul/2020:20:57:48 +0000] "GET / HTTP/1.1" 200 3667 "-" "libwww-perl/6.46" "-"
+130.76.24.28 - - [27/Jul/2020:21:03:31 +0000] "GET / HTTP/1.1" 200 3667 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:68.0) Gecko/20100101 Firefox/68.0" "-"
+130.76.24.28 - - [27/Jul/2020:21:03:31 +0000] "GET /favicon.ico HTTP/1.1" 404 153 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:68.0) Gecko/20100101 Firefox/68.0" "-"
+130.76.24.28 - - [27/Jul/2020:21:27:04 +0000] "GET / HTTP/1.1" 200 3667 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:68.0) Gecko/20100101 Firefox/68.0" "-"
+130.76.24.28 - - [27/Jul/2020:21:27:04 +0000] "GET /favicon.ico HTTP/1.1" 404 153 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:68.0) Gecko/20100101 Firefox/68.0" "-"
+172.104.108.109 - - [27/Jul/2020:21:28:19 +0000] "GET / HTTP/1.1" 200 3667 "-" "Mozilla/5.0" "-"
+180.226.42.98 - - [27/Jul/2020:21:38:13 +0000] "GET / HTTP/1.1" 400 157 "-" "-" "-"
+
+
+
+-------------------------------------
+/var/log/ecs/ecs-init.log
+-------------------------------------
+2020-07-27T20:49:45Z [INFO] pre-start
+2020-07-27T20:49:48Z [INFO] start
+2020-07-27T20:49:48Z [INFO] No existing agent container to remove.
+2020-07-27T20:49:48Z [INFO] Starting Amazon Elastic Container Service Agent
+
+
+
+-------------------------------------
+/var/log/eb-ecs-mgr.log
+-------------------------------------
+2020-07-27T23:38:28Z                 "memory": "128", 
+2020-07-27T23:38:28Z                 "runtimeId": "cacbb23331fbd3a67a8a9c49e85ee72dc63484016081fee9bd55aab56c8304f0", 
+2020-07-27T23:38:28Z                 "cpu": "0", 
+2020-07-27T23:38:28Z                 "networkInterfaces": []
+2020-07-27T23:38:28Z             }, 
+2020-07-27T23:38:28Z             {
+2020-07-27T23:38:28Z                 "containerArn": "arn:aws:ecs:us-west-2:276587239836:container/63669207-ff01-4c3d-a74d-bba22e19bcd4", 
+2020-07-27T23:38:28Z                 "taskArn": "arn:aws:ecs:us-west-2:276587239836:task/d781cb51-4462-4182-b58e-45c91f23a710", 
+2020-07-27T23:38:28Z                 "name": "nginx", 
+2020-07-27T23:38:28Z                 "image": "swaroopsalvi/multi-nginx", 
+2020-07-27T23:38:28Z                 "lastStatus": "PENDING", 
+2020-07-27T23:38:28Z                 "memory": "128", 
+2020-07-27T23:38:28Z                 "cpu": "0", 
+2020-07-27T23:38:28Z                 "networkInterfaces": []
+2020-07-27T23:38:28Z             }, 
+2020-07-27T23:38:28Z             {
+2020-07-27T23:38:28Z                 "containerArn": "arn:aws:ecs:us-west-2:276587239836:container/75085fa9-4c9e-49ae-9f00-d274c7e9eb5e", 
+2020-07-27T23:38:28Z                 "taskArn": "arn:aws:ecs:us-west-2:276587239836:task/d781cb51-4462-4182-b58e-45c91f23a710", 
+2020-07-27T23:38:28Z                 "name": "client", 
+2020-07-27T23:38:28Z                 "image": "swaroopsalvi/multi-client", 
+2020-07-27T23:38:28Z                 "lastStatus": "PENDING", 
+2020-07-27T23:38:28Z                 "memory": "128", 
+2020-07-27T23:38:28Z                 "cpu": "0", 
+2020-07-27T23:38:28Z                 "networkInterfaces": []
+2020-07-27T23:38:28Z             }, 
+2020-07-27T23:38:28Z             {
+2020-07-27T23:38:28Z                 "containerArn": "arn:aws:ecs:us-west-2:276587239836:container/fbf846c3-c4f8-4fde-ae08-bbd7ef61ebfb", 
+2020-07-27T23:38:28Z                 "taskArn": "arn:aws:ecs:us-west-2:276587239836:task/d781cb51-4462-4182-b58e-45c91f23a710", 
+2020-07-27T23:38:28Z                 "name": "worker", 
+2020-07-27T23:38:28Z                 "networkBindings": [], 
+2020-07-27T23:38:28Z                 "image": "swaroopsalvi/multi-worker", 
+2020-07-27T23:38:28Z                 "lastStatus": "RUNNING", 
+2020-07-27T23:38:28Z                 "memory": "128", 
+2020-07-27T23:38:28Z                 "runtimeId": "509124cc77faa9e00991d4b485bac9c96573d9a6e008e182d68cbc38de9ad35c", 
+2020-07-27T23:38:28Z                 "cpu": "0", 
+2020-07-27T23:38:28Z                 "networkInterfaces": []
+2020-07-27T23:38:28Z             }
+2020-07-27T23:38:28Z         ], 
+2020-07-27T23:38:28Z         "availabilityZone": "us-west-2c", 
+2020-07-27T23:38:28Z         "tags": [], 
+2020-07-27T23:38:28Z         "memory": "512", 
+2020-07-27T23:38:28Z         "lastStatus": "PENDING", 
+2020-07-27T23:38:28Z         "connectivity": "CONNECTED", 
+2020-07-27T23:38:28Z         "overrides": {
+2020-07-27T23:38:28Z             "inferenceAcceleratorOverrides": [], 
+2020-07-27T23:38:28Z             "containerOverrides": [
+2020-07-27T23:38:28Z                 {
+2020-07-27T23:38:28Z                     "name": "server"
+2020-07-27T23:38:28Z                 }, 
+2020-07-27T23:38:28Z                 {
+2020-07-27T23:38:28Z                     "name": "nginx"
+2020-07-27T23:38:28Z                 }, 
+2020-07-27T23:38:28Z                 {
+2020-07-27T23:38:28Z                     "name": "client"
+2020-07-27T23:38:28Z                 }, 
+2020-07-27T23:38:28Z                 {
+2020-07-27T23:38:28Z                     "name": "worker"
+2020-07-27T23:38:28Z                 }
+2020-07-27T23:38:28Z             ]
+2020-07-27T23:38:28Z         }, 
+2020-07-27T23:38:28Z         "stoppedReason": "Task stopped by user", 
+2020-07-27T23:38:28Z         "cpu": "0"
+2020-07-27T23:38:28Z     }
+2020-07-27T23:38:28Z }'
+2020-07-27T23:38:28Z + '[' 0 -ne 0 ']'
+2020-07-27T23:38:28Z + set -e
+2020-07-27T23:38:28Z + local STOP_TIMEOUT=120
+2020-07-27T23:38:28Z + local TIMEOUT=120
+2020-07-27T23:38:28Z ++ eval curl -sS 'http://localhost:51678/v1/tasks?taskarn=$EB_CONFIG_ECS_TASK_ARN' '|' jq -r .KnownStatus
+2020-07-27T23:38:28Z +++ jq -r .KnownStatus
+2020-07-27T23:38:28Z +++ curl -sS 'http://localhost:51678/v1/tasks?taskarn=arn:aws:ecs:us-west-2:276587239836:task/d781cb51-4462-4182-b58e-45c91f23a710'
+2020-07-27T23:38:28Z + local KNOWN_STATUS=PENDING
+2020-07-27T23:38:28Z + '[' PENDING '!=' STOPPED ']'
+2020-07-27T23:38:28Z + '[' PENDING '!=' DEAD ']'
+2020-07-27T23:38:28Z + sleep 3
+2020-07-27T23:38:31Z + TIMEOUT=117
+2020-07-27T23:38:31Z + '[' 117 -le 0 ']'
+2020-07-27T23:38:31Z ++ eval curl -sS 'http://localhost:51678/v1/tasks?taskarn=$EB_CONFIG_ECS_TASK_ARN' '|' jq -r .KnownStatus
+2020-07-27T23:38:31Z +++ curl -sS 'http://localhost:51678/v1/tasks?taskarn=arn:aws:ecs:us-west-2:276587239836:task/d781cb51-4462-4182-b58e-45c91f23a710'
+2020-07-27T23:38:31Z +++ jq -r .KnownStatus
+2020-07-27T23:38:31Z + KNOWN_STATUS=PENDING
+2020-07-27T23:38:31Z + '[' PENDING '!=' STOPPED ']'
+2020-07-27T23:38:31Z + '[' PENDING '!=' DEAD ']'
+2020-07-27T23:38:31Z + sleep 3
+2020-07-27T23:38:34Z + TIMEOUT=114
+2020-07-27T23:38:34Z + '[' 114 -le 0 ']'
+2020-07-27T23:38:34Z ++ eval curl -sS 'http://localhost:51678/v1/tasks?taskarn=$EB_CONFIG_ECS_TASK_ARN' '|' jq -r .KnownStatus
+2020-07-27T23:38:34Z +++ jq -r .KnownStatus
+2020-07-27T23:38:34Z +++ curl -sS 'http://localhost:51678/v1/tasks?taskarn=arn:aws:ecs:us-west-2:276587239836:task/d781cb51-4462-4182-b58e-45c91f23a710'
+2020-07-27T23:38:34Z + KNOWN_STATUS=STOPPED
+2020-07-27T23:38:34Z + '[' STOPPED '!=' STOPPED ']'
+2020-07-27T23:38:34Z + trace 'ECS task: arn:aws:ecs:us-west-2:276587239836:task/d781cb51-4462-4182-b58e-45c91f23a710 is STOPPED.'
+2020-07-27T23:38:34Z + echo 'ECS task: arn:aws:ecs:us-west-2:276587239836:task/d781cb51-4462-4182-b58e-45c91f23a710 is STOPPED.'
+2020-07-27T23:38:34Z ECS task: arn:aws:ecs:us-west-2:276587239836:task/d781cb51-4462-4182-b58e-45c91f23a710 is STOPPED.
+2020-07-27T23:38:34Z + eventHelper.py --msg 'ECS task: arn:aws:ecs:us-west-2:276587239836:task/d781cb51-4462-4182-b58e-45c91f23a710 is STOPPED.' --severity TRACE
+2020-07-27T23:38:34Z + TIMEOUT=60
+2020-07-27T23:38:34Z ++ wc -l
+2020-07-27T23:38:34Z ++ docker ps -q
+2020-07-27T23:38:34Z + '[' 1 '!=' 1 ']'
+2020-07-27T23:38:34Z + exit 0
+
+
+
+-------------------------------------
+/var/log/containers/nginx-proxy-92870a3e56e8-stdouterr.log
+-------------------------------------
+/docker-entrypoint.sh: /docker-entrypoint.d/ is not empty, will attempt to perform configuration
+/docker-entrypoint.sh: Looking for shell scripts in /docker-entrypoint.d/
+/docker-entrypoint.sh: Launching /docker-entrypoint.d/10-listen-on-ipv6-by-default.sh
+10-listen-on-ipv6-by-default.sh: error: can not modify /etc/nginx/conf.d/default.conf (read-only file system?)
+/docker-entrypoint.sh: Launching /docker-entrypoint.d/20-envsubst-on-templates.sh
+/docker-entrypoint.sh: Configuration complete; ready for start up
+
+
+
+-------------------------------------
+/var/log/containers/nginx-proxy-301d3f34500b-stdouterr.log
+-------------------------------------
+/docker-entrypoint.sh: /docker-entrypoint.d/ is not empty, will attempt to perform configuration
+/docker-entrypoint.sh: Looking for shell scripts in /docker-entrypoint.d/
+/docker-entrypoint.sh: Launching /docker-entrypoint.d/10-listen-on-ipv6-by-default.sh
+10-listen-on-ipv6-by-default.sh: error: can not modify /etc/nginx/conf.d/default.conf (read-only file system?)
+/docker-entrypoint.sh: Launching /docker-entrypoint.d/20-envsubst-on-templates.sh
+/docker-entrypoint.sh: Configuration complete; ready for start up
+
+
+
+-------------------------------------
+/var/log/containers/php-app-45519b1e5e24-stdouterr.log
+-------------------------------------
+[27-Jul-2020 21:48:25] NOTICE: fpm is running, pid 1
+[27-Jul-2020 21:48:25] NOTICE: ready to handle connections
+[27-Jul-2020 22:41:32] NOTICE: Finishing ...
+[27-Jul-2020 22:41:32] NOTICE: exiting, bye-bye!
+
+
+
+-------------------------------------
+/var/log/docker-events.log
+-------------------------------------
+2020-07-27T23:34:25.609586734Z container exec_start: /agent --healthcheck 8817a33bd924e9e3a534c7c09bb07325d5d7611179a163d5924184c1ef299600 (execID=0de6b35131850fe3e923b86183c69d9b032a324958b4453732b5ea95cdf6b30a, image=amazon/amazon-ecs-agent:latest, name=ecs-agent)
+2020-07-27T23:34:25.703307455Z container exec_die 8817a33bd924e9e3a534c7c09bb07325d5d7611179a163d5924184c1ef299600 (execID=0de6b35131850fe3e923b86183c69d9b032a324958b4453732b5ea95cdf6b30a, exitCode=0, image=amazon/amazon-ecs-agent:latest, name=ecs-agent)
+2020-07-27T23:34:55.710182851Z container exec_create: /agent --healthcheck 8817a33bd924e9e3a534c7c09bb07325d5d7611179a163d5924184c1ef299600 (execID=67933ba8972e7149c6c16eb4a1c992055ca1e5bb5bdd6bd44ad957719b1e373e, image=amazon/amazon-ecs-agent:latest, name=ecs-agent)
+2020-07-27T23:34:55.710254878Z container exec_start: /agent --healthcheck 8817a33bd924e9e3a534c7c09bb07325d5d7611179a163d5924184c1ef299600 (execID=67933ba8972e7149c6c16eb4a1c992055ca1e5bb5bdd6bd44ad957719b1e373e, image=amazon/amazon-ecs-agent:latest, name=ecs-agent)
+2020-07-27T23:34:55.814605195Z container exec_die 8817a33bd924e9e3a534c7c09bb07325d5d7611179a163d5924184c1ef299600 (execID=67933ba8972e7149c6c16eb4a1c992055ca1e5bb5bdd6bd44ad957719b1e373e, exitCode=0, image=amazon/amazon-ecs-agent:latest, name=ecs-agent)
+2020-07-27T23:35:25.821157616Z container exec_create: /agent --healthcheck 8817a33bd924e9e3a534c7c09bb07325d5d7611179a163d5924184c1ef299600 (execID=a42b350512af3f12f3f3bccf7faaa714c9e3a4e01d436a043ad3ef5f21dbc846, image=amazon/amazon-ecs-agent:latest, name=ecs-agent)
+2020-07-27T23:35:25.821219033Z container exec_start: /agent --healthcheck 8817a33bd924e9e3a534c7c09bb07325d5d7611179a163d5924184c1ef299600 (execID=a42b350512af3f12f3f3bccf7faaa714c9e3a4e01d436a043ad3ef5f21dbc846, image=amazon/amazon-ecs-agent:latest, name=ecs-agent)
+2020-07-27T23:35:25.912620667Z container exec_die 8817a33bd924e9e3a534c7c09bb07325d5d7611179a163d5924184c1ef299600 (execID=a42b350512af3f12f3f3bccf7faaa714c9e3a4e01d436a043ad3ef5f21dbc846, exitCode=0, image=amazon/amazon-ecs-agent:latest, name=ecs-agent)
+2020-07-27T23:35:55.920776822Z container exec_create: /agent --healthcheck 8817a33bd924e9e3a534c7c09bb07325d5d7611179a163d5924184c1ef299600 (execID=df76b6f7520e5f82e655e1a6fb57a4c349879a750bd6058f837cc6b005ffba99, image=amazon/amazon-ecs-agent:latest, name=ecs-agent)
+2020-07-27T23:35:55.920859711Z container exec_start: /agent --healthcheck 8817a33bd924e9e3a534c7c09bb07325d5d7611179a163d5924184c1ef299600 (execID=df76b6f7520e5f82e655e1a6fb57a4c349879a750bd6058f837cc6b005ffba99, image=amazon/amazon-ecs-agent:latest, name=ecs-agent)
+2020-07-27T23:35:56.027898309Z container exec_die 8817a33bd924e9e3a534c7c09bb07325d5d7611179a163d5924184c1ef299600 (execID=df76b6f7520e5f82e655e1a6fb57a4c349879a750bd6058f837cc6b005ffba99, exitCode=0, image=amazon/amazon-ecs-agent:latest, name=ecs-agent)
+2020-07-27T23:36:26.035335782Z container exec_create: /agent --healthcheck 8817a33bd924e9e3a534c7c09bb07325d5d7611179a163d5924184c1ef299600 (execID=94357b48c6a4d5ace80020148abf892844051fbce5b765e77089fa5f39ad01b4, image=amazon/amazon-ecs-agent:latest, name=ecs-agent)
+2020-07-27T23:36:26.035402636Z container exec_start: /agent --healthcheck 8817a33bd924e9e3a534c7c09bb07325d5d7611179a163d5924184c1ef299600 (execID=94357b48c6a4d5ace80020148abf892844051fbce5b765e77089fa5f39ad01b4, image=amazon/amazon-ecs-agent:latest, name=ecs-agent)
+2020-07-27T23:36:26.137657695Z container exec_die 8817a33bd924e9e3a534c7c09bb07325d5d7611179a163d5924184c1ef299600 (execID=94357b48c6a4d5ace80020148abf892844051fbce5b765e77089fa5f39ad01b4, exitCode=0, image=amazon/amazon-ecs-agent:latest, name=ecs-agent)
+2020-07-27T23:36:56.150106043Z container exec_create: /agent --healthcheck 8817a33bd924e9e3a534c7c09bb07325d5d7611179a163d5924184c1ef299600 (execID=5db7acc71a535fb2d31d36b7bac5366afe790d9f70db35f09ce4260b5045fc17, image=amazon/amazon-ecs-agent:latest, name=ecs-agent)
+2020-07-27T23:36:56.150175165Z container exec_start: /agent --healthcheck 8817a33bd924e9e3a534c7c09bb07325d5d7611179a163d5924184c1ef299600 (execID=5db7acc71a535fb2d31d36b7bac5366afe790d9f70db35f09ce4260b5045fc17, image=amazon/amazon-ecs-agent:latest, name=ecs-agent)
+2020-07-27T23:36:56.248739184Z container exec_die 8817a33bd924e9e3a534c7c09bb07325d5d7611179a163d5924184c1ef299600 (execID=5db7acc71a535fb2d31d36b7bac5366afe790d9f70db35f09ce4260b5045fc17, exitCode=0, image=amazon/amazon-ecs-agent:latest, name=ecs-agent)
+2020-07-27T23:37:26.256396773Z container exec_create: /agent --healthcheck 8817a33bd924e9e3a534c7c09bb07325d5d7611179a163d5924184c1ef299600 (execID=44a2e4f754f9d1fcb9b95638185bcb95aca99959e1aca0bf0f680b698b20bcd5, image=amazon/amazon-ecs-agent:latest, name=ecs-agent)
+2020-07-27T23:37:26.256460381Z container exec_start: /agent --healthcheck 8817a33bd924e9e3a534c7c09bb07325d5d7611179a163d5924184c1ef299600 (execID=44a2e4f754f9d1fcb9b95638185bcb95aca99959e1aca0bf0f680b698b20bcd5, image=amazon/amazon-ecs-agent:latest, name=ecs-agent)
+2020-07-27T23:37:26.349520468Z container exec_die 8817a33bd924e9e3a534c7c09bb07325d5d7611179a163d5924184c1ef299600 (execID=44a2e4f754f9d1fcb9b95638185bcb95aca99959e1aca0bf0f680b698b20bcd5, exitCode=0, image=amazon/amazon-ecs-agent:latest, name=ecs-agent)
+2020-07-27T23:37:56.356666780Z container exec_create: /agent --healthcheck 8817a33bd924e9e3a534c7c09bb07325d5d7611179a163d5924184c1ef299600 (execID=0e636a7ec23dbfa38c123470e5f471ccd7e0c7012e1a8f5aa304c2c0403f0ebc, image=amazon/amazon-ecs-agent:latest, name=ecs-agent)
+2020-07-27T23:37:56.356748770Z container exec_start: /agent --healthcheck 8817a33bd924e9e3a534c7c09bb07325d5d7611179a163d5924184c1ef299600 (execID=0e636a7ec23dbfa38c123470e5f471ccd7e0c7012e1a8f5aa304c2c0403f0ebc, image=amazon/amazon-ecs-agent:latest, name=ecs-agent)
+2020-07-27T23:37:56.468933631Z container exec_die 8817a33bd924e9e3a534c7c09bb07325d5d7611179a163d5924184c1ef299600 (execID=0e636a7ec23dbfa38c123470e5f471ccd7e0c7012e1a8f5aa304c2c0403f0ebc, exitCode=0, image=amazon/amazon-ecs-agent:latest, name=ecs-agent)
+2020-07-27T23:38:26.477360105Z container exec_create: /agent --healthcheck 8817a33bd924e9e3a534c7c09bb07325d5d7611179a163d5924184c1ef299600 (execID=c49e7bb688ed838b56bc287e0d106df6b7a2ca718a4ae92d9ff143445f633c1b, image=amazon/amazon-ecs-agent:latest, name=ecs-agent)
+2020-07-27T23:38:26.477430918Z container exec_start: /agent --healthcheck 8817a33bd924e9e3a534c7c09bb07325d5d7611179a163d5924184c1ef299600 (execID=c49e7bb688ed838b56bc287e0d106df6b7a2ca718a4ae92d9ff143445f633c1b, image=amazon/amazon-ecs-agent:latest, name=ecs-agent)
+2020-07-27T23:38:26.571992872Z container exec_die 8817a33bd924e9e3a534c7c09bb07325d5d7611179a163d5924184c1ef299600 (execID=c49e7bb688ed838b56bc287e0d106df6b7a2ca718a4ae92d9ff143445f633c1b, exitCode=0, image=amazon/amazon-ecs-agent:latest, name=ecs-agent)
+2020-07-27T23:38:30.968524359Z container kill 509124cc77faa9e00991d4b485bac9c96573d9a6e008e182d68cbc38de9ad35c (com.amazonaws.ecs.cluster=awseb-MultiDocker-env-qypupgjc3m, com.amazonaws.ecs.container-name=worker, com.amazonaws.ecs.task-arn=arn:aws:ecs:us-west-2:276587239836:task/d781cb51-4462-4182-b58e-45c91f23a710, com.amazonaws.ecs.task-definition-family=awseb-MultiDocker-env-qypupgjc3m, com.amazonaws.ecs.task-definition-version=5, image=swaroopsalvi/multi-worker, name=ecs-awseb-MultiDocker-env-qypupgjc3m-5-worker-fed9838af39faeb7c401, signal=15)
+2020-07-27T23:38:30.981195385Z container kill cacbb23331fbd3a67a8a9c49e85ee72dc63484016081fee9bd55aab56c8304f0 (com.amazonaws.ecs.cluster=awseb-MultiDocker-env-qypupgjc3m, com.amazonaws.ecs.container-name=server, com.amazonaws.ecs.task-arn=arn:aws:ecs:us-west-2:276587239836:task/d781cb51-4462-4182-b58e-45c91f23a710, com.amazonaws.ecs.task-definition-family=awseb-MultiDocker-env-qypupgjc3m, com.amazonaws.ecs.task-definition-version=5, image=swaroopsalvi/multi-server, name=ecs-awseb-MultiDocker-env-qypupgjc3m-5-server-ce9dea99e2ceadc98101, signal=15)
+2020-07-27T23:38:31.106412092Z container die 509124cc77faa9e00991d4b485bac9c96573d9a6e008e182d68cbc38de9ad35c (com.amazonaws.ecs.cluster=awseb-MultiDocker-env-qypupgjc3m, com.amazonaws.ecs.container-name=worker, com.amazonaws.ecs.task-arn=arn:aws:ecs:us-west-2:276587239836:task/d781cb51-4462-4182-b58e-45c91f23a710, com.amazonaws.ecs.task-definition-family=awseb-MultiDocker-env-qypupgjc3m, com.amazonaws.ecs.task-definition-version=5, exitCode=0, image=swaroopsalvi/multi-worker, name=ecs-awseb-MultiDocker-env-qypupgjc3m-5-worker-fed9838af39faeb7c401)
+2020-07-27T23:38:31.151194226Z container die cacbb23331fbd3a67a8a9c49e85ee72dc63484016081fee9bd55aab56c8304f0 (com.amazonaws.ecs.cluster=awseb-MultiDocker-env-qypupgjc3m, com.amazonaws.ecs.container-name=server, com.amazonaws.ecs.task-arn=arn:aws:ecs:us-west-2:276587239836:task/d781cb51-4462-4182-b58e-45c91f23a710, com.amazonaws.ecs.task-definition-family=awseb-MultiDocker-env-qypupgjc3m, com.amazonaws.ecs.task-definition-version=5, exitCode=0, image=swaroopsalvi/multi-server, name=ecs-awseb-MultiDocker-env-qypupgjc3m-5-server-ce9dea99e2ceadc98101)
+2020-07-27T23:38:31.247420927Z network disconnect 17cd70a1435415cc4f488f0b0adfd0e498580fdc23a505f2d61773947fd382c2 (container=509124cc77faa9e00991d4b485bac9c96573d9a6e008e182d68cbc38de9ad35c, name=bridge, type=bridge)
+2020-07-27T23:38:31.282574273Z network disconnect 17cd70a1435415cc4f488f0b0adfd0e498580fdc23a505f2d61773947fd382c2 (container=cacbb23331fbd3a67a8a9c49e85ee72dc63484016081fee9bd55aab56c8304f0, name=bridge, type=bridge)
+2020-07-27T23:38:31.306531440Z container stop 509124cc77faa9e00991d4b485bac9c96573d9a6e008e182d68cbc38de9ad35c (com.amazonaws.ecs.cluster=awseb-MultiDocker-env-qypupgjc3m, com.amazonaws.ecs.container-name=worker, com.amazonaws.ecs.task-arn=arn:aws:ecs:us-west-2:276587239836:task/d781cb51-4462-4182-b58e-45c91f23a710, com.amazonaws.ecs.task-definition-family=awseb-MultiDocker-env-qypupgjc3m, com.amazonaws.ecs.task-definition-version=5, image=swaroopsalvi/multi-worker, name=ecs-awseb-MultiDocker-env-qypupgjc3m-5-worker-fed9838af39faeb7c401)
+2020-07-27T23:38:31.341099107Z container stop cacbb23331fbd3a67a8a9c49e85ee72dc63484016081fee9bd55aab56c8304f0 (com.amazonaws.ecs.cluster=awseb-MultiDocker-env-qypupgjc3m, com.amazonaws.ecs.container-name=server, com.amazonaws.ecs.task-arn=arn:aws:ecs:us-west-2:276587239836:task/d781cb51-4462-4182-b58e-45c91f23a710, com.amazonaws.ecs.task-definition-family=awseb-MultiDocker-env-qypupgjc3m, com.amazonaws.ecs.task-definition-version=5, image=swaroopsalvi/multi-server, name=ecs-awseb-MultiDocker-env-qypupgjc3m-5-server-ce9dea99e2ceadc98101)
+2020-07-27T23:38:56.581829041Z container exec_create: /agent --healthcheck 8817a33bd924e9e3a534c7c09bb07325d5d7611179a163d5924184c1ef299600 (execID=8b3dd2878ec46f90266599c3995eceb4937dfc7601eaa97ac4b409be27939dcc, image=amazon/amazon-ecs-agent:latest, name=ecs-agent)
+2020-07-27T23:38:56.581914949Z container exec_start: /agent --healthcheck 8817a33bd924e9e3a534c7c09bb07325d5d7611179a163d5924184c1ef299600 (execID=8b3dd2878ec46f90266599c3995eceb4937dfc7601eaa97ac4b409be27939dcc, image=amazon/amazon-ecs-agent:latest, name=ecs-agent)
+2020-07-27T23:38:56.677173504Z container exec_die 8817a33bd924e9e3a534c7c09bb07325d5d7611179a163d5924184c1ef299600 (execID=8b3dd2878ec46f90266599c3995eceb4937dfc7601eaa97ac4b409be27939dcc, exitCode=0, image=amazon/amazon-ecs-agent:latest, name=ecs-agent)
+2020-07-27T23:39:26.684412795Z container exec_create: /agent --healthcheck 8817a33bd924e9e3a534c7c09bb07325d5d7611179a163d5924184c1ef299600 (execID=f0f7807cdce86c058536fbbcad635b9a65120263b5e68daf968f4ff660ae1c40, image=amazon/amazon-ecs-agent:latest, name=ecs-agent)
+2020-07-27T23:39:26.684502734Z container exec_start: /agent --healthcheck 8817a33bd924e9e3a534c7c09bb07325d5d7611179a163d5924184c1ef299600 (execID=f0f7807cdce86c058536fbbcad635b9a65120263b5e68daf968f4ff660ae1c40, image=amazon/amazon-ecs-agent:latest, name=ecs-agent)
+2020-07-27T23:39:26.784817654Z container exec_die 8817a33bd924e9e3a534c7c09bb07325d5d7611179a163d5924184c1ef299600 (execID=f0f7807cdce86c058536fbbcad635b9a65120263b5e68daf968f4ff660ae1c40, exitCode=0, image=amazon/amazon-ecs-agent:latest, name=ecs-agent)
+2020-07-27T23:39:56.792430671Z container exec_create: /agent --healthcheck 8817a33bd924e9e3a534c7c09bb07325d5d7611179a163d5924184c1ef299600 (execID=7b2ebb4b14abd5238d1ef2ccf95885a8327207d0a00e6088782dbccd10710cb1, image=amazon/amazon-ecs-agent:latest, name=ecs-agent)
+2020-07-27T23:39:56.792511266Z container exec_start: /agent --healthcheck 8817a33bd924e9e3a534c7c09bb07325d5d7611179a163d5924184c1ef299600 (execID=7b2ebb4b14abd5238d1ef2ccf95885a8327207d0a00e6088782dbccd10710cb1, image=amazon/amazon-ecs-agent:latest, name=ecs-agent)
+2020-07-27T23:39:56.891763959Z container exec_die 8817a33bd924e9e3a534c7c09bb07325d5d7611179a163d5924184c1ef299600 (execID=7b2ebb4b14abd5238d1ef2ccf95885a8327207d0a00e6088782dbccd10710cb1, exitCode=0, image=amazon/amazon-ecs-agent:latest, name=ecs-agent)
+2020-07-27T23:40:26.899143832Z container exec_create: /agent --healthcheck 8817a33bd924e9e3a534c7c09bb07325d5d7611179a163d5924184c1ef299600 (execID=9b5c11423e5025e2a2a5c9bd8b9076e872abf85a8f91cc9055fd01b8fe9c24ea, image=amazon/amazon-ecs-agent:latest, name=ecs-agent)
+2020-07-27T23:40:26.899212312Z container exec_start: /agent --healthcheck 8817a33bd924e9e3a534c7c09bb07325d5d7611179a163d5924184c1ef299600 (execID=9b5c11423e5025e2a2a5c9bd8b9076e872abf85a8f91cc9055fd01b8fe9c24ea, image=amazon/amazon-ecs-agent:latest, name=ecs-agent)
+2020-07-27T23:40:26.996842811Z container exec_die 8817a33bd924e9e3a534c7c09bb07325d5d7611179a163d5924184c1ef299600 (execID=9b5c11423e5025e2a2a5c9bd8b9076e872abf85a8f91cc9055fd01b8fe9c24ea, exitCode=0, image=amazon/amazon-ecs-agent:latest, name=ecs-agent)
+2020-07-27T23:40:57.010583833Z container exec_create: /agent --healthcheck 8817a33bd924e9e3a534c7c09bb07325d5d7611179a163d5924184c1ef299600 (execID=99b74542a4c7d424afd6baea3cb8ea30e21c76e56e080a5e0a145b9424fab736, image=amazon/amazon-ecs-agent:latest, name=ecs-agent)
+2020-07-27T23:40:57.010653769Z container exec_start: /agent --healthcheck 8817a33bd924e9e3a534c7c09bb07325d5d7611179a163d5924184c1ef299600 (execID=99b74542a4c7d424afd6baea3cb8ea30e21c76e56e080a5e0a145b9424fab736, image=amazon/amazon-ecs-agent:latest, name=ecs-agent)
+2020-07-27T23:40:57.112469474Z container exec_die 8817a33bd924e9e3a534c7c09bb07325d5d7611179a163d5924184c1ef299600 (execID=99b74542a4c7d424afd6baea3cb8ea30e21c76e56e080a5e0a145b9424fab736, exitCode=0, image=amazon/amazon-ecs-agent:latest, name=ecs-agent)
+2020-07-27T23:41:27.119985888Z container exec_create: /agent --healthcheck 8817a33bd924e9e3a534c7c09bb07325d5d7611179a163d5924184c1ef299600 (execID=86d6fce70882cd10ceff22d7e5ec05d669b57e8b1d82d0a845b686ff63872b6d, image=amazon/amazon-ecs-agent:latest, name=ecs-agent)
+2020-07-27T23:41:27.120052995Z container exec_start: /agent --healthcheck 8817a33bd924e9e3a534c7c09bb07325d5d7611179a163d5924184c1ef299600 (execID=86d6fce70882cd10ceff22d7e5ec05d669b57e8b1d82d0a845b686ff63872b6d, image=amazon/amazon-ecs-agent:latest, name=ecs-agent)
+2020-07-27T23:41:27.212472296Z container exec_die 8817a33bd924e9e3a534c7c09bb07325d5d7611179a163d5924184c1ef299600 (execID=86d6fce70882cd10ceff22d7e5ec05d669b57e8b1d82d0a845b686ff63872b6d, exitCode=0, image=amazon/amazon-ecs-agent:latest, name=ecs-agent)
+2020-07-27T23:41:57.220393156Z container exec_create: /agent --healthcheck 8817a33bd924e9e3a534c7c09bb07325d5d7611179a163d5924184c1ef299600 (execID=e65706e785c812935d01fcc915034f281577958a5d125bf3a07f7e815c838033, image=amazon/amazon-ecs-agent:latest, name=ecs-agent)
+2020-07-27T23:41:57.220479727Z container exec_start: /agent --healthcheck 8817a33bd924e9e3a534c7c09bb07325d5d7611179a163d5924184c1ef299600 (execID=e65706e785c812935d01fcc915034f281577958a5d125bf3a07f7e815c838033, image=amazon/amazon-ecs-agent:latest, name=ecs-agent)
+2020-07-27T23:41:57.324401452Z container exec_die 8817a33bd924e9e3a534c7c09bb07325d5d7611179a163d5924184c1ef299600 (execID=e65706e785c812935d01fcc915034f281577958a5d125bf3a07f7e815c838033, exitCode=0, image=amazon/amazon-ecs-agent:latest, name=ecs-agent)
+2020-07-27T23:42:27.332026140Z container exec_create: /agent --healthcheck 8817a33bd924e9e3a534c7c09bb07325d5d7611179a163d5924184c1ef299600 (execID=4785b20a0a90ba89561c1d212cf49dd967840dbca8521940d9012edda70206ba, image=amazon/amazon-ecs-agent:latest, name=ecs-agent)
+2020-07-27T23:42:27.332110793Z container exec_start: /agent --healthcheck 8817a33bd924e9e3a534c7c09bb07325d5d7611179a163d5924184c1ef299600 (execID=4785b20a0a90ba89561c1d212cf49dd967840dbca8521940d9012edda70206ba, image=amazon/amazon-ecs-agent:latest, name=ecs-agent)
+2020-07-27T23:42:27.424165868Z container exec_die 8817a33bd924e9e3a534c7c09bb07325d5d7611179a163d5924184c1ef299600 (execID=4785b20a0a90ba89561c1d212cf49dd967840dbca8521940d9012edda70206ba, exitCode=0, image=amazon/amazon-ecs-agent:latest, name=ecs-agent)
+2020-07-27T23:42:57.432027757Z container exec_create: /agent --healthcheck 8817a33bd924e9e3a534c7c09bb07325d5d7611179a163d5924184c1ef299600 (execID=955411acf4b76e15df9d85eb805aea35a9159022d890c516f84732f0c17dcd0c, image=amazon/amazon-ecs-agent:latest, name=ecs-agent)
+2020-07-27T23:42:57.432095588Z container exec_start: /agent --healthcheck 8817a33bd924e9e3a534c7c09bb07325d5d7611179a163d5924184c1ef299600 (execID=955411acf4b76e15df9d85eb805aea35a9159022d890c516f84732f0c17dcd0c, image=amazon/amazon-ecs-agent:latest, name=ecs-agent)
+2020-07-27T23:42:57.532224596Z container exec_die 8817a33bd924e9e3a534c7c09bb07325d5d7611179a163d5924184c1ef299600 (execID=955411acf4b76e15df9d85eb805aea35a9159022d890c516f84732f0c17dcd0c, exitCode=0, image=amazon/amazon-ecs-agent:latest, name=ecs-agent)
+2020-07-27T23:43:27.540433406Z container exec_create: /agent --healthcheck 8817a33bd924e9e3a534c7c09bb07325d5d7611179a163d5924184c1ef299600 (execID=5d947ee748629d1d679991335eec41efd1a6ce1fcd61b42922a29cf933a2b3f4, image=amazon/amazon-ecs-agent:latest, name=ecs-agent)
+2020-07-27T23:43:27.540503670Z container exec_start: /agent --healthcheck 8817a33bd924e9e3a534c7c09bb07325d5d7611179a163d5924184c1ef299600 (execID=5d947ee748629d1d679991335eec41efd1a6ce1fcd61b42922a29cf933a2b3f4, image=amazon/amazon-ecs-agent:latest, name=ecs-agent)
+2020-07-27T23:43:27.634964369Z container exec_die 8817a33bd924e9e3a534c7c09bb07325d5d7611179a163d5924184c1ef299600 (execID=5d947ee748629d1d679991335eec41efd1a6ce1fcd61b42922a29cf933a2b3f4, exitCode=0, image=amazon/amazon-ecs-agent:latest, name=ecs-agent)
+2020-07-27T23:43:57.642755877Z container exec_create: /agent --healthcheck 8817a33bd924e9e3a534c7c09bb07325d5d7611179a163d5924184c1ef299600 (execID=2420cab6064433f7f5662a391d9344f9f0f5f8db6dd8310f9e3c3090b25b38ae, image=amazon/amazon-ecs-agent:latest, name=ecs-agent)
+2020-07-27T23:43:57.642837080Z container exec_start: /agent --healthcheck 8817a33bd924e9e3a534c7c09bb07325d5d7611179a163d5924184c1ef299600 (execID=2420cab6064433f7f5662a391d9344f9f0f5f8db6dd8310f9e3c3090b25b38ae, image=amazon/amazon-ecs-agent:latest, name=ecs-agent)
+2020-07-27T23:43:57.742091069Z container exec_die 8817a33bd924e9e3a534c7c09bb07325d5d7611179a163d5924184c1ef299600 (execID=2420cab6064433f7f5662a391d9344f9f0f5f8db6dd8310f9e3c3090b25b38ae, exitCode=0, image=amazon/amazon-ecs-agent:latest, name=ecs-agent)
+2020-07-27T23:44:27.749879802Z container exec_create: /agent --healthcheck 8817a33bd924e9e3a534c7c09bb07325d5d7611179a163d5924184c1ef299600 (execID=3d53987303851d3c8a6ab34abdb3b0aca1fa08172639467f475ac843fa38e9ca, image=amazon/amazon-ecs-agent:latest, name=ecs-agent)
+2020-07-27T23:44:27.749965988Z container exec_start: /agent --healthcheck 8817a33bd924e9e3a534c7c09bb07325d5d7611179a163d5924184c1ef299600 (execID=3d53987303851d3c8a6ab34abdb3b0aca1fa08172639467f475ac843fa38e9ca, image=amazon/amazon-ecs-agent:latest, name=ecs-agent)
+2020-07-27T23:44:27.854876748Z container exec_die 8817a33bd924e9e3a534c7c09bb07325d5d7611179a163d5924184c1ef299600 (execID=3d53987303851d3c8a6ab34abdb3b0aca1fa08172639467f475ac843fa38e9ca, exitCode=0, image=amazon/amazon-ecs-agent:latest, name=ecs-agent)
+2020-07-27T23:44:57.862779782Z container exec_create: /agent --healthcheck 8817a33bd924e9e3a534c7c09bb07325d5d7611179a163d5924184c1ef299600 (execID=c85b90f11ce277a7c0fcd3b02f0783eb5897b1b062ebff5f33faf02b22332ff4, image=amazon/amazon-ecs-agent:latest, name=ecs-agent)
+2020-07-27T23:44:57.862847175Z container exec_start: /agent --healthcheck 8817a33bd924e9e3a534c7c09bb07325d5d7611179a163d5924184c1ef299600 (execID=c85b90f11ce277a7c0fcd3b02f0783eb5897b1b062ebff5f33faf02b22332ff4, image=amazon/amazon-ecs-agent:latest, name=ecs-agent)
+2020-07-27T23:44:57.961059814Z container exec_die 8817a33bd924e9e3a534c7c09bb07325d5d7611179a163d5924184c1ef299600 (execID=c85b90f11ce277a7c0fcd3b02f0783eb5897b1b062ebff5f33faf02b22332ff4, exitCode=0, image=amazon/amazon-ecs-agent:latest, name=ecs-agent)
+2020-07-27T23:45:27.973878648Z container exec_create: /agent --healthcheck 8817a33bd924e9e3a534c7c09bb07325d5d7611179a163d5924184c1ef299600 (execID=7a73437b1d585f865dba1af8a52c04bb49c5f7bb224584ddf7c5cd98cb916ea1, image=amazon/amazon-ecs-agent:latest, name=ecs-agent)
+2020-07-27T23:45:27.973960611Z container exec_start: /agent --healthcheck 8817a33bd924e9e3a534c7c09bb07325d5d7611179a163d5924184c1ef299600 (execID=7a73437b1d585f865dba1af8a52c04bb49c5f7bb224584ddf7c5cd98cb916ea1, image=amazon/amazon-ecs-agent:latest, name=ecs-agent)
+2020-07-27T23:45:28.067455642Z container exec_die 8817a33bd924e9e3a534c7c09bb07325d5d7611179a163d5924184c1ef299600 (execID=7a73437b1d585f865dba1af8a52c04bb49c5f7bb224584ddf7c5cd98cb916ea1, exitCode=0, image=amazon/amazon-ecs-agent:latest, name=ecs-agent)
+2020-07-27T23:45:58.078915325Z container exec_create: /agent --healthcheck 8817a33bd924e9e3a534c7c09bb07325d5d7611179a163d5924184c1ef299600 (execID=98939b4a8fffaaa72727f0d9cbaa85c71bede0c04ef5bb90f377216f46b817ca, image=amazon/amazon-ecs-agent:latest, name=ecs-agent)
+2020-07-27T23:45:58.078999261Z container exec_start: /agent --healthcheck 8817a33bd924e9e3a534c7c09bb07325d5d7611179a163d5924184c1ef299600 (execID=98939b4a8fffaaa72727f0d9cbaa85c71bede0c04ef5bb90f377216f46b817ca, image=amazon/amazon-ecs-agent:latest, name=ecs-agent)
+2020-07-27T23:45:58.176625270Z container exec_die 8817a33bd924e9e3a534c7c09bb07325d5d7611179a163d5924184c1ef299600 (execID=98939b4a8fffaaa72727f0d9cbaa85c71bede0c04ef5bb90f377216f46b817ca, exitCode=0, image=amazon/amazon-ecs-agent:latest, name=ecs-agent)
+2020-07-27T23:46:28.183634958Z container exec_create: /agent --healthcheck 8817a33bd924e9e3a534c7c09bb07325d5d7611179a163d5924184c1ef299600 (execID=21167719c85d28cc3b954e59410590a364f7bfe1671cf7cf35b66c05b14e0885, image=amazon/amazon-ecs-agent:latest, name=ecs-agent)
+2020-07-27T23:46:28.183718827Z container exec_start: /agent --healthcheck 8817a33bd924e9e3a534c7c09bb07325d5d7611179a163d5924184c1ef299600 (execID=21167719c85d28cc3b954e59410590a364f7bfe1671cf7cf35b66c05b14e0885, image=amazon/amazon-ecs-agent:latest, name=ecs-agent)
+2020-07-27T23:46:28.279597550Z container exec_die 8817a33bd924e9e3a534c7c09bb07325d5d7611179a163d5924184c1ef299600 (execID=21167719c85d28cc3b954e59410590a364f7bfe1671cf7cf35b66c05b14e0885, exitCode=0, image=amazon/amazon-ecs-agent:latest, name=ecs-agent)
+2020-07-27T23:46:58.287675260Z container exec_create: /agent --healthcheck 8817a33bd924e9e3a534c7c09bb07325d5d7611179a163d5924184c1ef299600 (execID=8b5872689e1f3d7f80211b6c64e90e751300602541f6e8e152f16e06e4c7291c, image=amazon/amazon-ecs-agent:latest, name=ecs-agent)
+2020-07-27T23:46:58.287757932Z container exec_start: /agent --healthcheck 8817a33bd924e9e3a534c7c09bb07325d5d7611179a163d5924184c1ef299600 (execID=8b5872689e1f3d7f80211b6c64e90e751300602541f6e8e152f16e06e4c7291c, image=amazon/amazon-ecs-agent:latest, name=ecs-agent)
+2020-07-27T23:46:58.389558995Z container exec_die 8817a33bd924e9e3a534c7c09bb07325d5d7611179a163d5924184c1ef299600 (execID=8b5872689e1f3d7f80211b6c64e90e751300602541f6e8e152f16e06e4c7291c, exitCode=0, image=amazon/amazon-ecs-agent:latest, name=ecs-agent)
+2020-07-27T23:47:28.396497719Z container exec_create: /agent --healthcheck 8817a33bd924e9e3a534c7c09bb07325d5d7611179a163d5924184c1ef299600 (execID=dbe0cf4ba81b7893bb4247f56aaed1dd14a113eacc11b39ee90f540f3fc6d9f3, image=amazon/amazon-ecs-agent:latest, name=ecs-agent)
+2020-07-27T23:47:28.396566354Z container exec_start: /agent --healthcheck 8817a33bd924e9e3a534c7c09bb07325d5d7611179a163d5924184c1ef299600 (execID=dbe0cf4ba81b7893bb4247f56aaed1dd14a113eacc11b39ee90f540f3fc6d9f3, image=amazon/amazon-ecs-agent:latest, name=ecs-agent)
+2020-07-27T23:47:28.492939377Z container exec_die 8817a33bd924e9e3a534c7c09bb07325d5d7611179a163d5924184c1ef299600 (execID=dbe0cf4ba81b7893bb4247f56aaed1dd14a113eacc11b39ee90f540f3fc6d9f3, exitCode=0, image=amazon/amazon-ecs-agent:latest, name=ecs-agent)
+2020-07-27T23:47:58.500924818Z container exec_create: /agent --healthcheck 8817a33bd924e9e3a534c7c09bb07325d5d7611179a163d5924184c1ef299600 (execID=ced1fcb2aa5eefe470445a2099d3588a493e9004423544d11afa6fba73d09536, image=amazon/amazon-ecs-agent:latest, name=ecs-agent)
+2020-07-27T23:47:58.501005747Z container exec_start: /agent --healthcheck 8817a33bd924e9e3a534c7c09bb07325d5d7611179a163d5924184c1ef299600 (execID=ced1fcb2aa5eefe470445a2099d3588a493e9004423544d11afa6fba73d09536, image=amazon/amazon-ecs-agent:latest, name=ecs-agent)
+2020-07-27T23:47:58.605451421Z container exec_die 8817a33bd924e9e3a534c7c09bb07325d5d7611179a163d5924184c1ef299600 (execID=ced1fcb2aa5eefe470445a2099d3588a493e9004423544d11afa6fba73d09536, exitCode=0, image=amazon/amazon-ecs-agent:latest, name=ecs-agent)
+2020-07-27T23:48:28.612695897Z container exec_create: /agent --healthcheck 8817a33bd924e9e3a534c7c09bb07325d5d7611179a163d5924184c1ef299600 (execID=d7b855f752d3b1773d95e53c5acdc227953d822bf45ee8e96756acf2c216bcb2, image=amazon/amazon-ecs-agent:latest, name=ecs-agent)
+2020-07-27T23:48:28.612777955Z container exec_start: /agent --healthcheck 8817a33bd924e9e3a534c7c09bb07325d5d7611179a163d5924184c1ef299600 (execID=d7b855f752d3b1773d95e53c5acdc227953d822bf45ee8e96756acf2c216bcb2, image=amazon/amazon-ecs-agent:latest, name=ecs-agent)
+2020-07-27T23:48:28.707422208Z container exec_die 8817a33bd924e9e3a534c7c09bb07325d5d7611179a163d5924184c1ef299600 (execID=d7b855f752d3b1773d95e53c5acdc227953d822bf45ee8e96756acf2c216bcb2, exitCode=0, image=amazon/amazon-ecs-agent:latest, name=ecs-agent)
+2020-07-27T23:48:58.714462205Z container exec_create: /agent --healthcheck 8817a33bd924e9e3a534c7c09bb07325d5d7611179a163d5924184c1ef299600 (execID=a832079c58162bf6d7b50b9cd9d3af647fc4ae2a74a46450c9118e1ea1cfd3ee, image=amazon/amazon-ecs-agent:latest, name=ecs-agent)
+2020-07-27T23:48:58.714543749Z container exec_start: /agent --healthcheck 8817a33bd924e9e3a534c7c09bb07325d5d7611179a163d5924184c1ef299600 (execID=a832079c58162bf6d7b50b9cd9d3af647fc4ae2a74a46450c9118e1ea1cfd3ee, image=amazon/amazon-ecs-agent:latest, name=ecs-agent)
+2020-07-27T23:48:58.820185505Z container exec_die 8817a33bd924e9e3a534c7c09bb07325d5d7611179a163d5924184c1ef299600 (execID=a832079c58162bf6d7b50b9cd9d3af647fc4ae2a74a46450c9118e1ea1cfd3ee, exitCode=0, image=amazon/amazon-ecs-agent:latest, name=ecs-agent)
+2020-07-27T23:49:28.828168951Z container exec_create: /agent --healthcheck 8817a33bd924e9e3a534c7c09bb07325d5d7611179a163d5924184c1ef299600 (execID=6067288680cfb3b26f66601a9cfa8dde51be1b51c34787e870fe05bf820012eb, image=amazon/amazon-ecs-agent:latest, name=ecs-agent)
+2020-07-27T23:49:28.828250531Z container exec_start: /agent --healthcheck 8817a33bd924e9e3a534c7c09bb07325d5d7611179a163d5924184c1ef299600 (execID=6067288680cfb3b26f66601a9cfa8dde51be1b51c34787e870fe05bf820012eb, image=amazon/amazon-ecs-agent:latest, name=ecs-agent)
+2020-07-27T23:49:28.924053660Z container exec_die 8817a33bd924e9e3a534c7c09bb07325d5d7611179a163d5924184c1ef299600 (execID=6067288680cfb3b26f66601a9cfa8dde51be1b51c34787e870fe05bf820012eb, exitCode=0, image=amazon/amazon-ecs-agent:latest, name=ecs-agent)
+
+
+
+-------------------------------------
+/var/log/containers/nginx-proxy/error.log
+-------------------------------------
+2020/07/27 21:03:31 [error] 20#20: *3 open() "/var/www/html/favicon.ico" failed (2: No such file or directory), client: 130.76.24.28, server: localhost, request: "GET /favicon.ico HTTP/1.1", host: "multidocker-env.eba-z4ipqcfi.us-west-2.elasticbeanstalk.com"
+2020/07/27 21:27:04 [error] 20#20: *5 open() "/var/www/html/favicon.ico" failed (2: No such file or directory), client: 130.76.24.28, server: localhost, request: "GET /favicon.ico HTTP/1.1", host: "multidocker-env.eba-z4ipqcfi.us-west-2.elasticbeanstalk.com"
+2020/07/27 21:38:13 [warn] 20#20: *9 using uninitialized "year" variable while logging request, client: 180.226.42.98, server: localhost, request: "GET / HTTP/1.1"
+2020/07/27 21:38:13 [warn] 20#20: *9 using uninitialized "month" variable while logging request, client: 180.226.42.98, server: localhost, request: "GET / HTTP/1.1"
+2020/07/27 21:38:13 [warn] 20#20: *9 using uninitialized "day" variable while logging request, client: 180.226.42.98, server: localhost, request: "GET / HTTP/1.1"
+2020/07/27 21:38:13 [warn] 20#20: *9 using uninitialized "hour" variable while logging request, client: 180.226.42.98, server: localhost, request: "GET / HTTP/1.1"
+
+
+
+-------------------------------------
+/var/log/ecs/ecs-agent.log
+-------------------------------------
+level=info time=2020-07-27T23:38:20Z msg="Managed task [arn:aws:ecs:us-west-2:276587239836:task/d781cb51-4462-4182-b58e-45c91f23a710]: Container [name=worker runtimeID=509124cc77faa9e00991d4b485bac9c96573d9a6e008e182d68cbc38de9ad35c]: handling container change event [RUNNING]" module=task_manager.go
+level=info time=2020-07-27T23:38:20Z msg="Managed task [arn:aws:ecs:us-west-2:276587239836:task/d781cb51-4462-4182-b58e-45c91f23a710]: Container [name=worker runtimeID=509124cc77faa9e00991d4b485bac9c96573d9a6e008e182d68cbc38de9ad35c]: container change RUNNING->RUNNING is redundant" module=task_manager.go
+level=info time=2020-07-27T23:38:20Z msg="Managed task [arn:aws:ecs:us-west-2:276587239836:task/d781cb51-4462-4182-b58e-45c91f23a710]: waiting for event for task" module=task_manager.go
+level=info time=2020-07-27T23:38:25Z msg="Managed task [arn:aws:ecs:us-west-2:276587239836:task/d781cb51-4462-4182-b58e-45c91f23a710]: no longer waiting" module=task_manager.go
+level=info time=2020-07-27T23:38:25Z msg="Managed task [arn:aws:ecs:us-west-2:276587239836:task/d781cb51-4462-4182-b58e-45c91f23a710]: task not steady state or terminal; progressing it" module=task_manager.go
+level=info time=2020-07-27T23:38:25Z msg="Managed task [arn:aws:ecs:us-west-2:276587239836:task/d781cb51-4462-4182-b58e-45c91f23a710]: waiting for event for task" module=task_manager.go
+level=info time=2020-07-27T23:38:25Z msg="Managed task [arn:aws:ecs:us-west-2:276587239836:task/d781cb51-4462-4182-b58e-45c91f23a710]: Container [name=server runtimeID=cacbb23331fbd3a67a8a9c49e85ee72dc63484016081fee9bd55aab56c8304f0]: handling container change event [RUNNING]" module=task_manager.go
+level=info time=2020-07-27T23:38:25Z msg="Managed task [arn:aws:ecs:us-west-2:276587239836:task/d781cb51-4462-4182-b58e-45c91f23a710]: Container [name=server runtimeID=cacbb23331fbd3a67a8a9c49e85ee72dc63484016081fee9bd55aab56c8304f0]: container change RUNNING->RUNNING is redundant" module=task_manager.go
+level=info time=2020-07-27T23:38:25Z msg="Managed task [arn:aws:ecs:us-west-2:276587239836:task/d781cb51-4462-4182-b58e-45c91f23a710]: waiting for event for task" module=task_manager.go
+level=info time=2020-07-27T23:38:25Z msg="Managed task [arn:aws:ecs:us-west-2:276587239836:task/d781cb51-4462-4182-b58e-45c91f23a710]: Container [name=client runtimeID=]: handling container change event [NONE]" module=task_manager.go
+level=info time=2020-07-27T23:38:25Z msg="Managed task [arn:aws:ecs:us-west-2:276587239836:task/d781cb51-4462-4182-b58e-45c91f23a710]: Container [name=client runtimeID=]: container change PULLED->NONE is redundant" module=task_manager.go
+level=info time=2020-07-27T23:38:25Z msg="Managed task [arn:aws:ecs:us-west-2:276587239836:task/d781cb51-4462-4182-b58e-45c91f23a710]: waiting for event for task" module=task_manager.go
+level=info time=2020-07-27T23:38:25Z msg="Managed task [arn:aws:ecs:us-west-2:276587239836:task/d781cb51-4462-4182-b58e-45c91f23a710]: Container [name=worker runtimeID=509124cc77faa9e00991d4b485bac9c96573d9a6e008e182d68cbc38de9ad35c]: handling container change event [RUNNING]" module=task_manager.go
+level=info time=2020-07-27T23:38:25Z msg="Managed task [arn:aws:ecs:us-west-2:276587239836:task/d781cb51-4462-4182-b58e-45c91f23a710]: Container [name=worker runtimeID=509124cc77faa9e00991d4b485bac9c96573d9a6e008e182d68cbc38de9ad35c]: container change RUNNING->RUNNING is redundant" module=task_manager.go
+level=info time=2020-07-27T23:38:25Z msg="Managed task [arn:aws:ecs:us-west-2:276587239836:task/d781cb51-4462-4182-b58e-45c91f23a710]: waiting for event for task" module=task_manager.go
+level=info time=2020-07-27T23:38:28Z msg="Managed task [arn:aws:ecs:us-west-2:276587239836:task/d781cb51-4462-4182-b58e-45c91f23a710]: got acs event" module=task_manager.go
+level=info time=2020-07-27T23:38:28Z msg="Managed task [arn:aws:ecs:us-west-2:276587239836:task/d781cb51-4462-4182-b58e-45c91f23a710]: new acs transition to: STOPPED; sequence number: 13; task stop sequence number: 0" module=task_manager.go
+level=info time=2020-07-27T23:38:28Z msg="Managed task [arn:aws:ecs:us-west-2:276587239836:task/d781cb51-4462-4182-b58e-45c91f23a710]: task moving to stopped, adding to stopgroup with sequence number: 13" module=task_manager.go
+level=info time=2020-07-27T23:38:28Z msg="Managed task [arn:aws:ecs:us-west-2:276587239836:task/d781cb51-4462-4182-b58e-45c91f23a710]: waiting for event for task" module=task_manager.go
+level=info time=2020-07-27T23:38:30Z msg="Saving state!" module=state_manager.go
+level=info time=2020-07-27T23:38:30Z msg="Managed task [arn:aws:ecs:us-west-2:276587239836:task/d781cb51-4462-4182-b58e-45c91f23a710]: no longer waiting" module=task_manager.go
+level=info time=2020-07-27T23:38:30Z msg="Managed task [arn:aws:ecs:us-west-2:276587239836:task/d781cb51-4462-4182-b58e-45c91f23a710]: task not steady state or terminal; progressing it" module=task_manager.go
+level=info time=2020-07-27T23:38:30Z msg="Managed task [arn:aws:ecs:us-west-2:276587239836:task/d781cb51-4462-4182-b58e-45c91f23a710]: waiting for event for task" module=task_manager.go
+level=info time=2020-07-27T23:38:30Z msg="Task engine [arn:aws:ecs:us-west-2:276587239836:task/d781cb51-4462-4182-b58e-45c91f23a710]: stopping container [worker]" module=docker_task_engine.go
+level=info time=2020-07-27T23:38:30Z msg="Managed task [arn:aws:ecs:us-west-2:276587239836:task/d781cb51-4462-4182-b58e-45c91f23a710]: got resource [cgroup] event: [REMOVED]" module=task_manager.go
+level=info time=2020-07-27T23:38:30Z msg="api/task: Updating task desired status to stopped because of container: [nginx]; task: [awseb-MultiDocker-env-qypupgjc3m:5 arn:aws:ecs:us-west-2:276587239836:task/d781cb51-4462-4182-b58e-45c91f23a710, TaskStatus: (NONE->STOPPED) Containers: [server (RUNNING->STOPPED),nginx (NONE->STOPPED),client (PULLED->STOPPED),worker (RUNNING->STOPPED),]]" module=task.go
+level=info time=2020-07-27T23:38:30Z msg="Managed task [arn:aws:ecs:us-west-2:276587239836:task/d781cb51-4462-4182-b58e-45c91f23a710]: task not steady state or terminal; progressing it" module=task_manager.go
+level=info time=2020-07-27T23:38:30Z msg="Managed task [arn:aws:ecs:us-west-2:276587239836:task/d781cb51-4462-4182-b58e-45c91f23a710]: waiting for event for task" module=task_manager.go
+level=info time=2020-07-27T23:38:30Z msg="Managed task [arn:aws:ecs:us-west-2:276587239836:task/d781cb51-4462-4182-b58e-45c91f23a710]: Container [name=nginx runtimeID=]: handling container change event [STOPPED]" module=task_manager.go
+level=info time=2020-07-27T23:38:30Z msg="Task [arn:aws:ecs:us-west-2:276587239836:task/d781cb51-4462-4182-b58e-45c91f23a710]: recording execution stopped time. Essential container [nginx] stopped at: 2020-07-27 23:38:30.94677542 +0000 UTC m=+10122.278663911" module=task.go
+level=info time=2020-07-27T23:38:30Z msg="Managed task [arn:aws:ecs:us-west-2:276587239836:task/d781cb51-4462-4182-b58e-45c91f23a710]: sending container change event [nginx]: arn:aws:ecs:us-west-2:276587239836:task/d781cb51-4462-4182-b58e-45c91f23a710 nginx -> STOPPED, Known Sent: NONE" module=task_manager.go
+level=info time=2020-07-27T23:38:30Z msg="Managed task [arn:aws:ecs:us-west-2:276587239836:task/d781cb51-4462-4182-b58e-45c91f23a710]: sent container change event [nginx]: arn:aws:ecs:us-west-2:276587239836:task/d781cb51-4462-4182-b58e-45c91f23a710 nginx -> STOPPED, Known Sent: NONE" module=task_manager.go
+level=info time=2020-07-27T23:38:30Z msg="api/task: Updating task desired status to stopped because of container: [nginx]; task: [awseb-MultiDocker-env-qypupgjc3m:5 arn:aws:ecs:us-west-2:276587239836:task/d781cb51-4462-4182-b58e-45c91f23a710, TaskStatus: (NONE->STOPPED) Containers: [server (RUNNING->STOPPED),nginx (STOPPED->STOPPED),client (PULLED->STOPPED),worker (RUNNING->STOPPED),]]" module=task.go
+level=info time=2020-07-27T23:38:30Z msg="api/task: Updating task desired status to stopped because of container: [nginx]; task: [awseb-MultiDocker-env-qypupgjc3m:5 arn:aws:ecs:us-west-2:276587239836:task/d781cb51-4462-4182-b58e-45c91f23a710, TaskStatus: (NONE->STOPPED) Containers: [server (RUNNING->STOPPED),nginx (STOPPED->STOPPED),client (PULLED->STOPPED),worker (RUNNING->STOPPED),]]" module=task.go
+level=info time=2020-07-27T23:38:30Z msg="Managed task [arn:aws:ecs:us-west-2:276587239836:task/d781cb51-4462-4182-b58e-45c91f23a710]: task not steady state or terminal; progressing it" module=task_manager.go
+level=info time=2020-07-27T23:38:30Z msg="Managed task [arn:aws:ecs:us-west-2:276587239836:task/d781cb51-4462-4182-b58e-45c91f23a710]: waiting for event for task" module=task_manager.go
+level=info time=2020-07-27T23:38:30Z msg="Managed task [arn:aws:ecs:us-west-2:276587239836:task/d781cb51-4462-4182-b58e-45c91f23a710]: Container [name=client runtimeID=]: handling container change event [STOPPED]" module=task_manager.go
+level=info time=2020-07-27T23:38:30Z msg="Managed task [arn:aws:ecs:us-west-2:276587239836:task/d781cb51-4462-4182-b58e-45c91f23a710]: sending container change event [client]: arn:aws:ecs:us-west-2:276587239836:task/d781cb51-4462-4182-b58e-45c91f23a710 client -> STOPPED, Reason CannotPullContainerError: Error response from daemon: pull access denied for swaroopsalvi/multi-client, repository does not exist or may require 'docker login': denied: requested access to the resource is denied, Known Sent: NONE" module=task_manager.go
+level=info time=2020-07-27T23:38:30Z msg="TaskHandler: batching container event: arn:aws:ecs:us-west-2:276587239836:task/d781cb51-4462-4182-b58e-45c91f23a710 nginx -> STOPPED, Known Sent: NONE" module=task_handler.go
+level=info time=2020-07-27T23:38:30Z msg="TaskHandler: batching container event: arn:aws:ecs:us-west-2:276587239836:task/d781cb51-4462-4182-b58e-45c91f23a710 client -> STOPPED, Reason CannotPullContainerError: Error response from daemon: pull access denied for swaroopsalvi/multi-client, repository does not exist or may require 'docker login': denied: requested access to the resource is denied, Known Sent: NONE" module=task_handler.go
+level=info time=2020-07-27T23:38:30Z msg="Managed task [arn:aws:ecs:us-west-2:276587239836:task/d781cb51-4462-4182-b58e-45c91f23a710]: sent container change event [client]: arn:aws:ecs:us-west-2:276587239836:task/d781cb51-4462-4182-b58e-45c91f23a710 client -> STOPPED, Reason CannotPullContainerError: Error response from daemon: pull access denied for swaroopsalvi/multi-client, repository does not exist or may require 'docker login': denied: requested access to the resource is denied, Known Sent: NONE" module=task_manager.go
+level=info time=2020-07-27T23:38:30Z msg="api/task: Updating task desired status to stopped because of container: [nginx]; task: [awseb-MultiDocker-env-qypupgjc3m:5 arn:aws:ecs:us-west-2:276587239836:task/d781cb51-4462-4182-b58e-45c91f23a710, TaskStatus: (NONE->STOPPED) Containers: [server (RUNNING->STOPPED),nginx (STOPPED->STOPPED),client (STOPPED->STOPPED),worker (RUNNING->STOPPED),]]" module=task.go
+level=info time=2020-07-27T23:38:30Z msg="api/task: Updating task desired status to stopped because of container: [nginx]; task: [awseb-MultiDocker-env-qypupgjc3m:5 arn:aws:ecs:us-west-2:276587239836:task/d781cb51-4462-4182-b58e-45c91f23a710, TaskStatus: (NONE->STOPPED) Containers: [server (RUNNING->STOPPED),nginx (STOPPED->STOPPED),client (STOPPED->STOPPED),worker (RUNNING->STOPPED),]]" module=task.go
+level=info time=2020-07-27T23:38:30Z msg="Managed task [arn:aws:ecs:us-west-2:276587239836:task/d781cb51-4462-4182-b58e-45c91f23a710]: task not steady state or terminal; progressing it" module=task_manager.go
+level=info time=2020-07-27T23:38:30Z msg="Managed task [arn:aws:ecs:us-west-2:276587239836:task/d781cb51-4462-4182-b58e-45c91f23a710]: waiting for event for task" module=task_manager.go
+level=info time=2020-07-27T23:38:30Z msg="Managed task [arn:aws:ecs:us-west-2:276587239836:task/d781cb51-4462-4182-b58e-45c91f23a710]: Container [name=nginx runtimeID=]: handling container change event [STOPPED]" module=task_manager.go
+level=info time=2020-07-27T23:38:30Z msg="Managed task [arn:aws:ecs:us-west-2:276587239836:task/d781cb51-4462-4182-b58e-45c91f23a710]: Container [name=nginx runtimeID=]: container change STOPPED->STOPPED is redundant" module=task_manager.go
+level=info time=2020-07-27T23:38:30Z msg="api/task: Updating task desired status to stopped because of container: [nginx]; task: [awseb-MultiDocker-env-qypupgjc3m:5 arn:aws:ecs:us-west-2:276587239836:task/d781cb51-4462-4182-b58e-45c91f23a710, TaskStatus: (NONE->STOPPED) Containers: [server (RUNNING->STOPPED),nginx (STOPPED->STOPPED),client (STOPPED->STOPPED),worker (RUNNING->STOPPED),]]" module=task.go
+level=info time=2020-07-27T23:38:30Z msg="Managed task [arn:aws:ecs:us-west-2:276587239836:task/d781cb51-4462-4182-b58e-45c91f23a710]: task not steady state or terminal; progressing it" module=task_manager.go
+level=info time=2020-07-27T23:38:30Z msg="Managed task [arn:aws:ecs:us-west-2:276587239836:task/d781cb51-4462-4182-b58e-45c91f23a710]: waiting for event for task" module=task_manager.go
+level=info time=2020-07-27T23:38:30Z msg="Task engine [arn:aws:ecs:us-west-2:276587239836:task/d781cb51-4462-4182-b58e-45c91f23a710]: stopping container [server]" module=docker_task_engine.go
+level=info time=2020-07-27T23:38:31Z msg="Managed task [arn:aws:ecs:us-west-2:276587239836:task/d781cb51-4462-4182-b58e-45c91f23a710]: Container [name=worker runtimeID=509124cc77faa9e00991d4b485bac9c96573d9a6e008e182d68cbc38de9ad35c]: handling container change event [STOPPED]" module=task_manager.go
+level=info time=2020-07-27T23:38:31Z msg="Managed task [arn:aws:ecs:us-west-2:276587239836:task/d781cb51-4462-4182-b58e-45c91f23a710]: sending container change event [worker]: arn:aws:ecs:us-west-2:276587239836:task/d781cb51-4462-4182-b58e-45c91f23a710 worker -> STOPPED, Exit 0, , Known Sent: RUNNING" module=task_manager.go
+level=info time=2020-07-27T23:38:31Z msg="Managed task [arn:aws:ecs:us-west-2:276587239836:task/d781cb51-4462-4182-b58e-45c91f23a710]: sent container change event [worker]: arn:aws:ecs:us-west-2:276587239836:task/d781cb51-4462-4182-b58e-45c91f23a710 worker -> STOPPED, Exit 0, , Known Sent: RUNNING" module=task_manager.go
+level=info time=2020-07-27T23:38:31Z msg="api/task: Updating task desired status to stopped because of container: [nginx]; task: [awseb-MultiDocker-env-qypupgjc3m:5 arn:aws:ecs:us-west-2:276587239836:task/d781cb51-4462-4182-b58e-45c91f23a710, TaskStatus: (NONE->STOPPED) Containers: [server (RUNNING->STOPPED),nginx (STOPPED->STOPPED),client (STOPPED->STOPPED),worker (STOPPED->STOPPED),]]" module=task.go
+level=info time=2020-07-27T23:38:31Z msg="api/task: Updating task desired status to stopped because of container: [nginx]; task: [awseb-MultiDocker-env-qypupgjc3m:5 arn:aws:ecs:us-west-2:276587239836:task/d781cb51-4462-4182-b58e-45c91f23a710, TaskStatus: (NONE->STOPPED) Containers: [server (RUNNING->STOPPED),nginx (STOPPED->STOPPED),client (STOPPED->STOPPED),worker (STOPPED->STOPPED),]]" module=task.go
+level=info time=2020-07-27T23:38:31Z msg="Managed task [arn:aws:ecs:us-west-2:276587239836:task/d781cb51-4462-4182-b58e-45c91f23a710]: task not steady state or terminal; progressing it" module=task_manager.go
+level=info time=2020-07-27T23:38:31Z msg="Managed task [arn:aws:ecs:us-west-2:276587239836:task/d781cb51-4462-4182-b58e-45c91f23a710]: waiting for event for task" module=task_manager.go
+level=info time=2020-07-27T23:38:31Z msg="TaskHandler: batching container event: arn:aws:ecs:us-west-2:276587239836:task/d781cb51-4462-4182-b58e-45c91f23a710 worker -> STOPPED, Exit 0, , Known Sent: RUNNING" module=task_handler.go
+level=info time=2020-07-27T23:38:31Z msg="Managed task [arn:aws:ecs:us-west-2:276587239836:task/d781cb51-4462-4182-b58e-45c91f23a710]: Container [name=worker runtimeID=509124cc77faa9e00991d4b485bac9c96573d9a6e008e182d68cbc38de9ad35c]: handling container change event [STOPPED]" module=task_manager.go
+level=info time=2020-07-27T23:38:31Z msg="Managed task [arn:aws:ecs:us-west-2:276587239836:task/d781cb51-4462-4182-b58e-45c91f23a710]: Container [name=worker runtimeID=509124cc77faa9e00991d4b485bac9c96573d9a6e008e182d68cbc38de9ad35c]: container change STOPPED->STOPPED is redundant" module=task_manager.go
+level=info time=2020-07-27T23:38:31Z msg="api/task: Updating task desired status to stopped because of container: [nginx]; task: [awseb-MultiDocker-env-qypupgjc3m:5 arn:aws:ecs:us-west-2:276587239836:task/d781cb51-4462-4182-b58e-45c91f23a710, TaskStatus: (NONE->STOPPED) Containers: [server (RUNNING->STOPPED),nginx (STOPPED->STOPPED),client (STOPPED->STOPPED),worker (STOPPED->STOPPED),]]" module=task.go
+level=info time=2020-07-27T23:38:31Z msg="Managed task [arn:aws:ecs:us-west-2:276587239836:task/d781cb51-4462-4182-b58e-45c91f23a710]: task not steady state or terminal; progressing it" module=task_manager.go
+level=info time=2020-07-27T23:38:31Z msg="Managed task [arn:aws:ecs:us-west-2:276587239836:task/d781cb51-4462-4182-b58e-45c91f23a710]: waiting for event for task" module=task_manager.go
+level=info time=2020-07-27T23:38:31Z msg="Managed task [arn:aws:ecs:us-west-2:276587239836:task/d781cb51-4462-4182-b58e-45c91f23a710]: Container [name=server runtimeID=cacbb23331fbd3a67a8a9c49e85ee72dc63484016081fee9bd55aab56c8304f0]: handling container change event [STOPPED]" module=task_manager.go
+level=info time=2020-07-27T23:38:31Z msg="Managed task [arn:aws:ecs:us-west-2:276587239836:task/d781cb51-4462-4182-b58e-45c91f23a710]: sending container change event [server]: arn:aws:ecs:us-west-2:276587239836:task/d781cb51-4462-4182-b58e-45c91f23a710 server -> STOPPED, Exit 0, , Known Sent: RUNNING" module=task_manager.go
+level=info time=2020-07-27T23:38:31Z msg="Managed task [arn:aws:ecs:us-west-2:276587239836:task/d781cb51-4462-4182-b58e-45c91f23a710]: sent container change event [server]: arn:aws:ecs:us-west-2:276587239836:task/d781cb51-4462-4182-b58e-45c91f23a710 server -> STOPPED, Exit 0, , Known Sent: RUNNING" module=task_manager.go
+level=info time=2020-07-27T23:38:31Z msg="api/task: Updating task's known status to: STOPPED, task: awseb-MultiDocker-env-qypupgjc3m:5 arn:aws:ecs:us-west-2:276587239836:task/d781cb51-4462-4182-b58e-45c91f23a710, TaskStatus: (NONE->STOPPED) Containers: [server (STOPPED->STOPPED),nginx (STOPPED->STOPPED),client (STOPPED->STOPPED),worker (STOPPED->STOPPED),]" module=task.go
+level=info time=2020-07-27T23:38:31Z msg="api/task: Updating task desired status to stopped because of container: [nginx]; task: [awseb-MultiDocker-env-qypupgjc3m:5 arn:aws:ecs:us-west-2:276587239836:task/d781cb51-4462-4182-b58e-45c91f23a710, TaskStatus: (STOPPED->STOPPED) Containers: [server (STOPPED->STOPPED),nginx (STOPPED->STOPPED),client (STOPPED->STOPPED),worker (STOPPED->STOPPED),]]" module=task.go
+level=info time=2020-07-27T23:38:31Z msg="Managed task [arn:aws:ecs:us-west-2:276587239836:task/d781cb51-4462-4182-b58e-45c91f23a710]: Container [name=server runtimeID=cacbb23331fbd3a67a8a9c49e85ee72dc63484016081fee9bd55aab56c8304f0]: container change also resulted in task change [STOPPED]" module=task_manager.go
+level=info time=2020-07-27T23:38:31Z msg="Managed task [arn:aws:ecs:us-west-2:276587239836:task/d781cb51-4462-4182-b58e-45c91f23a710]: sending task change event [arn:aws:ecs:us-west-2:276587239836:task/d781cb51-4462-4182-b58e-45c91f23a710 -> STOPPED, Known Sent: NONE, PullStartedAt: 2020-07-27 23:24:23.73247362 +0000 UTC m=+9275.064362124, PullStoppedAt: 2020-07-27 23:24:50.221780736 +0000 UTC m=+9301.553669243, ExecutionStoppedAt: 2020-07-27 23:38:30.94677542 +0000 UTC m=+10122.278663911]" module=task_manager.go
+level=info time=2020-07-27T23:38:31Z msg="TaskHandler: batching container event: arn:aws:ecs:us-west-2:276587239836:task/d781cb51-4462-4182-b58e-45c91f23a710 server -> STOPPED, Exit 0, , Known Sent: RUNNING" module=task_handler.go
+level=info time=2020-07-27T23:38:31Z msg="TaskHandler: Adding event: TaskChange: [arn:aws:ecs:us-west-2:276587239836:task/d781cb51-4462-4182-b58e-45c91f23a710 -> STOPPED, Known Sent: NONE, PullStartedAt: 2020-07-27 23:24:23.73247362 +0000 UTC m=+9275.064362124, PullStoppedAt: 2020-07-27 23:24:50.221780736 +0000 UTC m=+9301.553669243, ExecutionStoppedAt: 2020-07-27 23:38:30.94677542 +0000 UTC m=+10122.278663911, arn:aws:ecs:us-west-2:276587239836:task/d781cb51-4462-4182-b58e-45c91f23a710 nginx -> STOPPED, Known Sent: NONE, arn:aws:ecs:us-west-2:276587239836:task/d781cb51-4462-4182-b58e-45c91f23a710 client -> STOPPED, Reason CannotPullContainerError: Error response from daemon: pull access denied for swaroopsalvi/multi-client, repository does not exist or may require 'docker login': denied: requested access to the resource is denied, Known Sent: NONE, arn:aws:ecs:us-west-2:276587239836:task/d781cb51-4462-4182-b58e-45c91f23a710 worker -> STOPPED, Exit 0, , Known Sent: RUNNING, arn:aws:ecs:us-west-2:276587239836:task/d781cb51-4462-4182-b58e-45c91f23a710 server -> STOPPED, Exit 0, , Known Sent: RUNNING] sent: false" module=task_handler.go
+level=info time=2020-07-27T23:38:31Z msg="TaskHandler: Sending task change: TaskChange: [arn:aws:ecs:us-west-2:276587239836:task/d781cb51-4462-4182-b58e-45c91f23a710 -> STOPPED, Known Sent: NONE, PullStartedAt: 2020-07-27 23:24:23.73247362 +0000 UTC m=+9275.064362124, PullStoppedAt: 2020-07-27 23:24:50.221780736 +0000 UTC m=+9301.553669243, ExecutionStoppedAt: 2020-07-27 23:38:30.94677542 +0000 UTC m=+10122.278663911, arn:aws:ecs:us-west-2:276587239836:task/d781cb51-4462-4182-b58e-45c91f23a710 nginx -> STOPPED, Known Sent: NONE, arn:aws:ecs:us-west-2:276587239836:task/d781cb51-4462-4182-b58e-45c91f23a710 client -> STOPPED, Reason CannotPullContainerError: Error response from daemon: pull access denied for swaroopsalvi/multi-client, repository does not exist or may require 'docker login': denied: requested access to the resource is denied, Known Sent: NONE, arn:aws:ecs:us-west-2:276587239836:task/d781cb51-4462-4182-b58e-45c91f23a710 worker -> STOPPED, Exit 0, , Known Sent: RUNNING, arn:aws:ecs:us-west-2:276587239836:task/d781cb51-4462-4182-b58e-45c91f23a710 server -> STOPPED, Exit 0, , Known Sent: RUNNING] sent: false" module=task_handler_types.go
+level=info time=2020-07-27T23:38:31Z msg="Managed task [arn:aws:ecs:us-west-2:276587239836:task/d781cb51-4462-4182-b58e-45c91f23a710]: sent task change event [arn:aws:ecs:us-west-2:276587239836:task/d781cb51-4462-4182-b58e-45c91f23a710 -> STOPPED, Known Sent: NONE, PullStartedAt: 2020-07-27 23:24:23.73247362 +0000 UTC m=+9275.064362124, PullStoppedAt: 2020-07-27 23:24:50.221780736 +0000 UTC m=+9301.553669243, ExecutionStoppedAt: 2020-07-27 23:38:30.94677542 +0000 UTC m=+10122.278663911]" module=task_manager.go
+level=info time=2020-07-27T23:38:31Z msg="api/task: Updating task desired status to stopped because of container: [nginx]; task: [awseb-MultiDocker-env-qypupgjc3m:5 arn:aws:ecs:us-west-2:276587239836:task/d781cb51-4462-4182-b58e-45c91f23a710, TaskStatus: (STOPPED->STOPPED) Containers: [server (STOPPED->STOPPED),nginx (STOPPED->STOPPED),client (STOPPED->STOPPED),worker (STOPPED->STOPPED),]]" module=task.go
+level=info time=2020-07-27T23:38:31Z msg="Managed task [arn:aws:ecs:us-west-2:276587239836:task/d781cb51-4462-4182-b58e-45c91f23a710]: task has reached stopped. Waiting for container cleanup" module=task_manager.go
+level=info time=2020-07-27T23:38:31Z msg="Managed task [arn:aws:ecs:us-west-2:276587239836:task/d781cb51-4462-4182-b58e-45c91f23a710]: waiting for event for task" module=task_manager.go
+level=info time=2020-07-27T23:38:31Z msg="Managed task [arn:aws:ecs:us-west-2:276587239836:task/d781cb51-4462-4182-b58e-45c91f23a710]: Container [name=server runtimeID=cacbb23331fbd3a67a8a9c49e85ee72dc63484016081fee9bd55aab56c8304f0]: handling container change event [STOPPED]" module=task_manager.go
+level=info time=2020-07-27T23:38:31Z msg="Managed task [arn:aws:ecs:us-west-2:276587239836:task/d781cb51-4462-4182-b58e-45c91f23a710]: Container [name=server runtimeID=cacbb23331fbd3a67a8a9c49e85ee72dc63484016081fee9bd55aab56c8304f0]: container change STOPPED->STOPPED is redundant" module=task_manager.go
+level=info time=2020-07-27T23:38:31Z msg="Managed task [arn:aws:ecs:us-west-2:276587239836:task/d781cb51-4462-4182-b58e-45c91f23a710]: waiting for event for task" module=task_manager.go
+level=info time=2020-07-27T23:38:31Z msg="Managed task [arn:aws:ecs:us-west-2:276587239836:task/d781cb51-4462-4182-b58e-45c91f23a710]: Container [name=worker runtimeID=509124cc77faa9e00991d4b485bac9c96573d9a6e008e182d68cbc38de9ad35c]: handling container change event [STOPPED]" module=task_manager.go
+level=info time=2020-07-27T23:38:31Z msg="Managed task [arn:aws:ecs:us-west-2:276587239836:task/d781cb51-4462-4182-b58e-45c91f23a710]: Container [name=worker runtimeID=509124cc77faa9e00991d4b485bac9c96573d9a6e008e182d68cbc38de9ad35c]: container change STOPPED->STOPPED is redundant" module=task_manager.go
+level=info time=2020-07-27T23:38:31Z msg="Managed task [arn:aws:ecs:us-west-2:276587239836:task/d781cb51-4462-4182-b58e-45c91f23a710]: waiting for event for task" module=task_manager.go
+level=info time=2020-07-27T23:38:31Z msg="Managed task [arn:aws:ecs:us-west-2:276587239836:task/d781cb51-4462-4182-b58e-45c91f23a710]: Container [name=server runtimeID=cacbb23331fbd3a67a8a9c49e85ee72dc63484016081fee9bd55aab56c8304f0]: handling container change event [STOPPED]" module=task_manager.go
+level=info time=2020-07-27T23:38:31Z msg="Managed task [arn:aws:ecs:us-west-2:276587239836:task/d781cb51-4462-4182-b58e-45c91f23a710]: Container [name=server runtimeID=cacbb23331fbd3a67a8a9c49e85ee72dc63484016081fee9bd55aab56c8304f0]: container change STOPPED->STOPPED is redundant" module=task_manager.go
+level=info time=2020-07-27T23:38:31Z msg="Managed task [arn:aws:ecs:us-west-2:276587239836:task/d781cb51-4462-4182-b58e-45c91f23a710]: waiting for event for task" module=task_manager.go
+level=warn time=2020-07-27T23:38:38Z msg="Error encountered processing metrics stream from docker, this may affect cloudwatch metric accuracy: DockerGoClient: Unable to retrieve stats for container 509124cc77faa9e00991d4b485bac9c96573d9a6e008e182d68cbc38de9ad35c: error during connect: Get http://%2Fvar%2Frun%2Fdocker.sock/v1.21/containers/509124cc77faa9e00991d4b485bac9c96573d9a6e008e182d68cbc38de9ad35c/stats?stream=0: context canceled" module=container.go
+level=warn time=2020-07-27T23:38:38Z msg="Error encountered processing metrics stream from docker, this may affect cloudwatch metric accuracy: DockerGoClient: Unable to retrieve stats for container cacbb23331fbd3a67a8a9c49e85ee72dc63484016081fee9bd55aab56c8304f0: error during connect: Get http://%2Fvar%2Frun%2Fdocker.sock/v1.21/containers/cacbb23331fbd3a67a8a9c49e85ee72dc63484016081fee9bd55aab56c8304f0/stats?stream=0: context canceled" module=container.go
+level=info time=2020-07-27T23:38:39Z msg="Container 509124cc77faa9e00991d4b485bac9c96573d9a6e008e182d68cbc38de9ad35c is terminal, stopping stats collection" module=container.go
+level=info time=2020-07-27T23:38:39Z msg="Container cacbb23331fbd3a67a8a9c49e85ee72dc63484016081fee9bd55aab56c8304f0 is terminal, stopping stats collection" module=container.go
+level=info time=2020-07-27T23:38:40Z msg="Saving state!" module=state_manager.go
+level=info time=2020-07-27T23:40:26Z msg="ACS Websocket connection closed for a valid reason" module=acs_handler.go
+level=info time=2020-07-27T23:40:26Z msg="ACS Websocket connection closed for a valid reason: EOF" module=acs_handler.go
+level=info time=2020-07-27T23:40:26Z msg="Establishing a Websocket connection to https://ecs-a-10.us-west-2.amazonaws.com/ws?agentHash=17e8d834&agentVersion=1.40.0&clusterArn=awseb-MultiDocker-env-qypupgjc3m&containerInstanceArn=arn%3Aaws%3Aecs%3Aus-west-2%3A276587239836%3Acontainer-instance%2F49c1089d-c7ad-4792-9480-f1c433eff2a9&dockerVersion=DockerVersion%3A+19.03.6-ce&sendCredentials=false&seqNum=1" module=client.go
+level=info time=2020-07-27T23:40:26Z msg="Connected to ACS endpoint" module=acs_handler.go
+level=info time=2020-07-27T23:40:27Z msg="Saving state!" module=state_manager.go
+level=info time=2020-07-27T23:41:07Z msg="TCS Websocket connection closed for a valid reason" module=handler.go
+level=info time=2020-07-27T23:41:07Z msg="Establishing a Websocket connection to https://ecs-t-10.us-west-2.amazonaws.com/ws?agentHash=17e8d834&agentVersion=1.40.0&cluster=awseb-MultiDocker-env-qypupgjc3m&containerInstance=arn%3Aaws%3Aecs%3Aus-west-2%3A276587239836%3Acontainer-instance%2F49c1089d-c7ad-4792-9480-f1c433eff2a9&dockerVersion=19.03.6-ce" module=client.go
+level=info time=2020-07-27T23:41:07Z msg="Connected to TCS endpoint" module=handler.go
+
+
+
+-------------------------------------
+/var/log/docker
+-------------------------------------
+time="2020-07-27T20:49:11.582588464Z" level=info msg=serving... address=/var/run/docker/containerd/containerd.sock.ttrpc
+time="2020-07-27T20:49:11.582635042Z" level=info msg=serving... address=/var/run/docker/containerd/containerd.sock
+time="2020-07-27T20:49:11.582671362Z" level=info msg="containerd successfully booted in 0.054546s"
+time="2020-07-27T20:49:11.590836414Z" level=info msg="parsed scheme: \"unix\"" module=grpc
+time="2020-07-27T20:49:11.590861346Z" level=info msg="scheme \"unix\" not registered, fallback to default scheme" module=grpc
+time="2020-07-27T20:49:11.590893203Z" level=info msg="ccResolverWrapper: sending update to cc: {[{unix:///var/run/docker/containerd/containerd.sock 0  <nil>}] <nil>}" module=grpc
+time="2020-07-27T20:49:11.590906358Z" level=info msg="ClientConn switching balancer to \"pick_first\"" module=grpc
+time="2020-07-27T20:49:11.591723316Z" level=info msg="parsed scheme: \"unix\"" module=grpc
+time="2020-07-27T20:49:11.591740098Z" level=info msg="scheme \"unix\" not registered, fallback to default scheme" module=grpc
+time="2020-07-27T20:49:11.591754886Z" level=info msg="ccResolverWrapper: sending update to cc: {[{unix:///var/run/docker/containerd/containerd.sock 0  <nil>}] <nil>}" module=grpc
+time="2020-07-27T20:49:11.591779217Z" level=info msg="ClientConn switching balancer to \"pick_first\"" module=grpc
+time="2020-07-27T20:49:11.592420820Z" level=warning msg="[graphdriver] WARNING: the devicemapper storage-driver is deprecated, and will be removed in a future release"
+time="2020-07-27T20:49:11.616362623Z" level=info msg="Creating filesystem ext4 on device docker-202:1-395519-base, mkfs args: [/dev/mapper/docker-202:1-395519-base]" storage-driver=devicemapper
+time="2020-07-27T20:49:45.474611913Z" level=info msg="Successfully created filesystem ext4 on device docker-202:1-395519-base" storage-driver=devicemapper
+time="2020-07-27T20:49:45.519539644Z" level=warning msg="Your kernel does not support cgroup blkio weight"
+time="2020-07-27T20:49:45.519601542Z" level=warning msg="Your kernel does not support cgroup blkio weight_device"
+time="2020-07-27T20:49:45.519773991Z" level=info msg="Loading containers: start."
+time="2020-07-27T20:49:45.523509157Z" level=warning msg="Running iptables --wait -t nat -L -n failed with message: `iptables v1.4.18: unknown option \"--wait\"\nTry `iptables -h' or 'iptables --help' for more information.`, error: exit status 2"
+time="2020-07-27T20:49:45.583205718Z" level=info msg="Default bridge (docker0) is assigned with an IP address 172.17.0.0/16. Daemon option --bip can be used to set a preferred IP address"
+time="2020-07-27T20:49:45.612229079Z" level=info msg="Loading containers: done."
+time="2020-07-27T20:49:45.658969723Z" level=info msg="Docker daemon" commit=369ce74 graphdriver(s)=devicemapper version=19.03.6-ce
+time="2020-07-27T20:49:45.659069490Z" level=info msg="Daemon has completed initialization"
+time="2020-07-27T20:49:45.689984712Z" level=info msg="API listen on /var/run/docker.sock"
+time="2020-07-27T20:49:48.494707788Z" level=info msg="shim containerd-shim started" address=/containerd-shim/3b0d90e1705faee915d3052cc69c4aa69d52246eba6ba40f9795ed9155e42ee8.sock debug=false pid=3792
+time="2020-07-27T20:50:13.677159760Z" level=info msg="shim containerd-shim started" address=/containerd-shim/7e41a957c8443e35d4f8916613610fd8dc0d455d4c11a3470b0da8340578f4e5.sock debug=false pid=4410
+time="2020-07-27T20:50:18.626294976Z" level=info msg="shim containerd-shim started" address=/containerd-shim/c6e4fa4e2f8a6cd8e7c1d52d0b67d16869d820cd665a3a6739ad56542e0d3579.sock debug=false pid=4652
+time="2020-07-27T21:48:19.417551362Z" level=info msg="shim reaped" id=301d3f34500bfa300d88578a6dfc12570f83c105e6c683a9692a58393c58a204
+time="2020-07-27T21:48:19.427759300Z" level=info msg="ignoring event" module=libcontainerd namespace=moby topic=/tasks/delete type="*events.TaskDelete"
+time="2020-07-27T21:48:19.650704369Z" level=info msg="shim reaped" id=44e48c4896bf0933bf8f685eba5b701aa772e7a3cb87f4b0933aedb745c5ab62
+time="2020-07-27T21:48:19.660882253Z" level=info msg="ignoring event" module=libcontainerd namespace=moby topic=/tasks/delete type="*events.TaskDelete"
+time="2020-07-27T21:48:24.665735159Z" level=info msg="shim containerd-shim started" address=/containerd-shim/b601abb64497c41a750f1616835c54b8899ee831779be0f21b557481810f421b.sock debug=false pid=2514
+time="2020-07-27T21:48:26.537466265Z" level=info msg="shim containerd-shim started" address=/containerd-shim/3a8522189501ca9783b9eec94913b79e31d44b7dea9d0421c712287ace820a55.sock debug=false pid=2699
+time="2020-07-27T22:41:31.952034955Z" level=info msg="shim reaped" id=92870a3e56e892b3097e87f112b24efa67e4669aa36c85c8d3ab456bf06914c6
+time="2020-07-27T22:41:31.962240158Z" level=info msg="ignoring event" module=libcontainerd namespace=moby topic=/tasks/delete type="*events.TaskDelete"
+time="2020-07-27T22:41:32.170985297Z" level=info msg="shim reaped" id=45519b1e5e24ddb176cec9780b8ec86beab0280306f462e87194451d9c428bcb
+time="2020-07-27T22:41:32.181250136Z" level=info msg="ignoring event" module=libcontainerd namespace=moby topic=/tasks/delete type="*events.TaskDelete"
+time="2020-07-27T22:41:38.004114043Z" level=error msg="Not continuing with pull after error: errors:\ndenied: requested access to the resource is denied\nunauthorized: authentication required\n"
+time="2020-07-27T22:41:38.004176999Z" level=info msg="Ignoring extra error returned from registry: unauthorized: authentication required"
+time="2020-07-27T22:41:40.132464756Z" level=error msg="Not continuing with pull after error: errors:\ndenied: requested access to the resource is denied\nunauthorized: authentication required\n"
+time="2020-07-27T22:41:40.132500421Z" level=info msg="Ignoring extra error returned from registry: unauthorized: authentication required"
+time="2020-07-27T22:41:43.539104511Z" level=error msg="Not continuing with pull after error: errors:\ndenied: requested access to the resource is denied\nunauthorized: authentication required\n"
+time="2020-07-27T22:41:43.539138437Z" level=info msg="Ignoring extra error returned from registry: unauthorized: authentication required"
+time="2020-07-27T22:41:46.414259650Z" level=info msg="shim containerd-shim started" address=/containerd-shim/56a740d01e2149f7049d0d606bd9543a48d2511a64f057c1c4e36937b05b8d9f.sock debug=false pid=11409
+time="2020-07-27T22:41:46.857290518Z" level=info msg="shim containerd-shim started" address=/containerd-shim/65ad7876a39c57534bde0a478559a6c8a80fd4fdd9740752345b8ea27ef6d78f.sock debug=false pid=11543
+time="2020-07-27T22:41:49.175763514Z" level=error msg="Not continuing with pull after error: errors:\ndenied: requested access to the resource is denied\nunauthorized: authentication required\n"
+time="2020-07-27T22:41:49.175807661Z" level=info msg="Ignoring extra error returned from registry: unauthorized: authentication required"
+time="2020-07-27T22:41:56.006073288Z" level=error msg="Not continuing with pull after error: errors:\ndenied: requested access to the resource is denied\nunauthorized: authentication required\n"
+time="2020-07-27T22:41:56.006132220Z" level=info msg="Ignoring extra error returned from registry: unauthorized: authentication required"
+time="2020-07-27T22:55:46.226644431Z" level=info msg="shim reaped" id=ce3a7d4044daa02b74356b91155c845521b64888c318031e11578c3350b32052
+time="2020-07-27T22:55:46.228430000Z" level=info msg="shim reaped" id=eb8ea718f5468aa1c5cdac146ca63ad3d9a4625444f25aa306ac7ada1f40975d
+time="2020-07-27T22:55:46.236912468Z" level=info msg="ignoring event" module=libcontainerd namespace=moby topic=/tasks/delete type="*events.TaskDelete"
+time="2020-07-27T22:55:46.238687201Z" level=info msg="ignoring event" module=libcontainerd namespace=moby topic=/tasks/delete type="*events.TaskDelete"
+time="2020-07-27T22:55:50.522143896Z" level=error msg="Not continuing with pull after error: errors:\ndenied: requested access to the resource is denied\nunauthorized: authentication required\n"
+time="2020-07-27T22:55:50.522188194Z" level=info msg="Ignoring extra error returned from registry: unauthorized: authentication required"
+time="2020-07-27T22:55:50.961242566Z" level=info msg="shim containerd-shim started" address=/containerd-shim/24f4ce69264cb7222623d3f8b783d4cc33d2a4a9a12911fa7683ffdc49164511.sock debug=false pid=14511
+time="2020-07-27T22:55:51.212899041Z" level=info msg="shim containerd-shim started" address=/containerd-shim/376c85f1c80e4ccc5820c31ca69546d4ce76e379ccadb7e781ce2cb189cda7db.sock debug=false pid=14615
+time="2020-07-27T22:55:56.969137611Z" level=error msg="Not continuing with pull after error: errors:\ndenied: requested access to the resource is denied\nunauthorized: authentication required\n"
+time="2020-07-27T22:55:56.969180529Z" level=info msg="Ignoring extra error returned from registry: unauthorized: authentication required"
+time="2020-07-27T22:56:03.611758398Z" level=error msg="Not continuing with pull after error: errors:\ndenied: requested access to the resource is denied\nunauthorized: authentication required\n"
+time="2020-07-27T22:56:03.611820979Z" level=info msg="Ignoring extra error returned from registry: unauthorized: authentication required"
+time="2020-07-27T22:56:10.211206532Z" level=error msg="Not continuing with pull after error: errors:\ndenied: requested access to the resource is denied\nunauthorized: authentication required\n"
+time="2020-07-27T22:56:10.211248964Z" level=info msg="Ignoring extra error returned from registry: unauthorized: authentication required"
+time="2020-07-27T22:56:16.696004670Z" level=error msg="Not continuing with pull after error: errors:\ndenied: requested access to the resource is denied\nunauthorized: authentication required\n"
+time="2020-07-27T22:56:16.696047032Z" level=info msg="Ignoring extra error returned from registry: unauthorized: authentication required"
+time="2020-07-27T23:09:57.471421324Z" level=info msg="shim reaped" id=6c9b40ca0ff1c16bf61f5392bed891fdc78c4d370b7425e874e9977e9741d1da
+time="2020-07-27T23:09:57.483589433Z" level=info msg="ignoring event" module=libcontainerd namespace=moby topic=/tasks/delete type="*events.TaskDelete"
+time="2020-07-27T23:09:57.507818461Z" level=info msg="shim reaped" id=9f3d44ea521d7c31824883c2e7c85d3938dcc4f5e0ad50cce0a0f8db7c606ec2
+time="2020-07-27T23:09:57.520332150Z" level=info msg="ignoring event" module=libcontainerd namespace=moby topic=/tasks/delete type="*events.TaskDelete"
+time="2020-07-27T23:10:11.421960507Z" level=error msg="Not continuing with pull after error: errors:\ndenied: requested access to the resource is denied\nunauthorized: authentication required\n"
+time="2020-07-27T23:10:11.422005423Z" level=info msg="Ignoring extra error returned from registry: unauthorized: authentication required"
+time="2020-07-27T23:10:18.246761118Z" level=error msg="Not continuing with pull after error: errors:\ndenied: requested access to the resource is denied\nunauthorized: authentication required\n"
+time="2020-07-27T23:10:18.246798221Z" level=info msg="Ignoring extra error returned from registry: unauthorized: authentication required"
+time="2020-07-27T23:10:19.985323996Z" level=info msg="shim containerd-shim started" address=/containerd-shim/0cb4136d792950d4c75eecc527cde02322e063831f235b09d2fa6b1675765c05.sock debug=false pid=18147
+time="2020-07-27T23:10:20.655664370Z" level=info msg="shim containerd-shim started" address=/containerd-shim/7ef9fcc0aef0439ad1ceb156e47c3420cbfa51fc60fd6301ad238878452e850c.sock debug=false pid=18316
+time="2020-07-27T23:10:25.114121859Z" level=error msg="Not continuing with pull after error: errors:\ndenied: requested access to the resource is denied\nunauthorized: authentication required\n"
+time="2020-07-27T23:10:25.114173876Z" level=info msg="Ignoring extra error returned from registry: unauthorized: authentication required"
+time="2020-07-27T23:10:31.959107555Z" level=error msg="Not continuing with pull after error: errors:\ndenied: requested access to the resource is denied\nunauthorized: authentication required\n"
+time="2020-07-27T23:10:31.959149420Z" level=info msg="Ignoring extra error returned from registry: unauthorized: authentication required"
+time="2020-07-27T23:10:37.947296867Z" level=error msg="Not continuing with pull after error: errors:\ndenied: requested access to the resource is denied\nunauthorized: authentication required\n"
+time="2020-07-27T23:10:37.947339731Z" level=info msg="Ignoring extra error returned from registry: unauthorized: authentication required"
+time="2020-07-27T23:24:18.816101824Z" level=info msg="shim reaped" id=b03f21d73b6f680b4f6ee17f1b869db97a7e480dc3da16c545efe3862b0db30f
+time="2020-07-27T23:24:18.819608751Z" level=info msg="shim reaped" id=e2d9cd337e8057400e29b8a2f480e344b6c9ea49351b53618ac8bc2aec8c4948
+time="2020-07-27T23:24:18.826348186Z" level=info msg="ignoring event" module=libcontainerd namespace=moby topic=/tasks/delete type="*events.TaskDelete"
+time="2020-07-27T23:24:18.829812509Z" level=info msg="ignoring event" module=libcontainerd namespace=moby topic=/tasks/delete type="*events.TaskDelete"
+time="2020-07-27T23:24:24.569467461Z" level=error msg="Not continuing with pull after error: errors:\ndenied: requested access to the resource is denied\nunauthorized: authentication required\n"
+time="2020-07-27T23:24:24.569511209Z" level=info msg="Ignoring extra error returned from registry: unauthorized: authentication required"
+time="2020-07-27T23:24:25.275960497Z" level=info msg="shim containerd-shim started" address=/containerd-shim/b5a63b5005b182bdb70ef060fabd1d81996a83b4f2db965f5c8a5d9844837835.sock debug=false pid=21242
+time="2020-07-27T23:24:25.415233624Z" level=info msg="shim containerd-shim started" address=/containerd-shim/73c5d2ad598f2c97d5f0216131cca2bacb39525e5e65b2a6ca41306f07506e49.sock debug=false pid=21310
+time="2020-07-27T23:24:31.207751820Z" level=error msg="Not continuing with pull after error: errors:\ndenied: requested access to the resource is denied\nunauthorized: authentication required\n"
+time="2020-07-27T23:24:31.207794950Z" level=info msg="Ignoring extra error returned from registry: unauthorized: authentication required"
+time="2020-07-27T23:24:37.894691189Z" level=error msg="Not continuing with pull after error: errors:\ndenied: requested access to the resource is denied\nunauthorized: authentication required\n"
+time="2020-07-27T23:24:37.894729315Z" level=info msg="Ignoring extra error returned from registry: unauthorized: authentication required"
+time="2020-07-27T23:24:43.895270070Z" level=error msg="Not continuing with pull after error: errors:\ndenied: requested access to the resource is denied\nunauthorized: authentication required\n"
+time="2020-07-27T23:24:43.895311170Z" level=info msg="Ignoring extra error returned from registry: unauthorized: authentication required"
+time="2020-07-27T23:24:50.200077027Z" level=error msg="Not continuing with pull after error: errors:\ndenied: requested access to the resource is denied\nunauthorized: authentication required\n"
+time="2020-07-27T23:24:50.200119728Z" level=info msg="Ignoring extra error returned from registry: unauthorized: authentication required"
+time="2020-07-27T23:38:31.096130351Z" level=info msg="shim reaped" id=509124cc77faa9e00991d4b485bac9c96573d9a6e008e182d68cbc38de9ad35c
+time="2020-07-27T23:38:31.106325233Z" level=info msg="ignoring event" module=libcontainerd namespace=moby topic=/tasks/delete type="*events.TaskDelete"
+time="2020-07-27T23:38:31.131587565Z" level=info msg="shim reaped" id=cacbb23331fbd3a67a8a9c49e85ee72dc63484016081fee9bd55aab56c8304f0
+time="2020-07-27T23:38:31.151104754Z" level=info msg="ignoring event" module=libcontainerd namespace=moby topic=/tasks/delete type="*events.TaskDelete"
+
+
+
+-------------------------------------
+/var/log/ecs/ecs-agent.log.2020-07-27-22
+-------------------------------------
+level=info time=2020-07-27T22:59:21Z msg="Managed task [arn:aws:ecs:us-west-2:276587239836:task/00d05be6-b403-49cb-b71c-76d870cf83e8]: no longer waiting" module=task_manager.go
+level=info time=2020-07-27T22:59:21Z msg="Managed task [arn:aws:ecs:us-west-2:276587239836:task/00d05be6-b403-49cb-b71c-76d870cf83e8]: task not steady state or terminal; progressing it" module=task_manager.go
+level=info time=2020-07-27T22:59:21Z msg="Managed task [arn:aws:ecs:us-west-2:276587239836:task/00d05be6-b403-49cb-b71c-76d870cf83e8]: waiting for event for task" module=task_manager.go
+level=info time=2020-07-27T22:59:21Z msg="Managed task [arn:aws:ecs:us-west-2:276587239836:task/00d05be6-b403-49cb-b71c-76d870cf83e8]: Container [name=server runtimeID=9f3d44ea521d7c31824883c2e7c85d3938dcc4f5e0ad50cce0a0f8db7c606ec2]: handling container change event [RUNNING]" module=task_manager.go
+level=info time=2020-07-27T22:59:21Z msg="Managed task [arn:aws:ecs:us-west-2:276587239836:task/00d05be6-b403-49cb-b71c-76d870cf83e8]: Container [name=server runtimeID=9f3d44ea521d7c31824883c2e7c85d3938dcc4f5e0ad50cce0a0f8db7c606ec2]: container change RUNNING->RUNNING is redundant" module=task_manager.go
+level=info time=2020-07-27T22:59:21Z msg="Managed task [arn:aws:ecs:us-west-2:276587239836:task/00d05be6-b403-49cb-b71c-76d870cf83e8]: waiting for event for task" module=task_manager.go
+level=info time=2020-07-27T22:59:21Z msg="Managed task [arn:aws:ecs:us-west-2:276587239836:task/00d05be6-b403-49cb-b71c-76d870cf83e8]: Container [name=worker runtimeID=6c9b40ca0ff1c16bf61f5392bed891fdc78c4d370b7425e874e9977e9741d1da]: handling container change event [RUNNING]" module=task_manager.go
+level=info time=2020-07-27T22:59:21Z msg="Managed task [arn:aws:ecs:us-west-2:276587239836:task/00d05be6-b403-49cb-b71c-76d870cf83e8]: Container [name=worker runtimeID=6c9b40ca0ff1c16bf61f5392bed891fdc78c4d370b7425e874e9977e9741d1da]: container change RUNNING->RUNNING is redundant" module=task_manager.go
+level=info time=2020-07-27T22:59:21Z msg="Managed task [arn:aws:ecs:us-west-2:276587239836:task/00d05be6-b403-49cb-b71c-76d870cf83e8]: waiting for event for task" module=task_manager.go
+level=info time=2020-07-27T22:59:21Z msg="Managed task [arn:aws:ecs:us-west-2:276587239836:task/00d05be6-b403-49cb-b71c-76d870cf83e8]: Container [name=client runtimeID=]: handling container change event [NONE]" module=task_manager.go
+level=info time=2020-07-27T22:59:21Z msg="Managed task [arn:aws:ecs:us-west-2:276587239836:task/00d05be6-b403-49cb-b71c-76d870cf83e8]: Container [name=client runtimeID=]: container change PULLED->NONE is redundant" module=task_manager.go
+level=info time=2020-07-27T22:59:21Z msg="Managed task [arn:aws:ecs:us-west-2:276587239836:task/00d05be6-b403-49cb-b71c-76d870cf83e8]: waiting for event for task" module=task_manager.go
+level=info time=2020-07-27T22:59:26Z msg="Saving state!" module=state_manager.go
+level=info time=2020-07-27T22:59:26Z msg="Managed task [arn:aws:ecs:us-west-2:276587239836:task/00d05be6-b403-49cb-b71c-76d870cf83e8]: no longer waiting" module=task_manager.go
+level=info time=2020-07-27T22:59:26Z msg="Managed task [arn:aws:ecs:us-west-2:276587239836:task/00d05be6-b403-49cb-b71c-76d870cf83e8]: task not steady state or terminal; progressing it" module=task_manager.go
+level=info time=2020-07-27T22:59:26Z msg="Managed task [arn:aws:ecs:us-west-2:276587239836:task/00d05be6-b403-49cb-b71c-76d870cf83e8]: waiting for event for task" module=task_manager.go
+level=info time=2020-07-27T22:59:26Z msg="Managed task [arn:aws:ecs:us-west-2:276587239836:task/00d05be6-b403-49cb-b71c-76d870cf83e8]: Container [name=server runtimeID=9f3d44ea521d7c31824883c2e7c85d3938dcc4f5e0ad50cce0a0f8db7c606ec2]: handling container change event [RUNNING]" module=task_manager.go
+level=info time=2020-07-27T22:59:26Z msg="Managed task [arn:aws:ecs:us-west-2:276587239836:task/00d05be6-b403-49cb-b71c-76d870cf83e8]: Container [name=server runtimeID=9f3d44ea521d7c31824883c2e7c85d3938dcc4f5e0ad50cce0a0f8db7c606ec2]: container change RUNNING->RUNNING is redundant" module=task_manager.go
+level=info time=2020-07-27T22:59:26Z msg="Managed task [arn:aws:ecs:us-west-2:276587239836:task/00d05be6-b403-49cb-b71c-76d870cf83e8]: waiting for event for task" module=task_manager.go
+level=info time=2020-07-27T22:59:26Z msg="Managed task [arn:aws:ecs:us-west-2:276587239836:task/00d05be6-b403-49cb-b71c-76d870cf83e8]: Container [name=worker runtimeID=6c9b40ca0ff1c16bf61f5392bed891fdc78c4d370b7425e874e9977e9741d1da]: handling container change event [RUNNING]" module=task_manager.go
+level=info time=2020-07-27T22:59:26Z msg="Managed task [arn:aws:ecs:us-west-2:276587239836:task/00d05be6-b403-49cb-b71c-76d870cf83e8]: Container [name=worker runtimeID=6c9b40ca0ff1c16bf61f5392bed891fdc78c4d370b7425e874e9977e9741d1da]: container change RUNNING->RUNNING is redundant" module=task_manager.go
+level=info time=2020-07-27T22:59:26Z msg="Managed task [arn:aws:ecs:us-west-2:276587239836:task/00d05be6-b403-49cb-b71c-76d870cf83e8]: waiting for event for task" module=task_manager.go
+level=info time=2020-07-27T22:59:26Z msg="Managed task [arn:aws:ecs:us-west-2:276587239836:task/00d05be6-b403-49cb-b71c-76d870cf83e8]: Container [name=client runtimeID=]: handling container change event [NONE]" module=task_manager.go
+level=info time=2020-07-27T22:59:26Z msg="Managed task [arn:aws:ecs:us-west-2:276587239836:task/00d05be6-b403-49cb-b71c-76d870cf83e8]: Container [name=client runtimeID=]: container change PULLED->NONE is redundant" module=task_manager.go
+level=info time=2020-07-27T22:59:26Z msg="Managed task [arn:aws:ecs:us-west-2:276587239836:task/00d05be6-b403-49cb-b71c-76d870cf83e8]: waiting for event for task" module=task_manager.go
+level=info time=2020-07-27T22:59:31Z msg="Managed task [arn:aws:ecs:us-west-2:276587239836:task/00d05be6-b403-49cb-b71c-76d870cf83e8]: no longer waiting" module=task_manager.go
+level=info time=2020-07-27T22:59:31Z msg="Managed task [arn:aws:ecs:us-west-2:276587239836:task/00d05be6-b403-49cb-b71c-76d870cf83e8]: task not steady state or terminal; progressing it" module=task_manager.go
+level=info time=2020-07-27T22:59:31Z msg="Managed task [arn:aws:ecs:us-west-2:276587239836:task/00d05be6-b403-49cb-b71c-76d870cf83e8]: waiting for event for task" module=task_manager.go
+level=info time=2020-07-27T22:59:31Z msg="Managed task [arn:aws:ecs:us-west-2:276587239836:task/00d05be6-b403-49cb-b71c-76d870cf83e8]: Container [name=server runtimeID=9f3d44ea521d7c31824883c2e7c85d3938dcc4f5e0ad50cce0a0f8db7c606ec2]: handling container change event [RUNNING]" module=task_manager.go
+level=info time=2020-07-27T22:59:31Z msg="Managed task [arn:aws:ecs:us-west-2:276587239836:task/00d05be6-b403-49cb-b71c-76d870cf83e8]: Container [name=server runtimeID=9f3d44ea521d7c31824883c2e7c85d3938dcc4f5e0ad50cce0a0f8db7c606ec2]: container change RUNNING->RUNNING is redundant" module=task_manager.go
+level=info time=2020-07-27T22:59:31Z msg="Managed task [arn:aws:ecs:us-west-2:276587239836:task/00d05be6-b403-49cb-b71c-76d870cf83e8]: waiting for event for task" module=task_manager.go
+level=info time=2020-07-27T22:59:31Z msg="Managed task [arn:aws:ecs:us-west-2:276587239836:task/00d05be6-b403-49cb-b71c-76d870cf83e8]: Container [name=worker runtimeID=6c9b40ca0ff1c16bf61f5392bed891fdc78c4d370b7425e874e9977e9741d1da]: handling container change event [RUNNING]" module=task_manager.go
+level=info time=2020-07-27T22:59:31Z msg="Managed task [arn:aws:ecs:us-west-2:276587239836:task/00d05be6-b403-49cb-b71c-76d870cf83e8]: Container [name=worker runtimeID=6c9b40ca0ff1c16bf61f5392bed891fdc78c4d370b7425e874e9977e9741d1da]: container change RUNNING->RUNNING is redundant" module=task_manager.go
+level=info time=2020-07-27T22:59:31Z msg="Managed task [arn:aws:ecs:us-west-2:276587239836:task/00d05be6-b403-49cb-b71c-76d870cf83e8]: waiting for event for task" module=task_manager.go
+level=info time=2020-07-27T22:59:31Z msg="Managed task [arn:aws:ecs:us-west-2:276587239836:task/00d05be6-b403-49cb-b71c-76d870cf83e8]: Container [name=client runtimeID=]: handling container change event [NONE]" module=task_manager.go
+level=info time=2020-07-27T22:59:31Z msg="Managed task [arn:aws:ecs:us-west-2:276587239836:task/00d05be6-b403-49cb-b71c-76d870cf83e8]: Container [name=client runtimeID=]: container change PULLED->NONE is redundant" module=task_manager.go
+level=info time=2020-07-27T22:59:31Z msg="Managed task [arn:aws:ecs:us-west-2:276587239836:task/00d05be6-b403-49cb-b71c-76d870cf83e8]: waiting for event for task" module=task_manager.go
+level=info time=2020-07-27T22:59:36Z msg="Saving state!" module=state_manager.go
+level=info time=2020-07-27T22:59:36Z msg="Managed task [arn:aws:ecs:us-west-2:276587239836:task/00d05be6-b403-49cb-b71c-76d870cf83e8]: no longer waiting" module=task_manager.go
+level=info time=2020-07-27T22:59:36Z msg="Managed task [arn:aws:ecs:us-west-2:276587239836:task/00d05be6-b403-49cb-b71c-76d870cf83e8]: task not steady state or terminal; progressing it" module=task_manager.go
+level=info time=2020-07-27T22:59:36Z msg="Managed task [arn:aws:ecs:us-west-2:276587239836:task/00d05be6-b403-49cb-b71c-76d870cf83e8]: waiting for event for task" module=task_manager.go
+level=info time=2020-07-27T22:59:36Z msg="Managed task [arn:aws:ecs:us-west-2:276587239836:task/00d05be6-b403-49cb-b71c-76d870cf83e8]: Container [name=server runtimeID=9f3d44ea521d7c31824883c2e7c85d3938dcc4f5e0ad50cce0a0f8db7c606ec2]: handling container change event [RUNNING]" module=task_manager.go
+level=info time=2020-07-27T22:59:36Z msg="Managed task [arn:aws:ecs:us-west-2:276587239836:task/00d05be6-b403-49cb-b71c-76d870cf83e8]: Container [name=server runtimeID=9f3d44ea521d7c31824883c2e7c85d3938dcc4f5e0ad50cce0a0f8db7c606ec2]: container change RUNNING->RUNNING is redundant" module=task_manager.go
+level=info time=2020-07-27T22:59:36Z msg="Managed task [arn:aws:ecs:us-west-2:276587239836:task/00d05be6-b403-49cb-b71c-76d870cf83e8]: waiting for event for task" module=task_manager.go
+level=info time=2020-07-27T22:59:36Z msg="Managed task [arn:aws:ecs:us-west-2:276587239836:task/00d05be6-b403-49cb-b71c-76d870cf83e8]: Container [name=worker runtimeID=6c9b40ca0ff1c16bf61f5392bed891fdc78c4d370b7425e874e9977e9741d1da]: handling container change event [RUNNING]" module=task_manager.go
+level=info time=2020-07-27T22:59:36Z msg="Managed task [arn:aws:ecs:us-west-2:276587239836:task/00d05be6-b403-49cb-b71c-76d870cf83e8]: Container [name=worker runtimeID=6c9b40ca0ff1c16bf61f5392bed891fdc78c4d370b7425e874e9977e9741d1da]: container change RUNNING->RUNNING is redundant" module=task_manager.go
+level=info time=2020-07-27T22:59:36Z msg="Managed task [arn:aws:ecs:us-west-2:276587239836:task/00d05be6-b403-49cb-b71c-76d870cf83e8]: waiting for event for task" module=task_manager.go
+level=info time=2020-07-27T22:59:36Z msg="Managed task [arn:aws:ecs:us-west-2:276587239836:task/00d05be6-b403-49cb-b71c-76d870cf83e8]: Container [name=client runtimeID=]: handling container change event [NONE]" module=task_manager.go
+level=info time=2020-07-27T22:59:36Z msg="Managed task [arn:aws:ecs:us-west-2:276587239836:task/00d05be6-b403-49cb-b71c-76d870cf83e8]: Container [name=client runtimeID=]: container change PULLED->NONE is redundant" module=task_manager.go
+level=info time=2020-07-27T22:59:36Z msg="Managed task [arn:aws:ecs:us-west-2:276587239836:task/00d05be6-b403-49cb-b71c-76d870cf83e8]: waiting for event for task" module=task_manager.go
+level=info time=2020-07-27T22:59:41Z msg="Managed task [arn:aws:ecs:us-west-2:276587239836:task/00d05be6-b403-49cb-b71c-76d870cf83e8]: no longer waiting" module=task_manager.go
+level=info time=2020-07-27T22:59:41Z msg="Managed task [arn:aws:ecs:us-west-2:276587239836:task/00d05be6-b403-49cb-b71c-76d870cf83e8]: task not steady state or terminal; progressing it" module=task_manager.go
+level=info time=2020-07-27T22:59:41Z msg="Managed task [arn:aws:ecs:us-west-2:276587239836:task/00d05be6-b403-49cb-b71c-76d870cf83e8]: waiting for event for task" module=task_manager.go
+level=info time=2020-07-27T22:59:41Z msg="Managed task [arn:aws:ecs:us-west-2:276587239836:task/00d05be6-b403-49cb-b71c-76d870cf83e8]: Container [name=server runtimeID=9f3d44ea521d7c31824883c2e7c85d3938dcc4f5e0ad50cce0a0f8db7c606ec2]: handling container change event [RUNNING]" module=task_manager.go
+level=info time=2020-07-27T22:59:41Z msg="Managed task [arn:aws:ecs:us-west-2:276587239836:task/00d05be6-b403-49cb-b71c-76d870cf83e8]: Container [name=server runtimeID=9f3d44ea521d7c31824883c2e7c85d3938dcc4f5e0ad50cce0a0f8db7c606ec2]: container change RUNNING->RUNNING is redundant" module=task_manager.go
+level=info time=2020-07-27T22:59:41Z msg="Managed task [arn:aws:ecs:us-west-2:276587239836:task/00d05be6-b403-49cb-b71c-76d870cf83e8]: waiting for event for task" module=task_manager.go
+level=info time=2020-07-27T22:59:41Z msg="Managed task [arn:aws:ecs:us-west-2:276587239836:task/00d05be6-b403-49cb-b71c-76d870cf83e8]: Container [name=worker runtimeID=6c9b40ca0ff1c16bf61f5392bed891fdc78c4d370b7425e874e9977e9741d1da]: handling container change event [RUNNING]" module=task_manager.go
+level=info time=2020-07-27T22:59:41Z msg="Managed task [arn:aws:ecs:us-west-2:276587239836:task/00d05be6-b403-49cb-b71c-76d870cf83e8]: Container [name=worker runtimeID=6c9b40ca0ff1c16bf61f5392bed891fdc78c4d370b7425e874e9977e9741d1da]: container change RUNNING->RUNNING is redundant" module=task_manager.go
+level=info time=2020-07-27T22:59:41Z msg="Managed task [arn:aws:ecs:us-west-2:276587239836:task/00d05be6-b403-49cb-b71c-76d870cf83e8]: waiting for event for task" module=task_manager.go
+level=info time=2020-07-27T22:59:41Z msg="Managed task [arn:aws:ecs:us-west-2:276587239836:task/00d05be6-b403-49cb-b71c-76d870cf83e8]: Container [name=client runtimeID=]: handling container change event [NONE]" module=task_manager.go
+level=info time=2020-07-27T22:59:41Z msg="Managed task [arn:aws:ecs:us-west-2:276587239836:task/00d05be6-b403-49cb-b71c-76d870cf83e8]: Container [name=client runtimeID=]: container change PULLED->NONE is redundant" module=task_manager.go
+level=info time=2020-07-27T22:59:41Z msg="Managed task [arn:aws:ecs:us-west-2:276587239836:task/00d05be6-b403-49cb-b71c-76d870cf83e8]: waiting for event for task" module=task_manager.go
+level=info time=2020-07-27T22:59:46Z msg="Saving state!" module=state_manager.go
+level=info time=2020-07-27T22:59:46Z msg="Managed task [arn:aws:ecs:us-west-2:276587239836:task/00d05be6-b403-49cb-b71c-76d870cf83e8]: no longer waiting" module=task_manager.go
+level=info time=2020-07-27T22:59:46Z msg="Managed task [arn:aws:ecs:us-west-2:276587239836:task/00d05be6-b403-49cb-b71c-76d870cf83e8]: task not steady state or terminal; progressing it" module=task_manager.go
+level=info time=2020-07-27T22:59:46Z msg="Managed task [arn:aws:ecs:us-west-2:276587239836:task/00d05be6-b403-49cb-b71c-76d870cf83e8]: waiting for event for task" module=task_manager.go
+level=info time=2020-07-27T22:59:46Z msg="Managed task [arn:aws:ecs:us-west-2:276587239836:task/00d05be6-b403-49cb-b71c-76d870cf83e8]: Container [name=server runtimeID=9f3d44ea521d7c31824883c2e7c85d3938dcc4f5e0ad50cce0a0f8db7c606ec2]: handling container change event [RUNNING]" module=task_manager.go
+level=info time=2020-07-27T22:59:46Z msg="Managed task [arn:aws:ecs:us-west-2:276587239836:task/00d05be6-b403-49cb-b71c-76d870cf83e8]: Container [name=server runtimeID=9f3d44ea521d7c31824883c2e7c85d3938dcc4f5e0ad50cce0a0f8db7c606ec2]: container change RUNNING->RUNNING is redundant" module=task_manager.go
+level=info time=2020-07-27T22:59:46Z msg="Managed task [arn:aws:ecs:us-west-2:276587239836:task/00d05be6-b403-49cb-b71c-76d870cf83e8]: waiting for event for task" module=task_manager.go
+level=info time=2020-07-27T22:59:46Z msg="Managed task [arn:aws:ecs:us-west-2:276587239836:task/00d05be6-b403-49cb-b71c-76d870cf83e8]: Container [name=worker runtimeID=6c9b40ca0ff1c16bf61f5392bed891fdc78c4d370b7425e874e9977e9741d1da]: handling container change event [RUNNING]" module=task_manager.go
+level=info time=2020-07-27T22:59:46Z msg="Managed task [arn:aws:ecs:us-west-2:276587239836:task/00d05be6-b403-49cb-b71c-76d870cf83e8]: Container [name=worker runtimeID=6c9b40ca0ff1c16bf61f5392bed891fdc78c4d370b7425e874e9977e9741d1da]: container change RUNNING->RUNNING is redundant" module=task_manager.go
+level=info time=2020-07-27T22:59:46Z msg="Managed task [arn:aws:ecs:us-west-2:276587239836:task/00d05be6-b403-49cb-b71c-76d870cf83e8]: waiting for event for task" module=task_manager.go
+level=info time=2020-07-27T22:59:46Z msg="Managed task [arn:aws:ecs:us-west-2:276587239836:task/00d05be6-b403-49cb-b71c-76d870cf83e8]: Container [name=client runtimeID=]: handling container change event [NONE]" module=task_manager.go
+level=info time=2020-07-27T22:59:46Z msg="Managed task [arn:aws:ecs:us-west-2:276587239836:task/00d05be6-b403-49cb-b71c-76d870cf83e8]: Container [name=client runtimeID=]: container change PULLED->NONE is redundant" module=task_manager.go
+level=info time=2020-07-27T22:59:46Z msg="Managed task [arn:aws:ecs:us-west-2:276587239836:task/00d05be6-b403-49cb-b71c-76d870cf83e8]: waiting for event for task" module=task_manager.go
+level=info time=2020-07-27T22:59:51Z msg="Managed task [arn:aws:ecs:us-west-2:276587239836:task/00d05be6-b403-49cb-b71c-76d870cf83e8]: no longer waiting" module=task_manager.go
+level=info time=2020-07-27T22:59:51Z msg="Managed task [arn:aws:ecs:us-west-2:276587239836:task/00d05be6-b403-49cb-b71c-76d870cf83e8]: task not steady state or terminal; progressing it" module=task_manager.go
+level=info time=2020-07-27T22:59:51Z msg="Managed task [arn:aws:ecs:us-west-2:276587239836:task/00d05be6-b403-49cb-b71c-76d870cf83e8]: waiting for event for task" module=task_manager.go
+level=info time=2020-07-27T22:59:51Z msg="Managed task [arn:aws:ecs:us-west-2:276587239836:task/00d05be6-b403-49cb-b71c-76d870cf83e8]: Container [name=server runtimeID=9f3d44ea521d7c31824883c2e7c85d3938dcc4f5e0ad50cce0a0f8db7c606ec2]: handling container change event [RUNNING]" module=task_manager.go
+level=info time=2020-07-27T22:59:51Z msg="Managed task [arn:aws:ecs:us-west-2:276587239836:task/00d05be6-b403-49cb-b71c-76d870cf83e8]: Container [name=server runtimeID=9f3d44ea521d7c31824883c2e7c85d3938dcc4f5e0ad50cce0a0f8db7c606ec2]: container change RUNNING->RUNNING is redundant" module=task_manager.go
+level=info time=2020-07-27T22:59:51Z msg="Managed task [arn:aws:ecs:us-west-2:276587239836:task/00d05be6-b403-49cb-b71c-76d870cf83e8]: waiting for event for task" module=task_manager.go
+level=info time=2020-07-27T22:59:51Z msg="Managed task [arn:aws:ecs:us-west-2:276587239836:task/00d05be6-b403-49cb-b71c-76d870cf83e8]: Container [name=worker runtimeID=6c9b40ca0ff1c16bf61f5392bed891fdc78c4d370b7425e874e9977e9741d1da]: handling container change event [RUNNING]" module=task_manager.go
+level=info time=2020-07-27T22:59:51Z msg="Managed task [arn:aws:ecs:us-west-2:276587239836:task/00d05be6-b403-49cb-b71c-76d870cf83e8]: Container [name=worker runtimeID=6c9b40ca0ff1c16bf61f5392bed891fdc78c4d370b7425e874e9977e9741d1da]: container change RUNNING->RUNNING is redundant" module=task_manager.go
+level=info time=2020-07-27T22:59:51Z msg="Managed task [arn:aws:ecs:us-west-2:276587239836:task/00d05be6-b403-49cb-b71c-76d870cf83e8]: waiting for event for task" module=task_manager.go
+level=info time=2020-07-27T22:59:51Z msg="Managed task [arn:aws:ecs:us-west-2:276587239836:task/00d05be6-b403-49cb-b71c-76d870cf83e8]: Container [name=client runtimeID=]: handling container change event [NONE]" module=task_manager.go
+level=info time=2020-07-27T22:59:51Z msg="Managed task [arn:aws:ecs:us-west-2:276587239836:task/00d05be6-b403-49cb-b71c-76d870cf83e8]: Container [name=client runtimeID=]: container change PULLED->NONE is redundant" module=task_manager.go
+level=info time=2020-07-27T22:59:51Z msg="Managed task [arn:aws:ecs:us-west-2:276587239836:task/00d05be6-b403-49cb-b71c-76d870cf83e8]: waiting for event for task" module=task_manager.go
+level=info time=2020-07-27T22:59:56Z msg="Saving state!" module=state_manager.go
+level=info time=2020-07-27T22:59:56Z msg="Managed task [arn:aws:ecs:us-west-2:276587239836:task/00d05be6-b403-49cb-b71c-76d870cf83e8]: no longer waiting" module=task_manager.go
+level=info time=2020-07-27T22:59:56Z msg="Managed task [arn:aws:ecs:us-west-2:276587239836:task/00d05be6-b403-49cb-b71c-76d870cf83e8]: task not steady state or terminal; progressing it" module=task_manager.go
+level=info time=2020-07-27T22:59:56Z msg="Managed task [arn:aws:ecs:us-west-2:276587239836:task/00d05be6-b403-49cb-b71c-76d870cf83e8]: waiting for event for task" module=task_manager.go
+level=info time=2020-07-27T22:59:56Z msg="Managed task [arn:aws:ecs:us-west-2:276587239836:task/00d05be6-b403-49cb-b71c-76d870cf83e8]: Container [name=server runtimeID=9f3d44ea521d7c31824883c2e7c85d3938dcc4f5e0ad50cce0a0f8db7c606ec2]: handling container change event [RUNNING]" module=task_manager.go
+level=info time=2020-07-27T22:59:56Z msg="Managed task [arn:aws:ecs:us-west-2:276587239836:task/00d05be6-b403-49cb-b71c-76d870cf83e8]: Container [name=server runtimeID=9f3d44ea521d7c31824883c2e7c85d3938dcc4f5e0ad50cce0a0f8db7c606ec2]: container change RUNNING->RUNNING is redundant" module=task_manager.go
+level=info time=2020-07-27T22:59:56Z msg="Managed task [arn:aws:ecs:us-west-2:276587239836:task/00d05be6-b403-49cb-b71c-76d870cf83e8]: waiting for event for task" module=task_manager.go
+level=info time=2020-07-27T22:59:56Z msg="Managed task [arn:aws:ecs:us-west-2:276587239836:task/00d05be6-b403-49cb-b71c-76d870cf83e8]: Container [name=worker runtimeID=6c9b40ca0ff1c16bf61f5392bed891fdc78c4d370b7425e874e9977e9741d1da]: handling container change event [RUNNING]" module=task_manager.go
+level=info time=2020-07-27T22:59:56Z msg="Managed task [arn:aws:ecs:us-west-2:276587239836:task/00d05be6-b403-49cb-b71c-76d870cf83e8]: Container [name=worker runtimeID=6c9b40ca0ff1c16bf61f5392bed891fdc78c4d370b7425e874e9977e9741d1da]: container change RUNNING->RUNNING is redundant" module=task_manager.go
+level=info time=2020-07-27T22:59:56Z msg="Managed task [arn:aws:ecs:us-west-2:276587239836:task/00d05be6-b403-49cb-b71c-76d870cf83e8]: waiting for event for task" module=task_manager.go
+level=info time=2020-07-27T22:59:56Z msg="Managed task [arn:aws:ecs:us-west-2:276587239836:task/00d05be6-b403-49cb-b71c-76d870cf83e8]: Container [name=client runtimeID=]: handling container change event [NONE]" module=task_manager.go
+level=info time=2020-07-27T22:59:56Z msg="Managed task [arn:aws:ecs:us-west-2:276587239836:task/00d05be6-b403-49cb-b71c-76d870cf83e8]: Container [name=client runtimeID=]: container change PULLED->NONE is redundant" module=task_manager.go
+level=info time=2020-07-27T22:59:56Z msg="Managed task [arn:aws:ecs:us-west-2:276587239836:task/00d05be6-b403-49cb-b71c-76d870cf83e8]: waiting for event for task" module=task_manager.go
+
+
+
+-------------------------------------
+/var/log/eb-activity.log
+-------------------------------------
+[2020-07-27T23:10:07.622Z] INFO  [17595] - [Application update travis-bf902521e54d2c6bba715eedb7367d2a3e0e9a2e-1595891354@6/AppDeployStage0/EbExtensionPostBuild] : Completed activity.
+[2020-07-27T23:10:07.622Z] INFO  [17595] - [Application update travis-bf902521e54d2c6bba715eedb7367d2a3e0e9a2e-1595891354@6/AppDeployStage0/InfraCleanEbextension] : Starting activity...
+[2020-07-27T23:10:07.623Z] INFO  [17595] - [Application update travis-bf902521e54d2c6bba715eedb7367d2a3e0e9a2e-1595891354@6/AppDeployStage0/InfraCleanEbextension] : Completed activity. Result:
+  Cleaned ebextensions subdirectories from /var/app/staging.
+[2020-07-27T23:10:07.623Z] INFO  [17595] - [Application update travis-bf902521e54d2c6bba715eedb7367d2a3e0e9a2e-1595891354@6/AppDeployStage0] : Completed activity. Result:
+  Application update - Command CMD-AppDeploy stage 0 completed
+[2020-07-27T23:10:07.623Z] INFO  [17595] - [Application update travis-bf902521e54d2c6bba715eedb7367d2a3e0e9a2e-1595891354@6/AppDeployStage1] : Starting activity...
+[2020-07-27T23:10:07.623Z] INFO  [17595] - [Application update travis-bf902521e54d2c6bba715eedb7367d2a3e0e9a2e-1595891354@6/AppDeployStage1/AppDeployEnactHook] : Starting activity...
+[2020-07-27T23:10:07.623Z] INFO  [17595] - [Application update travis-bf902521e54d2c6bba715eedb7367d2a3e0e9a2e-1595891354@6/AppDeployStage1/AppDeployEnactHook/00stop-task.sh] : Starting activity...
+[2020-07-27T23:10:07.628Z] INFO  [17595] - [Application update travis-bf902521e54d2c6bba715eedb7367d2a3e0e9a2e-1595891354@6/AppDeployStage1/AppDeployEnactHook/00stop-task.sh] : Completed activity. Result:
+  + grep -q 'eb-ecs start/'
+  + initctl status eb-ecs
+[2020-07-27T23:10:07.628Z] INFO  [17595] - [Application update travis-bf902521e54d2c6bba715eedb7367d2a3e0e9a2e-1595891354@6/AppDeployStage1/AppDeployEnactHook/01flip-dir.sh] : Starting activity...
+[2020-07-27T23:10:07.823Z] INFO  [17595] - [Application update travis-bf902521e54d2c6bba715eedb7367d2a3e0e9a2e-1595891354@6/AppDeployStage1/AppDeployEnactHook/01flip-dir.sh] : Completed activity. Result:
+  + . /opt/elasticbeanstalk/hooks/common.sh
+  ++ /opt/elasticbeanstalk/bin/get-config container -k app_deploy_dir
+  + EB_CONFIG_APP_CURRENT=/var/app/current
+  ++ /opt/elasticbeanstalk/bin/get-config container -k app_staging_dir
+  + EB_CONFIG_APP_STAGING=/var/app/staging
+  + '[' -z /var/app/staging ']'
+  + '[' -d /var/app/current ']'
+  + mv /var/app/current /var/app/current.old
+  + mv /var/app/staging /var/app/current
+  + nohup rm -rf /var/app/current.old
+[2020-07-27T23:10:07.823Z] INFO  [17595] - [Application update travis-bf902521e54d2c6bba715eedb7367d2a3e0e9a2e-1595891354@6/AppDeployStage1/AppDeployEnactHook/02update-credentials.sh] : Starting activity...
+[2020-07-27T23:10:08.025Z] INFO  [17595] - [Application update travis-bf902521e54d2c6bba715eedb7367d2a3e0e9a2e-1595891354@6/AppDeployStage1/AppDeployEnactHook/02update-credentials.sh] : Completed activity.
+[2020-07-27T23:10:08.025Z] INFO  [17595] - [Application update travis-bf902521e54d2c6bba715eedb7367d2a3e0e9a2e-1595891354@6/AppDeployStage1/AppDeployEnactHook/03start-task.sh] : Starting activity...
+[2020-07-27T23:38:30.356Z] INFO  [17595] - [Application update travis-bf902521e54d2c6bba715eedb7367d2a3e0e9a2e-1595891354@6/AppDeployStage1/AppDeployEnactHook/03start-task.sh] : Activity execution failed, because: + . /opt/elasticbeanstalk/hooks/common.sh
+  + RETRY=0
+  + initctl start eb-ecs EB_EVENT_FILE=/tmp/eventsfile20200727-17595-1pypklb
+  initctl: Job failed to start
+  + '[' -f /etc/elasticbeanstalk/.eb-ecs-start-no-retry ']'
+  + warn 'Failed to start ECS task, retrying...'
+  + echo 'Failed to start ECS task, retrying...'
+  Failed to start ECS task, retrying...
+  + eventHelper.py --msg 'Failed to start ECS task, retrying...' --severity WARN
+  + RETRY=1
+  + sleep 3
+  + '[' 1 -gt 1 ']'
+  + initctl start eb-ecs EB_EVENT_FILE=/tmp/eventsfile20200727-17595-1pypklb
+  initctl: Job failed to start
+  + '[' -f /etc/elasticbeanstalk/.eb-ecs-start-no-retry ']'
+  + warn 'Failed to start ECS task, retrying...'
+  + echo 'Failed to start ECS task, retrying...'
+  Failed to start ECS task, retrying...
+  + eventHelper.py --msg 'Failed to start ECS task, retrying...' --severity WARN
+  + RETRY=2
+  + sleep 3
+  + '[' 2 -gt 1 ']'
+  + error_exit 'Failed to start ECS task after retrying 2 times.' 1
+  + error 'Failed to start ECS task after retrying 2 times.'
+  + echo 'Failed to start ECS task after retrying 2 times.'
+  Failed to start ECS task after retrying 2 times.
+  + eventHelper.py --msg 'Failed to start ECS task after retrying 2 times.' --severity ERROR
+  + exit 1 (ElasticBeanstalk::ExternalInvocationError)
+caused by: + . /opt/elasticbeanstalk/hooks/common.sh
+  + RETRY=0
+  + initctl start eb-ecs EB_EVENT_FILE=/tmp/eventsfile20200727-17595-1pypklb
+  initctl: Job failed to start
+  + '[' -f /etc/elasticbeanstalk/.eb-ecs-start-no-retry ']'
+  + warn 'Failed to start ECS task, retrying...'
+  + echo 'Failed to start ECS task, retrying...'
+  Failed to start ECS task, retrying...
+  + eventHelper.py --msg 'Failed to start ECS task, retrying...' --severity WARN
+  + RETRY=1
+  + sleep 3
+  + '[' 1 -gt 1 ']'
+  + initctl start eb-ecs EB_EVENT_FILE=/tmp/eventsfile20200727-17595-1pypklb
+  initctl: Job failed to start
+  + '[' -f /etc/elasticbeanstalk/.eb-ecs-start-no-retry ']'
+  + warn 'Failed to start ECS task, retrying...'
+  + echo 'Failed to start ECS task, retrying...'
+  Failed to start ECS task, retrying...
+  + eventHelper.py --msg 'Failed to start ECS task, retrying...' --severity WARN
+  + RETRY=2
+  + sleep 3
+  + '[' 2 -gt 1 ']'
+  + error_exit 'Failed to start ECS task after retrying 2 times.' 1
+  + error 'Failed to start ECS task after retrying 2 times.'
+  + echo 'Failed to start ECS task after retrying 2 times.'
+  Failed to start ECS task after retrying 2 times.
+  + eventHelper.py --msg 'Failed to start ECS task after retrying 2 times.' --severity ERROR
+  + exit 1 (Executor::NonZeroExitStatus)
+
+
+[2020-07-27T23:38:30.356Z] INFO  [17595] - [Application update travis-bf902521e54d2c6bba715eedb7367d2a3e0e9a2e-1595891354@6/AppDeployStage1/AppDeployEnactHook/03start-task.sh] : Activity failed.
+[2020-07-27T23:38:30.356Z] INFO  [17595] - [Application update travis-bf902521e54d2c6bba715eedb7367d2a3e0e9a2e-1595891354@6/AppDeployStage1/AppDeployEnactHook] : Activity failed.
+[2020-07-27T23:38:30.356Z] INFO  [17595] - [Application update travis-bf902521e54d2c6bba715eedb7367d2a3e0e9a2e-1595891354@6/AppDeployStage1] : Activity failed.
+[2020-07-27T23:38:30.356Z] INFO  [17595] - [Application update travis-bf902521e54d2c6bba715eedb7367d2a3e0e9a2e-1595891354@6] : Completed activity. Result:
+  Application update - Command CMD-AppDeploy failed
+[2020-07-27T23:49:32.372Z] INFO  [25084] - [CMD-TailLogs] : Starting activity...
+[2020-07-27T23:49:32.372Z] INFO  [25084] - [CMD-TailLogs/AddonsBefore] : Starting activity...
+[2020-07-27T23:49:32.372Z] INFO  [25084] - [CMD-TailLogs/AddonsBefore] : Completed activity.
+[2020-07-27T23:49:32.373Z] INFO  [25084] - [CMD-TailLogs/TailLogsDockerPS] : Starting activity...
+[2020-07-27T23:49:32.373Z] INFO  [25084] - [CMD-TailLogs/TailLogsDockerPS/DockerPS] : Starting activity...
+[2020-07-27T23:49:32.438Z] INFO  [25084] - [CMD-TailLogs/TailLogsDockerPS/DockerPS] : Completed activity.
+[2020-07-27T23:49:32.438Z] INFO  [25084] - [CMD-TailLogs/TailLogsDockerPS] : Completed activity. Result:
+  CMD-TailLogs - stage 0 - Command CMD-TailLogs stage 0 completed
+[2020-07-27T23:49:32.438Z] INFO  [25084] - [CMD-TailLogs/TailLogs] : Starting activity...
+[2020-07-27T23:49:32.438Z] INFO  [25084] - [CMD-TailLogs/TailLogs/TailLogs] : Starting activity...
+
+
+
+-------------------------------------
+/var/log/ecs/ecs-agent.log.2020-07-27-20
+-------------------------------------
+level=info time=2020-07-27T20:49:50Z msg="Establishing a Websocket connection to https://ecs-t-10.us-west-2.amazonaws.com/ws?agentHash=17e8d834&agentVersion=1.40.0&cluster=awseb-MultiDocker-env-qypupgjc3m&containerInstance=arn%3Aaws%3Aecs%3Aus-west-2%3A276587239836%3Acontainer-instance%2F49c1089d-c7ad-4792-9480-f1c433eff2a9&dockerVersion=19.03.6-ce" module=client.go
+level=info time=2020-07-27T20:49:50Z msg="Connected to TCS endpoint" module=handler.go
+level=info time=2020-07-27T20:49:50Z msg="Connected to ACS endpoint" module=acs_handler.go
+level=warn time=2020-07-27T20:49:58Z msg="Could not find requested resource: arn:aws:ecs:us-west-2:276587239836:task/4312533a-0e93-43cc-a6fd-be4fba57f9fd" module=task_container_metadata_handler.go
+level=info time=2020-07-27T20:49:59Z msg="Managed task [arn:aws:ecs:us-west-2:276587239836:task/4312533a-0e93-43cc-a6fd-be4fba57f9fd]: waiting for any previous stops to complete. Sequence number: 2" module=task_manager.go
+level=info time=2020-07-27T20:49:59Z msg="Managed task [arn:aws:ecs:us-west-2:276587239836:task/4312533a-0e93-43cc-a6fd-be4fba57f9fd]: waiting for event for task" module=task_manager.go
+level=info time=2020-07-27T20:49:59Z msg="Managed task [arn:aws:ecs:us-west-2:276587239836:task/4312533a-0e93-43cc-a6fd-be4fba57f9fd]: no longer waiting" module=task_manager.go
+level=info time=2020-07-27T20:49:59Z msg="Managed task [arn:aws:ecs:us-west-2:276587239836:task/4312533a-0e93-43cc-a6fd-be4fba57f9fd]: wait over; ready to move towards status: RUNNING" module=task_manager.go
+level=info time=2020-07-27T20:49:59Z msg="Managed task [arn:aws:ecs:us-west-2:276587239836:task/4312533a-0e93-43cc-a6fd-be4fba57f9fd]: task not steady state or terminal; progressing it" module=task_manager.go
+level=info time=2020-07-27T20:49:59Z msg="Managed task [arn:aws:ecs:us-west-2:276587239836:task/4312533a-0e93-43cc-a6fd-be4fba57f9fd]: waiting for event for task" module=task_manager.go
+level=info time=2020-07-27T20:49:59Z msg="Creating cgroup /ecs/4312533a-0e93-43cc-a6fd-be4fba57f9fd" module=cgroup_controller_linux.go
+level=info time=2020-07-27T20:49:59Z msg="Managed task [arn:aws:ecs:us-west-2:276587239836:task/4312533a-0e93-43cc-a6fd-be4fba57f9fd]: transitioned resource [cgroup] to [CREATED]" module=task_manager.go
+level=info time=2020-07-27T20:49:59Z msg="Managed task [arn:aws:ecs:us-west-2:276587239836:task/4312533a-0e93-43cc-a6fd-be4fba57f9fd]: got resource [cgroup] event: [CREATED]" module=task_manager.go
+level=info time=2020-07-27T20:49:59Z msg="Managed task [arn:aws:ecs:us-west-2:276587239836:task/4312533a-0e93-43cc-a6fd-be4fba57f9fd]: task not steady state or terminal; progressing it" module=task_manager.go
+level=info time=2020-07-27T20:49:59Z msg="Managed task [arn:aws:ecs:us-west-2:276587239836:task/4312533a-0e93-43cc-a6fd-be4fba57f9fd]: waiting for event for task" module=task_manager.go
+level=info time=2020-07-27T20:49:59Z msg="Task engine [arn:aws:ecs:us-west-2:276587239836:task/4312533a-0e93-43cc-a6fd-be4fba57f9fd]: pulling image php:fpm for container php-app concurrently" module=docker_task_engine.go
+level=info time=2020-07-27T20:49:59Z msg="Task engine [arn:aws:ecs:us-west-2:276587239836:task/4312533a-0e93-43cc-a6fd-be4fba57f9fd]: recording timestamp for starting image pulltime: 2020-07-27 20:49:59.321860938 +0000 UTC m=+10.653749449" module=docker_task_engine.go
+level=info time=2020-07-27T20:50:00Z msg="Saving state!" module=state_manager.go
+level=info time=2020-07-27T20:50:13Z msg="Adding image name- php:fpm to Image state- sha256:d7f856a7dcc7ec5485fc972ba9b9587051e2ad38bee556669405589685f1ab6f" module=types.go
+level=info time=2020-07-27T20:50:13Z msg="Updating container reference php-app in Image State - sha256:d7f856a7dcc7ec5485fc972ba9b9587051e2ad38bee556669405589685f1ab6f" module=types.go
+level=info time=2020-07-27T20:50:13Z msg="Saving state!" module=state_manager.go
+level=info time=2020-07-27T20:50:13Z msg="Saving state!" module=state_manager.go
+level=info time=2020-07-27T20:50:13Z msg="Task engine [arn:aws:ecs:us-west-2:276587239836:task/4312533a-0e93-43cc-a6fd-be4fba57f9fd]: finished pulling image php:fpm for container php-app in 14.033907988s" module=docker_task_engine.go
+level=info time=2020-07-27T20:50:13Z msg="Managed task [arn:aws:ecs:us-west-2:276587239836:task/4312533a-0e93-43cc-a6fd-be4fba57f9fd]: Container [name=php-app runtimeID=]: handling container change event [PULLED]" module=task_manager.go
+level=info time=2020-07-27T20:50:13Z msg="Managed task [arn:aws:ecs:us-west-2:276587239836:task/4312533a-0e93-43cc-a6fd-be4fba57f9fd]: task not steady state or terminal; progressing it" module=task_manager.go
+level=info time=2020-07-27T20:50:13Z msg="Managed task [arn:aws:ecs:us-west-2:276587239836:task/4312533a-0e93-43cc-a6fd-be4fba57f9fd]: waiting for event for task" module=task_manager.go
+level=info time=2020-07-27T20:50:13Z msg="Task engine [arn:aws:ecs:us-west-2:276587239836:task/4312533a-0e93-43cc-a6fd-be4fba57f9fd]: creating container: php-app" module=docker_task_engine.go
+level=info time=2020-07-27T20:50:13Z msg="Task engine [arn:aws:ecs:us-west-2:276587239836:task/4312533a-0e93-43cc-a6fd-be4fba57f9fd]: created container name mapping for task:  php-app -> ecs-awseb-MultiDocker-env-qypupgjc3m-2-php-app-8cd8cae9b1f58980fa01" module=docker_task_engine.go
+level=info time=2020-07-27T20:50:13Z msg="Saving state!" module=state_manager.go
+level=info time=2020-07-27T20:50:13Z msg="Task engine [arn:aws:ecs:us-west-2:276587239836:task/4312533a-0e93-43cc-a6fd-be4fba57f9fd]: created docker container for task: php-app -> 44e48c4896bf0933bf8f685eba5b701aa772e7a3cb87f4b0933aedb745c5ab62" module=docker_task_engine.go
+level=info time=2020-07-27T20:50:13Z msg="Task engine [arn:aws:ecs:us-west-2:276587239836:task/4312533a-0e93-43cc-a6fd-be4fba57f9fd]: created docker container for task: php-app -> 44e48c4896bf0933bf8f685eba5b701aa772e7a3cb87f4b0933aedb745c5ab62, took 206.065837ms" module=docker_task_engine.go
+level=info time=2020-07-27T20:50:13Z msg="Managed task [arn:aws:ecs:us-west-2:276587239836:task/4312533a-0e93-43cc-a6fd-be4fba57f9fd]: Container [name=php-app runtimeID=44e48c4896bf0933bf8f685eba5b701aa772e7a3cb87f4b0933aedb745c5ab62]: handling container change event [CREATED]" module=task_manager.go
+level=info time=2020-07-27T20:50:13Z msg="Managed task [arn:aws:ecs:us-west-2:276587239836:task/4312533a-0e93-43cc-a6fd-be4fba57f9fd]: task not steady state or terminal; progressing it" module=task_manager.go
+level=info time=2020-07-27T20:50:13Z msg="Managed task [arn:aws:ecs:us-west-2:276587239836:task/4312533a-0e93-43cc-a6fd-be4fba57f9fd]: waiting for event for task" module=task_manager.go
+level=info time=2020-07-27T20:50:13Z msg="Task engine [arn:aws:ecs:us-west-2:276587239836:task/4312533a-0e93-43cc-a6fd-be4fba57f9fd]: starting container: php-app (Runtime ID: 44e48c4896bf0933bf8f685eba5b701aa772e7a3cb87f4b0933aedb745c5ab62)" module=docker_task_engine.go
+level=info time=2020-07-27T20:50:14Z msg="Managed task [arn:aws:ecs:us-west-2:276587239836:task/4312533a-0e93-43cc-a6fd-be4fba57f9fd]: Container [name=php-app runtimeID=44e48c4896bf0933bf8f685eba5b701aa772e7a3cb87f4b0933aedb745c5ab62]: handling container change event [RUNNING]" module=task_manager.go
+level=info time=2020-07-27T20:50:14Z msg="Managed task [arn:aws:ecs:us-west-2:276587239836:task/4312533a-0e93-43cc-a6fd-be4fba57f9fd]: sending container change event [php-app]: arn:aws:ecs:us-west-2:276587239836:task/4312533a-0e93-43cc-a6fd-be4fba57f9fd php-app -> RUNNING, Known Sent: NONE" module=task_manager.go
+level=info time=2020-07-27T20:50:14Z msg="Managed task [arn:aws:ecs:us-west-2:276587239836:task/4312533a-0e93-43cc-a6fd-be4fba57f9fd]: sent container change event [php-app]: arn:aws:ecs:us-west-2:276587239836:task/4312533a-0e93-43cc-a6fd-be4fba57f9fd php-app -> RUNNING, Known Sent: NONE" module=task_manager.go
+level=info time=2020-07-27T20:50:14Z msg="Managed task [arn:aws:ecs:us-west-2:276587239836:task/4312533a-0e93-43cc-a6fd-be4fba57f9fd]: task not steady state or terminal; progressing it" module=task_manager.go
+level=info time=2020-07-27T20:50:14Z msg="Managed task [arn:aws:ecs:us-west-2:276587239836:task/4312533a-0e93-43cc-a6fd-be4fba57f9fd]: waiting for event for task" module=task_manager.go
+level=info time=2020-07-27T20:50:14Z msg="Task engine [arn:aws:ecs:us-west-2:276587239836:task/4312533a-0e93-43cc-a6fd-be4fba57f9fd]: pulling image nginx for container nginx-proxy concurrently" module=docker_task_engine.go
+level=info time=2020-07-27T20:50:14Z msg="DockerGoClient: Starting to Poll for metrics for container 44e48c4896bf0933bf8f685eba5b701aa772e7a3cb87f4b0933aedb745c5ab62" module=docker_client.go
+level=info time=2020-07-27T20:50:14Z msg="TaskHandler: batching container event: arn:aws:ecs:us-west-2:276587239836:task/4312533a-0e93-43cc-a6fd-be4fba57f9fd php-app -> RUNNING, Known Sent: NONE" module=task_handler.go
+level=info time=2020-07-27T20:50:14Z msg="Task engine [arn:aws:ecs:us-west-2:276587239836:task/4312533a-0e93-43cc-a6fd-be4fba57f9fd]: started docker container for task: php-app -> 44e48c4896bf0933bf8f685eba5b701aa772e7a3cb87f4b0933aedb745c5ab62, took 505.457067ms" module=docker_task_engine.go
+level=info time=2020-07-27T20:50:14Z msg="Managed task [arn:aws:ecs:us-west-2:276587239836:task/4312533a-0e93-43cc-a6fd-be4fba57f9fd]: Container [name=php-app runtimeID=44e48c4896bf0933bf8f685eba5b701aa772e7a3cb87f4b0933aedb745c5ab62]: handling container change event [RUNNING]" module=task_manager.go
+level=info time=2020-07-27T20:50:14Z msg="Managed task [arn:aws:ecs:us-west-2:276587239836:task/4312533a-0e93-43cc-a6fd-be4fba57f9fd]: Container [name=php-app runtimeID=44e48c4896bf0933bf8f685eba5b701aa772e7a3cb87f4b0933aedb745c5ab62]: container change RUNNING->RUNNING is redundant" module=task_manager.go
+level=info time=2020-07-27T20:50:14Z msg="Managed task [arn:aws:ecs:us-west-2:276587239836:task/4312533a-0e93-43cc-a6fd-be4fba57f9fd]: task not steady state or terminal; progressing it" module=task_manager.go
+level=info time=2020-07-27T20:50:14Z msg="Managed task [arn:aws:ecs:us-west-2:276587239836:task/4312533a-0e93-43cc-a6fd-be4fba57f9fd]: waiting for event for task" module=task_manager.go
+level=info time=2020-07-27T20:50:18Z msg="Adding image name- nginx to Image state- sha256:8cf1bfb43ff5d9b05af9b6b63983440f137c6a08320fa7592197c1474ef30241" module=types.go
+level=info time=2020-07-27T20:50:18Z msg="Updating container reference nginx-proxy in Image State - sha256:8cf1bfb43ff5d9b05af9b6b63983440f137c6a08320fa7592197c1474ef30241" module=types.go
+level=info time=2020-07-27T20:50:18Z msg="Saving state!" module=state_manager.go
+level=info time=2020-07-27T20:50:18Z msg="Task engine [arn:aws:ecs:us-west-2:276587239836:task/4312533a-0e93-43cc-a6fd-be4fba57f9fd]: finished pulling image nginx for container nginx-proxy in 4.222717858s" module=docker_task_engine.go
+level=info time=2020-07-27T20:50:18Z msg="Managed task [arn:aws:ecs:us-west-2:276587239836:task/4312533a-0e93-43cc-a6fd-be4fba57f9fd]: Container [name=nginx-proxy runtimeID=]: handling container change event [PULLED]" module=task_manager.go
+level=info time=2020-07-27T20:50:18Z msg="Managed task [arn:aws:ecs:us-west-2:276587239836:task/4312533a-0e93-43cc-a6fd-be4fba57f9fd]: task not steady state or terminal; progressing it" module=task_manager.go
+level=info time=2020-07-27T20:50:18Z msg="Managed task [arn:aws:ecs:us-west-2:276587239836:task/4312533a-0e93-43cc-a6fd-be4fba57f9fd]: waiting for event for task" module=task_manager.go
+level=info time=2020-07-27T20:50:18Z msg="Task engine [arn:aws:ecs:us-west-2:276587239836:task/4312533a-0e93-43cc-a6fd-be4fba57f9fd]: creating container: nginx-proxy" module=docker_task_engine.go
+level=warn time=2020-07-27T20:50:18Z msg="Link name [php-app] found with no linkalias for container: [nginx-proxy(nginx) (PULLED->RUNNING)] in task: [awseb-MultiDocker-env-qypupgjc3m:2 arn:aws:ecs:us-west-2:276587239836:task/4312533a-0e93-43cc-a6fd-be4fba57f9fd, TaskStatus: (NONE->RUNNING) Containers: [nginx-proxy (PULLED->RUNNING),php-app (RUNNING->RUNNING),]]" module=task.go
+level=info time=2020-07-27T20:50:18Z msg="Task engine [arn:aws:ecs:us-west-2:276587239836:task/4312533a-0e93-43cc-a6fd-be4fba57f9fd]: created container name mapping for task:  nginx-proxy -> ecs-awseb-MultiDocker-env-qypupgjc3m-2-nginx-proxy-dad198fcf4a9f3b42300" module=docker_task_engine.go
+level=info time=2020-07-27T20:50:18Z msg="Saving state!" module=state_manager.go
+level=info time=2020-07-27T20:50:18Z msg="Task engine [arn:aws:ecs:us-west-2:276587239836:task/4312533a-0e93-43cc-a6fd-be4fba57f9fd]: created docker container for task: nginx-proxy -> 301d3f34500bfa300d88578a6dfc12570f83c105e6c683a9692a58393c58a204" module=docker_task_engine.go
+level=info time=2020-07-27T20:50:18Z msg="Task engine [arn:aws:ecs:us-west-2:276587239836:task/4312533a-0e93-43cc-a6fd-be4fba57f9fd]: created docker container for task: nginx-proxy -> 301d3f34500bfa300d88578a6dfc12570f83c105e6c683a9692a58393c58a204, took 189.28678ms" module=docker_task_engine.go
+level=info time=2020-07-27T20:50:18Z msg="Managed task [arn:aws:ecs:us-west-2:276587239836:task/4312533a-0e93-43cc-a6fd-be4fba57f9fd]: Container [name=nginx-proxy runtimeID=301d3f34500bfa300d88578a6dfc12570f83c105e6c683a9692a58393c58a204]: handling container change event [CREATED]" module=task_manager.go
+level=info time=2020-07-27T20:50:18Z msg="api/task: Updating task's known status to: CREATED, task: awseb-MultiDocker-env-qypupgjc3m:2 arn:aws:ecs:us-west-2:276587239836:task/4312533a-0e93-43cc-a6fd-be4fba57f9fd, TaskStatus: (NONE->RUNNING) Containers: [nginx-proxy (CREATED->RUNNING),php-app (RUNNING->RUNNING),]" module=task.go
+level=info time=2020-07-27T20:50:18Z msg="Managed task [arn:aws:ecs:us-west-2:276587239836:task/4312533a-0e93-43cc-a6fd-be4fba57f9fd]: Container [name=nginx-proxy runtimeID=301d3f34500bfa300d88578a6dfc12570f83c105e6c683a9692a58393c58a204]: container change also resulted in task change [RUNNING]" module=task_manager.go
+level=info time=2020-07-27T20:50:18Z msg="Managed task [arn:aws:ecs:us-west-2:276587239836:task/4312533a-0e93-43cc-a6fd-be4fba57f9fd]: task not steady state or terminal; progressing it" module=task_manager.go
+level=info time=2020-07-27T20:50:18Z msg="Managed task [arn:aws:ecs:us-west-2:276587239836:task/4312533a-0e93-43cc-a6fd-be4fba57f9fd]: waiting for event for task" module=task_manager.go
+level=info time=2020-07-27T20:50:18Z msg="Task engine [arn:aws:ecs:us-west-2:276587239836:task/4312533a-0e93-43cc-a6fd-be4fba57f9fd]: starting container: nginx-proxy (Runtime ID: 301d3f34500bfa300d88578a6dfc12570f83c105e6c683a9692a58393c58a204)" module=docker_task_engine.go
+level=info time=2020-07-27T20:50:19Z msg="Managed task [arn:aws:ecs:us-west-2:276587239836:task/4312533a-0e93-43cc-a6fd-be4fba57f9fd]: Container [name=nginx-proxy runtimeID=301d3f34500bfa300d88578a6dfc12570f83c105e6c683a9692a58393c58a204]: handling container change event [RUNNING]" module=task_manager.go
+level=info time=2020-07-27T20:50:19Z msg="Managed task [arn:aws:ecs:us-west-2:276587239836:task/4312533a-0e93-43cc-a6fd-be4fba57f9fd]: sending container change event [nginx-proxy]: arn:aws:ecs:us-west-2:276587239836:task/4312533a-0e93-43cc-a6fd-be4fba57f9fd nginx-proxy -> RUNNING, Ports [{80 80 0.0.0.0 0}], Known Sent: NONE" module=task_manager.go
+level=info time=2020-07-27T20:50:19Z msg="Managed task [arn:aws:ecs:us-west-2:276587239836:task/4312533a-0e93-43cc-a6fd-be4fba57f9fd]: sent container change event [nginx-proxy]: arn:aws:ecs:us-west-2:276587239836:task/4312533a-0e93-43cc-a6fd-be4fba57f9fd nginx-proxy -> RUNNING, Ports [{80 80 0.0.0.0 0}], Known Sent: NONE" module=task_manager.go
+level=info time=2020-07-27T20:50:19Z msg="api/task: Updating task's known status to: RUNNING, task: awseb-MultiDocker-env-qypupgjc3m:2 arn:aws:ecs:us-west-2:276587239836:task/4312533a-0e93-43cc-a6fd-be4fba57f9fd, TaskStatus: (CREATED->RUNNING) Containers: [nginx-proxy (RUNNING->RUNNING),php-app (RUNNING->RUNNING),]" module=task.go
+level=info time=2020-07-27T20:50:19Z msg="Managed task [arn:aws:ecs:us-west-2:276587239836:task/4312533a-0e93-43cc-a6fd-be4fba57f9fd]: Container [name=nginx-proxy runtimeID=301d3f34500bfa300d88578a6dfc12570f83c105e6c683a9692a58393c58a204]: container change also resulted in task change [RUNNING]" module=task_manager.go
+level=info time=2020-07-27T20:50:19Z msg="Managed task [arn:aws:ecs:us-west-2:276587239836:task/4312533a-0e93-43cc-a6fd-be4fba57f9fd]: sending task change event [arn:aws:ecs:us-west-2:276587239836:task/4312533a-0e93-43cc-a6fd-be4fba57f9fd -> RUNNING, Known Sent: NONE, PullStartedAt: 2020-07-27 20:49:59.321860938 +0000 UTC m=+10.653749449, PullStoppedAt: 2020-07-27 20:50:18.29260873 +0000 UTC m=+29.624497220, ExecutionStoppedAt: 0001-01-01 00:00:00 +0000 UTC]" module=task_manager.go
+level=info time=2020-07-27T20:50:19Z msg="TaskHandler: batching container event: arn:aws:ecs:us-west-2:276587239836:task/4312533a-0e93-43cc-a6fd-be4fba57f9fd nginx-proxy -> RUNNING, Ports [{80 80 0.0.0.0 0}], Known Sent: NONE" module=task_handler.go
+level=info time=2020-07-27T20:50:19Z msg="TaskHandler: Adding event: TaskChange: [arn:aws:ecs:us-west-2:276587239836:task/4312533a-0e93-43cc-a6fd-be4fba57f9fd -> RUNNING, Known Sent: NONE, PullStartedAt: 2020-07-27 20:49:59.321860938 +0000 UTC m=+10.653749449, PullStoppedAt: 2020-07-27 20:50:18.29260873 +0000 UTC m=+29.624497220, ExecutionStoppedAt: 0001-01-01 00:00:00 +0000 UTC, arn:aws:ecs:us-west-2:276587239836:task/4312533a-0e93-43cc-a6fd-be4fba57f9fd php-app -> RUNNING, Known Sent: NONE, arn:aws:ecs:us-west-2:276587239836:task/4312533a-0e93-43cc-a6fd-be4fba57f9fd nginx-proxy -> RUNNING, Ports [{80 80 0.0.0.0 0}], Known Sent: NONE] sent: false" module=task_handler.go
+level=info time=2020-07-27T20:50:19Z msg="TaskHandler: Sending task change: TaskChange: [arn:aws:ecs:us-west-2:276587239836:task/4312533a-0e93-43cc-a6fd-be4fba57f9fd -> RUNNING, Known Sent: NONE, PullStartedAt: 2020-07-27 20:49:59.321860938 +0000 UTC m=+10.653749449, PullStoppedAt: 2020-07-27 20:50:18.29260873 +0000 UTC m=+29.624497220, ExecutionStoppedAt: 0001-01-01 00:00:00 +0000 UTC, arn:aws:ecs:us-west-2:276587239836:task/4312533a-0e93-43cc-a6fd-be4fba57f9fd php-app -> RUNNING, Known Sent: NONE, arn:aws:ecs:us-west-2:276587239836:task/4312533a-0e93-43cc-a6fd-be4fba57f9fd nginx-proxy -> RUNNING, Ports [{80 80 0.0.0.0 0}], Known Sent: NONE] sent: false" module=task_handler_types.go
+level=info time=2020-07-27T20:50:19Z msg="DockerGoClient: Starting to Poll for metrics for container 301d3f34500bfa300d88578a6dfc12570f83c105e6c683a9692a58393c58a204" module=docker_client.go
+level=info time=2020-07-27T20:50:19Z msg="Managed task [arn:aws:ecs:us-west-2:276587239836:task/4312533a-0e93-43cc-a6fd-be4fba57f9fd]: sent task change event [arn:aws:ecs:us-west-2:276587239836:task/4312533a-0e93-43cc-a6fd-be4fba57f9fd -> RUNNING, Known Sent: NONE, PullStartedAt: 2020-07-27 20:49:59.321860938 +0000 UTC m=+10.653749449, PullStoppedAt: 2020-07-27 20:50:18.29260873 +0000 UTC m=+29.624497220, ExecutionStoppedAt: 0001-01-01 00:00:00 +0000 UTC]" module=task_manager.go
+level=info time=2020-07-27T20:50:19Z msg="Managed task [arn:aws:ecs:us-west-2:276587239836:task/4312533a-0e93-43cc-a6fd-be4fba57f9fd]: task at steady state: RUNNING" module=task_manager.go
+level=info time=2020-07-27T20:50:19Z msg="Managed task [arn:aws:ecs:us-west-2:276587239836:task/4312533a-0e93-43cc-a6fd-be4fba57f9fd]: waiting for event for task" module=task_manager.go
+level=info time=2020-07-27T20:50:19Z msg="Task engine [arn:aws:ecs:us-west-2:276587239836:task/4312533a-0e93-43cc-a6fd-be4fba57f9fd]: started docker container for task: nginx-proxy -> 301d3f34500bfa300d88578a6dfc12570f83c105e6c683a9692a58393c58a204, took 616.59024ms" module=docker_task_engine.go
+level=info time=2020-07-27T20:50:19Z msg="Managed task [arn:aws:ecs:us-west-2:276587239836:task/4312533a-0e93-43cc-a6fd-be4fba57f9fd]: Container [name=nginx-proxy runtimeID=301d3f34500bfa300d88578a6dfc12570f83c105e6c683a9692a58393c58a204]: handling container change event [RUNNING]" module=task_manager.go
+level=info time=2020-07-27T20:50:19Z msg="Managed task [arn:aws:ecs:us-west-2:276587239836:task/4312533a-0e93-43cc-a6fd-be4fba57f9fd]: Container [name=nginx-proxy runtimeID=301d3f34500bfa300d88578a6dfc12570f83c105e6c683a9692a58393c58a204]: container change RUNNING->RUNNING is redundant" module=task_manager.go
+level=info time=2020-07-27T20:50:19Z msg="Managed task [arn:aws:ecs:us-west-2:276587239836:task/4312533a-0e93-43cc-a6fd-be4fba57f9fd]: task at steady state: RUNNING" module=task_manager.go
+level=info time=2020-07-27T20:50:19Z msg="Managed task [arn:aws:ecs:us-west-2:276587239836:task/4312533a-0e93-43cc-a6fd-be4fba57f9fd]: waiting for event for task" module=task_manager.go
+level=info time=2020-07-27T20:50:23Z msg="Saving state!" module=state_manager.go
+level=info time=2020-07-27T20:50:30Z msg="cloudwatch metrics for container 44e48c4896bf0933bf8f685eba5b701aa772e7a3cb87f4b0933aedb745c5ab62 not collected, reason (cpu): need at least 2 data points in queue to calculate CW stats set" module=engine.go
+level=info time=2020-07-27T20:50:30Z msg="cloudwatch metrics for container 301d3f34500bfa300d88578a6dfc12570f83c105e6c683a9692a58393c58a204 not collected, reason (cpu): need at least 2 data points in queue to calculate CW stats set" module=engine.go
+level=warn time=2020-07-27T20:50:30Z msg="Error publishing metrics: stats engine: no task metrics to report" module=client.go
+level=info time=2020-07-27T20:55:26Z msg="Managed task [arn:aws:ecs:us-west-2:276587239836:task/4312533a-0e93-43cc-a6fd-be4fba57f9fd]: no longer waiting" module=task_manager.go
+level=info time=2020-07-27T20:55:26Z msg="Managed task [arn:aws:ecs:us-west-2:276587239836:task/4312533a-0e93-43cc-a6fd-be4fba57f9fd]: task at steady state: RUNNING" module=task_manager.go
+level=info time=2020-07-27T20:55:26Z msg="Managed task [arn:aws:ecs:us-west-2:276587239836:task/4312533a-0e93-43cc-a6fd-be4fba57f9fd]: waiting for event for task" module=task_manager.go
+level=info time=2020-07-27T20:55:26Z msg="Managed task [arn:aws:ecs:us-west-2:276587239836:task/4312533a-0e93-43cc-a6fd-be4fba57f9fd]: Container [name=nginx-proxy runtimeID=301d3f34500bfa300d88578a6dfc12570f83c105e6c683a9692a58393c58a204]: handling container change event [RUNNING]" module=task_manager.go
+level=info time=2020-07-27T20:55:26Z msg="Managed task [arn:aws:ecs:us-west-2:276587239836:task/4312533a-0e93-43cc-a6fd-be4fba57f9fd]: Container [name=nginx-proxy runtimeID=301d3f34500bfa300d88578a6dfc12570f83c105e6c683a9692a58393c58a204]: container change RUNNING->RUNNING is redundant" module=task_manager.go
+level=info time=2020-07-27T20:55:26Z msg="Managed task [arn:aws:ecs:us-west-2:276587239836:task/4312533a-0e93-43cc-a6fd-be4fba57f9fd]: task at steady state: RUNNING" module=task_manager.go
+level=info time=2020-07-27T20:55:26Z msg="Managed task [arn:aws:ecs:us-west-2:276587239836:task/4312533a-0e93-43cc-a6fd-be4fba57f9fd]: waiting for event for task" module=task_manager.go
+level=info time=2020-07-27T20:55:26Z msg="Managed task [arn:aws:ecs:us-west-2:276587239836:task/4312533a-0e93-43cc-a6fd-be4fba57f9fd]: Container [name=php-app runtimeID=44e48c4896bf0933bf8f685eba5b701aa772e7a3cb87f4b0933aedb745c5ab62]: handling container change event [RUNNING]" module=task_manager.go
+level=info time=2020-07-27T20:55:26Z msg="Managed task [arn:aws:ecs:us-west-2:276587239836:task/4312533a-0e93-43cc-a6fd-be4fba57f9fd]: Container [name=php-app runtimeID=44e48c4896bf0933bf8f685eba5b701aa772e7a3cb87f4b0933aedb745c5ab62]: container change RUNNING->RUNNING is redundant" module=task_manager.go
+level=info time=2020-07-27T20:55:26Z msg="Managed task [arn:aws:ecs:us-west-2:276587239836:task/4312533a-0e93-43cc-a6fd-be4fba57f9fd]: task at steady state: RUNNING" module=task_manager.go
+level=info time=2020-07-27T20:55:26Z msg="Managed task [arn:aws:ecs:us-west-2:276587239836:task/4312533a-0e93-43cc-a6fd-be4fba57f9fd]: waiting for event for task" module=task_manager.go
+
+
+
+-------------------------------------
+/var/log/ecs/ecs-agent.log.2020-07-27-21
+-------------------------------------
+level=info time=2020-07-27T21:48:24Z msg="Updating container reference php-app in Image State - sha256:d7f856a7dcc7ec5485fc972ba9b9587051e2ad38bee556669405589685f1ab6f" module=types.go
+level=info time=2020-07-27T21:48:24Z msg="Saving state!" module=state_manager.go
+level=info time=2020-07-27T21:48:24Z msg="Task engine [arn:aws:ecs:us-west-2:276587239836:task/ffced7d6-dd0c-49aa-af7f-012c439bb978]: finished pulling image php:fpm for container php-app in 1.279495182s" module=docker_task_engine.go
+level=info time=2020-07-27T21:48:24Z msg="Managed task [arn:aws:ecs:us-west-2:276587239836:task/ffced7d6-dd0c-49aa-af7f-012c439bb978]: Container [name=php-app runtimeID=]: handling container change event [PULLED]" module=task_manager.go
+level=info time=2020-07-27T21:48:24Z msg="Managed task [arn:aws:ecs:us-west-2:276587239836:task/ffced7d6-dd0c-49aa-af7f-012c439bb978]: task not steady state or terminal; progressing it" module=task_manager.go
+level=info time=2020-07-27T21:48:24Z msg="Managed task [arn:aws:ecs:us-west-2:276587239836:task/ffced7d6-dd0c-49aa-af7f-012c439bb978]: waiting for event for task" module=task_manager.go
+level=info time=2020-07-27T21:48:24Z msg="Task engine [arn:aws:ecs:us-west-2:276587239836:task/ffced7d6-dd0c-49aa-af7f-012c439bb978]: creating container: php-app" module=docker_task_engine.go
+level=info time=2020-07-27T21:48:24Z msg="Task engine [arn:aws:ecs:us-west-2:276587239836:task/ffced7d6-dd0c-49aa-af7f-012c439bb978]: created container name mapping for task:  php-app -> ecs-awseb-MultiDocker-env-qypupgjc3m-3-php-app-e6ebf193ecd0c1ec5300" module=docker_task_engine.go
+level=info time=2020-07-27T21:48:24Z msg="Saving state!" module=state_manager.go
+level=info time=2020-07-27T21:48:24Z msg="Task engine [arn:aws:ecs:us-west-2:276587239836:task/ffced7d6-dd0c-49aa-af7f-012c439bb978]: created docker container for task: php-app -> 45519b1e5e24ddb176cec9780b8ec86beab0280306f462e87194451d9c428bcb" module=docker_task_engine.go
+level=info time=2020-07-27T21:48:24Z msg="Task engine [arn:aws:ecs:us-west-2:276587239836:task/ffced7d6-dd0c-49aa-af7f-012c439bb978]: created docker container for task: php-app -> 45519b1e5e24ddb176cec9780b8ec86beab0280306f462e87194451d9c428bcb, took 181.57103ms" module=docker_task_engine.go
+level=info time=2020-07-27T21:48:24Z msg="Managed task [arn:aws:ecs:us-west-2:276587239836:task/ffced7d6-dd0c-49aa-af7f-012c439bb978]: Container [name=php-app runtimeID=45519b1e5e24ddb176cec9780b8ec86beab0280306f462e87194451d9c428bcb]: handling container change event [CREATED]" module=task_manager.go
+level=info time=2020-07-27T21:48:24Z msg="Managed task [arn:aws:ecs:us-west-2:276587239836:task/ffced7d6-dd0c-49aa-af7f-012c439bb978]: task not steady state or terminal; progressing it" module=task_manager.go
+level=info time=2020-07-27T21:48:24Z msg="Managed task [arn:aws:ecs:us-west-2:276587239836:task/ffced7d6-dd0c-49aa-af7f-012c439bb978]: waiting for event for task" module=task_manager.go
+level=info time=2020-07-27T21:48:24Z msg="Task engine [arn:aws:ecs:us-west-2:276587239836:task/ffced7d6-dd0c-49aa-af7f-012c439bb978]: starting container: php-app (Runtime ID: 45519b1e5e24ddb176cec9780b8ec86beab0280306f462e87194451d9c428bcb)" module=docker_task_engine.go
+level=info time=2020-07-27T21:48:25Z msg="Managed task [arn:aws:ecs:us-west-2:276587239836:task/ffced7d6-dd0c-49aa-af7f-012c439bb978]: Container [name=php-app runtimeID=45519b1e5e24ddb176cec9780b8ec86beab0280306f462e87194451d9c428bcb]: handling container change event [RUNNING]" module=task_manager.go
+level=info time=2020-07-27T21:48:25Z msg="Managed task [arn:aws:ecs:us-west-2:276587239836:task/ffced7d6-dd0c-49aa-af7f-012c439bb978]: sending container change event [php-app]: arn:aws:ecs:us-west-2:276587239836:task/ffced7d6-dd0c-49aa-af7f-012c439bb978 php-app -> RUNNING, Known Sent: NONE" module=task_manager.go
+level=info time=2020-07-27T21:48:25Z msg="Managed task [arn:aws:ecs:us-west-2:276587239836:task/ffced7d6-dd0c-49aa-af7f-012c439bb978]: sent container change event [php-app]: arn:aws:ecs:us-west-2:276587239836:task/ffced7d6-dd0c-49aa-af7f-012c439bb978 php-app -> RUNNING, Known Sent: NONE" module=task_manager.go
+level=info time=2020-07-27T21:48:25Z msg="Managed task [arn:aws:ecs:us-west-2:276587239836:task/ffced7d6-dd0c-49aa-af7f-012c439bb978]: task not steady state or terminal; progressing it" module=task_manager.go
+level=info time=2020-07-27T21:48:25Z msg="Managed task [arn:aws:ecs:us-west-2:276587239836:task/ffced7d6-dd0c-49aa-af7f-012c439bb978]: waiting for event for task" module=task_manager.go
+level=info time=2020-07-27T21:48:25Z msg="Task engine [arn:aws:ecs:us-west-2:276587239836:task/ffced7d6-dd0c-49aa-af7f-012c439bb978]: pulling image nginx for container nginx-proxy concurrently" module=docker_task_engine.go
+level=info time=2020-07-27T21:48:25Z msg="DockerGoClient: Starting to Poll for metrics for container 45519b1e5e24ddb176cec9780b8ec86beab0280306f462e87194451d9c428bcb" module=docker_client.go
+level=info time=2020-07-27T21:48:25Z msg="TaskHandler: batching container event: arn:aws:ecs:us-west-2:276587239836:task/ffced7d6-dd0c-49aa-af7f-012c439bb978 php-app -> RUNNING, Known Sent: NONE" module=task_handler.go
+level=info time=2020-07-27T21:48:25Z msg="Task engine [arn:aws:ecs:us-west-2:276587239836:task/ffced7d6-dd0c-49aa-af7f-012c439bb978]: started docker container for task: php-app -> 45519b1e5e24ddb176cec9780b8ec86beab0280306f462e87194451d9c428bcb, took 452.868735ms" module=docker_task_engine.go
+level=info time=2020-07-27T21:48:25Z msg="Managed task [arn:aws:ecs:us-west-2:276587239836:task/ffced7d6-dd0c-49aa-af7f-012c439bb978]: Container [name=php-app runtimeID=45519b1e5e24ddb176cec9780b8ec86beab0280306f462e87194451d9c428bcb]: handling container change event [RUNNING]" module=task_manager.go
+level=info time=2020-07-27T21:48:25Z msg="Managed task [arn:aws:ecs:us-west-2:276587239836:task/ffced7d6-dd0c-49aa-af7f-012c439bb978]: Container [name=php-app runtimeID=45519b1e5e24ddb176cec9780b8ec86beab0280306f462e87194451d9c428bcb]: container change RUNNING->RUNNING is redundant" module=task_manager.go
+level=info time=2020-07-27T21:48:25Z msg="Managed task [arn:aws:ecs:us-west-2:276587239836:task/ffced7d6-dd0c-49aa-af7f-012c439bb978]: task not steady state or terminal; progressing it" module=task_manager.go
+level=info time=2020-07-27T21:48:25Z msg="Managed task [arn:aws:ecs:us-west-2:276587239836:task/ffced7d6-dd0c-49aa-af7f-012c439bb978]: waiting for event for task" module=task_manager.go
+level=info time=2020-07-27T21:48:25Z msg="cloudwatch metrics for container 45519b1e5e24ddb176cec9780b8ec86beab0280306f462e87194451d9c428bcb not collected, reason (cpu): need at least 2 data points in queue to calculate CW stats set" module=engine.go
+level=warn time=2020-07-27T21:48:25Z msg="Error publishing metrics: stats engine: no task metrics to report" module=client.go
+level=info time=2020-07-27T21:48:26Z msg="Updating container reference nginx-proxy in Image State - sha256:8cf1bfb43ff5d9b05af9b6b63983440f137c6a08320fa7592197c1474ef30241" module=types.go
+level=info time=2020-07-27T21:48:26Z msg="Saving state!" module=state_manager.go
+level=info time=2020-07-27T21:48:26Z msg="Task engine [arn:aws:ecs:us-west-2:276587239836:task/ffced7d6-dd0c-49aa-af7f-012c439bb978]: finished pulling image nginx for container nginx-proxy in 1.198531091s" module=docker_task_engine.go
+level=info time=2020-07-27T21:48:26Z msg="Managed task [arn:aws:ecs:us-west-2:276587239836:task/ffced7d6-dd0c-49aa-af7f-012c439bb978]: Container [name=nginx-proxy runtimeID=]: handling container change event [PULLED]" module=task_manager.go
+level=info time=2020-07-27T21:48:26Z msg="Managed task [arn:aws:ecs:us-west-2:276587239836:task/ffced7d6-dd0c-49aa-af7f-012c439bb978]: task not steady state or terminal; progressing it" module=task_manager.go
+level=info time=2020-07-27T21:48:26Z msg="Managed task [arn:aws:ecs:us-west-2:276587239836:task/ffced7d6-dd0c-49aa-af7f-012c439bb978]: waiting for event for task" module=task_manager.go
+level=info time=2020-07-27T21:48:26Z msg="Task engine [arn:aws:ecs:us-west-2:276587239836:task/ffced7d6-dd0c-49aa-af7f-012c439bb978]: creating container: nginx-proxy" module=docker_task_engine.go
+level=warn time=2020-07-27T21:48:26Z msg="Link name [php-app] found with no linkalias for container: [nginx-proxy(nginx) (PULLED->RUNNING)] in task: [awseb-MultiDocker-env-qypupgjc3m:3 arn:aws:ecs:us-west-2:276587239836:task/ffced7d6-dd0c-49aa-af7f-012c439bb978, TaskStatus: (NONE->RUNNING) Containers: [php-app (RUNNING->RUNNING),nginx-proxy (PULLED->RUNNING),]]" module=task.go
+level=info time=2020-07-27T21:48:26Z msg="Task engine [arn:aws:ecs:us-west-2:276587239836:task/ffced7d6-dd0c-49aa-af7f-012c439bb978]: created container name mapping for task:  nginx-proxy -> ecs-awseb-MultiDocker-env-qypupgjc3m-3-nginx-proxy-f486a2b1e8bbf6b48001" module=docker_task_engine.go
+level=info time=2020-07-27T21:48:26Z msg="Saving state!" module=state_manager.go
+level=info time=2020-07-27T21:48:26Z msg="Task engine [arn:aws:ecs:us-west-2:276587239836:task/ffced7d6-dd0c-49aa-af7f-012c439bb978]: created docker container for task: nginx-proxy -> 92870a3e56e892b3097e87f112b24efa67e4669aa36c85c8d3ab456bf06914c6" module=docker_task_engine.go
+level=info time=2020-07-27T21:48:26Z msg="Task engine [arn:aws:ecs:us-west-2:276587239836:task/ffced7d6-dd0c-49aa-af7f-012c439bb978]: created docker container for task: nginx-proxy -> 92870a3e56e892b3097e87f112b24efa67e4669aa36c85c8d3ab456bf06914c6, took 181.575553ms" module=docker_task_engine.go
+level=info time=2020-07-27T21:48:26Z msg="Managed task [arn:aws:ecs:us-west-2:276587239836:task/ffced7d6-dd0c-49aa-af7f-012c439bb978]: Container [name=nginx-proxy runtimeID=92870a3e56e892b3097e87f112b24efa67e4669aa36c85c8d3ab456bf06914c6]: handling container change event [CREATED]" module=task_manager.go
+level=info time=2020-07-27T21:48:26Z msg="api/task: Updating task's known status to: CREATED, task: awseb-MultiDocker-env-qypupgjc3m:3 arn:aws:ecs:us-west-2:276587239836:task/ffced7d6-dd0c-49aa-af7f-012c439bb978, TaskStatus: (NONE->RUNNING) Containers: [php-app (RUNNING->RUNNING),nginx-proxy (CREATED->RUNNING),]" module=task.go
+level=info time=2020-07-27T21:48:26Z msg="Managed task [arn:aws:ecs:us-west-2:276587239836:task/ffced7d6-dd0c-49aa-af7f-012c439bb978]: Container [name=nginx-proxy runtimeID=92870a3e56e892b3097e87f112b24efa67e4669aa36c85c8d3ab456bf06914c6]: container change also resulted in task change [RUNNING]" module=task_manager.go
+level=info time=2020-07-27T21:48:26Z msg="Managed task [arn:aws:ecs:us-west-2:276587239836:task/ffced7d6-dd0c-49aa-af7f-012c439bb978]: task not steady state or terminal; progressing it" module=task_manager.go
+level=info time=2020-07-27T21:48:26Z msg="Managed task [arn:aws:ecs:us-west-2:276587239836:task/ffced7d6-dd0c-49aa-af7f-012c439bb978]: waiting for event for task" module=task_manager.go
+level=info time=2020-07-27T21:48:26Z msg="Task engine [arn:aws:ecs:us-west-2:276587239836:task/ffced7d6-dd0c-49aa-af7f-012c439bb978]: starting container: nginx-proxy (Runtime ID: 92870a3e56e892b3097e87f112b24efa67e4669aa36c85c8d3ab456bf06914c6)" module=docker_task_engine.go
+level=info time=2020-07-27T21:48:26Z msg="Task engine [arn:aws:ecs:us-west-2:276587239836:task/ffced7d6-dd0c-49aa-af7f-012c439bb978]: started docker container for task: nginx-proxy -> 92870a3e56e892b3097e87f112b24efa67e4669aa36c85c8d3ab456bf06914c6, took 465.178206ms" module=docker_task_engine.go
+level=info time=2020-07-27T21:48:26Z msg="Managed task [arn:aws:ecs:us-west-2:276587239836:task/ffced7d6-dd0c-49aa-af7f-012c439bb978]: Container [name=nginx-proxy runtimeID=92870a3e56e892b3097e87f112b24efa67e4669aa36c85c8d3ab456bf06914c6]: handling container change event [RUNNING]" module=task_manager.go
+level=info time=2020-07-27T21:48:26Z msg="Managed task [arn:aws:ecs:us-west-2:276587239836:task/ffced7d6-dd0c-49aa-af7f-012c439bb978]: sending container change event [nginx-proxy]: arn:aws:ecs:us-west-2:276587239836:task/ffced7d6-dd0c-49aa-af7f-012c439bb978 nginx-proxy -> RUNNING, Ports [{80 80 0.0.0.0 0}], Known Sent: NONE" module=task_manager.go
+level=info time=2020-07-27T21:48:26Z msg="Managed task [arn:aws:ecs:us-west-2:276587239836:task/ffced7d6-dd0c-49aa-af7f-012c439bb978]: sent container change event [nginx-proxy]: arn:aws:ecs:us-west-2:276587239836:task/ffced7d6-dd0c-49aa-af7f-012c439bb978 nginx-proxy -> RUNNING, Ports [{80 80 0.0.0.0 0}], Known Sent: NONE" module=task_manager.go
+level=info time=2020-07-27T21:48:26Z msg="api/task: Updating task's known status to: RUNNING, task: awseb-MultiDocker-env-qypupgjc3m:3 arn:aws:ecs:us-west-2:276587239836:task/ffced7d6-dd0c-49aa-af7f-012c439bb978, TaskStatus: (CREATED->RUNNING) Containers: [php-app (RUNNING->RUNNING),nginx-proxy (RUNNING->RUNNING),]" module=task.go
+level=info time=2020-07-27T21:48:26Z msg="Managed task [arn:aws:ecs:us-west-2:276587239836:task/ffced7d6-dd0c-49aa-af7f-012c439bb978]: Container [name=nginx-proxy runtimeID=92870a3e56e892b3097e87f112b24efa67e4669aa36c85c8d3ab456bf06914c6]: container change also resulted in task change [RUNNING]" module=task_manager.go
+level=info time=2020-07-27T21:48:26Z msg="Managed task [arn:aws:ecs:us-west-2:276587239836:task/ffced7d6-dd0c-49aa-af7f-012c439bb978]: sending task change event [arn:aws:ecs:us-west-2:276587239836:task/ffced7d6-dd0c-49aa-af7f-012c439bb978 -> RUNNING, Known Sent: NONE, PullStartedAt: 2020-07-27 21:48:23.084117001 +0000 UTC m=+3514.416005549, PullStoppedAt: 2020-07-27 21:48:26.199277248 +0000 UTC m=+3517.531165762, ExecutionStoppedAt: 0001-01-01 00:00:00 +0000 UTC]" module=task_manager.go
+level=info time=2020-07-27T21:48:26Z msg="TaskHandler: batching container event: arn:aws:ecs:us-west-2:276587239836:task/ffced7d6-dd0c-49aa-af7f-012c439bb978 nginx-proxy -> RUNNING, Ports [{80 80 0.0.0.0 0}], Known Sent: NONE" module=task_handler.go
+level=info time=2020-07-27T21:48:26Z msg="TaskHandler: Adding event: TaskChange: [arn:aws:ecs:us-west-2:276587239836:task/ffced7d6-dd0c-49aa-af7f-012c439bb978 -> RUNNING, Known Sent: NONE, PullStartedAt: 2020-07-27 21:48:23.084117001 +0000 UTC m=+3514.416005549, PullStoppedAt: 2020-07-27 21:48:26.199277248 +0000 UTC m=+3517.531165762, ExecutionStoppedAt: 0001-01-01 00:00:00 +0000 UTC, arn:aws:ecs:us-west-2:276587239836:task/ffced7d6-dd0c-49aa-af7f-012c439bb978 php-app -> RUNNING, Known Sent: NONE, arn:aws:ecs:us-west-2:276587239836:task/ffced7d6-dd0c-49aa-af7f-012c439bb978 nginx-proxy -> RUNNING, Ports [{80 80 0.0.0.0 0}], Known Sent: NONE] sent: false" module=task_handler.go
+level=info time=2020-07-27T21:48:26Z msg="TaskHandler: Sending task change: TaskChange: [arn:aws:ecs:us-west-2:276587239836:task/ffced7d6-dd0c-49aa-af7f-012c439bb978 -> RUNNING, Known Sent: NONE, PullStartedAt: 2020-07-27 21:48:23.084117001 +0000 UTC m=+3514.416005549, PullStoppedAt: 2020-07-27 21:48:26.199277248 +0000 UTC m=+3517.531165762, ExecutionStoppedAt: 0001-01-01 00:00:00 +0000 UTC, arn:aws:ecs:us-west-2:276587239836:task/ffced7d6-dd0c-49aa-af7f-012c439bb978 php-app -> RUNNING, Known Sent: NONE, arn:aws:ecs:us-west-2:276587239836:task/ffced7d6-dd0c-49aa-af7f-012c439bb978 nginx-proxy -> RUNNING, Ports [{80 80 0.0.0.0 0}], Known Sent: NONE] sent: false" module=task_handler_types.go
+level=info time=2020-07-27T21:48:26Z msg="DockerGoClient: Starting to Poll for metrics for container 92870a3e56e892b3097e87f112b24efa67e4669aa36c85c8d3ab456bf06914c6" module=docker_client.go
+level=info time=2020-07-27T21:48:26Z msg="Managed task [arn:aws:ecs:us-west-2:276587239836:task/ffced7d6-dd0c-49aa-af7f-012c439bb978]: sent task change event [arn:aws:ecs:us-west-2:276587239836:task/ffced7d6-dd0c-49aa-af7f-012c439bb978 -> RUNNING, Known Sent: NONE, PullStartedAt: 2020-07-27 21:48:23.084117001 +0000 UTC m=+3514.416005549, PullStoppedAt: 2020-07-27 21:48:26.199277248 +0000 UTC m=+3517.531165762, ExecutionStoppedAt: 0001-01-01 00:00:00 +0000 UTC]" module=task_manager.go
+level=info time=2020-07-27T21:48:26Z msg="Managed task [arn:aws:ecs:us-west-2:276587239836:task/ffced7d6-dd0c-49aa-af7f-012c439bb978]: task at steady state: RUNNING" module=task_manager.go
+level=info time=2020-07-27T21:48:26Z msg="Managed task [arn:aws:ecs:us-west-2:276587239836:task/ffced7d6-dd0c-49aa-af7f-012c439bb978]: waiting for event for task" module=task_manager.go
+level=info time=2020-07-27T21:48:26Z msg="Managed task [arn:aws:ecs:us-west-2:276587239836:task/ffced7d6-dd0c-49aa-af7f-012c439bb978]: Container [name=nginx-proxy runtimeID=92870a3e56e892b3097e87f112b24efa67e4669aa36c85c8d3ab456bf06914c6]: handling container change event [RUNNING]" module=task_manager.go
+level=info time=2020-07-27T21:48:26Z msg="Managed task [arn:aws:ecs:us-west-2:276587239836:task/ffced7d6-dd0c-49aa-af7f-012c439bb978]: Container [name=nginx-proxy runtimeID=92870a3e56e892b3097e87f112b24efa67e4669aa36c85c8d3ab456bf06914c6]: container change RUNNING->RUNNING is redundant" module=task_manager.go
+level=info time=2020-07-27T21:48:26Z msg="Managed task [arn:aws:ecs:us-west-2:276587239836:task/ffced7d6-dd0c-49aa-af7f-012c439bb978]: task at steady state: RUNNING" module=task_manager.go
+level=info time=2020-07-27T21:48:26Z msg="Managed task [arn:aws:ecs:us-west-2:276587239836:task/ffced7d6-dd0c-49aa-af7f-012c439bb978]: waiting for event for task" module=task_manager.go
+level=info time=2020-07-27T21:48:29Z msg="Saving state!" module=state_manager.go
+level=info time=2020-07-27T21:49:50Z msg="Begin building map of eligible unused images for deletion" module=docker_image_manager.go
+level=info time=2020-07-27T21:49:50Z msg="No eligible images for deletion for this cleanup cycle" module=docker_image_manager.go
+level=info time=2020-07-27T21:49:50Z msg="End of eligible images for deletion: No more eligible images for deletion; Still have 2 image states being managed" module=docker_image_manager.go
+level=info time=2020-07-27T21:52:49Z msg="ACS Websocket connection closed for a valid reason" module=acs_handler.go
+level=info time=2020-07-27T21:52:49Z msg="ACS Websocket connection closed for a valid reason: EOF" module=acs_handler.go
+level=info time=2020-07-27T21:52:49Z msg="Establishing a Websocket connection to https://ecs-a-10.us-west-2.amazonaws.com/ws?agentHash=17e8d834&agentVersion=1.40.0&clusterArn=awseb-MultiDocker-env-qypupgjc3m&containerInstanceArn=arn%3Aaws%3Aecs%3Aus-west-2%3A276587239836%3Acontainer-instance%2F49c1089d-c7ad-4792-9480-f1c433eff2a9&dockerVersion=DockerVersion%3A+19.03.6-ce&sendCredentials=false&seqNum=1" module=client.go
+level=info time=2020-07-27T21:52:49Z msg="Connected to ACS endpoint" module=acs_handler.go
+level=info time=2020-07-27T21:52:50Z msg="Saving state!" module=state_manager.go
+level=info time=2020-07-27T21:53:52Z msg="Managed task [arn:aws:ecs:us-west-2:276587239836:task/ffced7d6-dd0c-49aa-af7f-012c439bb978]: no longer waiting" module=task_manager.go
+level=info time=2020-07-27T21:53:52Z msg="Managed task [arn:aws:ecs:us-west-2:276587239836:task/ffced7d6-dd0c-49aa-af7f-012c439bb978]: task at steady state: RUNNING" module=task_manager.go
+level=info time=2020-07-27T21:53:52Z msg="Managed task [arn:aws:ecs:us-west-2:276587239836:task/ffced7d6-dd0c-49aa-af7f-012c439bb978]: waiting for event for task" module=task_manager.go
+level=info time=2020-07-27T21:53:52Z msg="Managed task [arn:aws:ecs:us-west-2:276587239836:task/ffced7d6-dd0c-49aa-af7f-012c439bb978]: Container [name=php-app runtimeID=45519b1e5e24ddb176cec9780b8ec86beab0280306f462e87194451d9c428bcb]: handling container change event [RUNNING]" module=task_manager.go
+level=info time=2020-07-27T21:53:52Z msg="Managed task [arn:aws:ecs:us-west-2:276587239836:task/ffced7d6-dd0c-49aa-af7f-012c439bb978]: Container [name=php-app runtimeID=45519b1e5e24ddb176cec9780b8ec86beab0280306f462e87194451d9c428bcb]: container change RUNNING->RUNNING is redundant" module=task_manager.go
+level=info time=2020-07-27T21:53:52Z msg="Managed task [arn:aws:ecs:us-west-2:276587239836:task/ffced7d6-dd0c-49aa-af7f-012c439bb978]: task at steady state: RUNNING" module=task_manager.go
+level=info time=2020-07-27T21:53:52Z msg="Managed task [arn:aws:ecs:us-west-2:276587239836:task/ffced7d6-dd0c-49aa-af7f-012c439bb978]: waiting for event for task" module=task_manager.go
+level=info time=2020-07-27T21:53:52Z msg="Managed task [arn:aws:ecs:us-west-2:276587239836:task/ffced7d6-dd0c-49aa-af7f-012c439bb978]: Container [name=nginx-proxy runtimeID=92870a3e56e892b3097e87f112b24efa67e4669aa36c85c8d3ab456bf06914c6]: handling container change event [RUNNING]" module=task_manager.go
+level=info time=2020-07-27T21:53:52Z msg="Managed task [arn:aws:ecs:us-west-2:276587239836:task/ffced7d6-dd0c-49aa-af7f-012c439bb978]: Container [name=nginx-proxy runtimeID=92870a3e56e892b3097e87f112b24efa67e4669aa36c85c8d3ab456bf06914c6]: container change RUNNING->RUNNING is redundant" module=task_manager.go
+level=info time=2020-07-27T21:53:52Z msg="Managed task [arn:aws:ecs:us-west-2:276587239836:task/ffced7d6-dd0c-49aa-af7f-012c439bb978]: task at steady state: RUNNING" module=task_manager.go
+level=info time=2020-07-27T21:53:52Z msg="Managed task [arn:aws:ecs:us-west-2:276587239836:task/ffced7d6-dd0c-49aa-af7f-012c439bb978]: waiting for event for task" module=task_manager.go
+level=info time=2020-07-27T21:54:04Z msg="TCS Websocket connection closed for a valid reason" module=handler.go
+level=info time=2020-07-27T21:54:04Z msg="Establishing a Websocket connection to https://ecs-t-10.us-west-2.amazonaws.com/ws?agentHash=17e8d834&agentVersion=1.40.0&cluster=awseb-MultiDocker-env-qypupgjc3m&containerInstance=arn%3Aaws%3Aecs%3Aus-west-2%3A276587239836%3Acontainer-instance%2F49c1089d-c7ad-4792-9480-f1c433eff2a9&dockerVersion=19.03.6-ce" module=client.go
+level=info time=2020-07-27T21:54:04Z msg="Connected to TCS endpoint" module=handler.go
+level=info time=2020-07-27T21:59:05Z msg="Managed task [arn:aws:ecs:us-west-2:276587239836:task/ffced7d6-dd0c-49aa-af7f-012c439bb978]: no longer waiting" module=task_manager.go
+level=info time=2020-07-27T21:59:05Z msg="Managed task [arn:aws:ecs:us-west-2:276587239836:task/ffced7d6-dd0c-49aa-af7f-012c439bb978]: task at steady state: RUNNING" module=task_manager.go
+level=info time=2020-07-27T21:59:05Z msg="Managed task [arn:aws:ecs:us-west-2:276587239836:task/ffced7d6-dd0c-49aa-af7f-012c439bb978]: waiting for event for task" module=task_manager.go
+level=info time=2020-07-27T21:59:05Z msg="Managed task [arn:aws:ecs:us-west-2:276587239836:task/ffced7d6-dd0c-49aa-af7f-012c439bb978]: Container [name=php-app runtimeID=45519b1e5e24ddb176cec9780b8ec86beab0280306f462e87194451d9c428bcb]: handling container change event [RUNNING]" module=task_manager.go
+level=info time=2020-07-27T21:59:05Z msg="Managed task [arn:aws:ecs:us-west-2:276587239836:task/ffced7d6-dd0c-49aa-af7f-012c439bb978]: Container [name=php-app runtimeID=45519b1e5e24ddb176cec9780b8ec86beab0280306f462e87194451d9c428bcb]: container change RUNNING->RUNNING is redundant" module=task_manager.go
+level=info time=2020-07-27T21:59:05Z msg="Managed task [arn:aws:ecs:us-west-2:276587239836:task/ffced7d6-dd0c-49aa-af7f-012c439bb978]: task at steady state: RUNNING" module=task_manager.go
+level=info time=2020-07-27T21:59:05Z msg="Managed task [arn:aws:ecs:us-west-2:276587239836:task/ffced7d6-dd0c-49aa-af7f-012c439bb978]: waiting for event for task" module=task_manager.go
+level=info time=2020-07-27T21:59:05Z msg="Managed task [arn:aws:ecs:us-west-2:276587239836:task/ffced7d6-dd0c-49aa-af7f-012c439bb978]: Container [name=nginx-proxy runtimeID=92870a3e56e892b3097e87f112b24efa67e4669aa36c85c8d3ab456bf06914c6]: handling container change event [RUNNING]" module=task_manager.go
+level=info time=2020-07-27T21:59:05Z msg="Managed task [arn:aws:ecs:us-west-2:276587239836:task/ffced7d6-dd0c-49aa-af7f-012c439bb978]: Container [name=nginx-proxy runtimeID=92870a3e56e892b3097e87f112b24efa67e4669aa36c85c8d3ab456bf06914c6]: container change RUNNING->RUNNING is redundant" module=task_manager.go
+level=info time=2020-07-27T21:59:05Z msg="Managed task [arn:aws:ecs:us-west-2:276587239836:task/ffced7d6-dd0c-49aa-af7f-012c439bb978]: task at steady state: RUNNING" module=task_manager.go
+level=info time=2020-07-27T21:59:05Z msg="Managed task [arn:aws:ecs:us-west-2:276587239836:task/ffced7d6-dd0c-49aa-af7f-012c439bb978]: waiting for event for task" module=task_manager.go
+
+
+
+-------------------------------------
+/var/log/docker-ps.log
+-------------------------------------
+'docker ps' ran at Mon Jul 27 22:40:36 UTC 2020: 
+CONTAINER ID        IMAGE                            COMMAND                  CREATED             STATUS                 PORTS                NAMES
+92870a3e56e8        nginx                            "/docker-entrypoint.…"   52 minutes ago      Up 52 minutes          0.0.0.0:80->80/tcp   ecs-awseb-MultiDocker-env-qypupgjc3m-3-nginx-proxy-f486a2b1e8bbf6b48001
+45519b1e5e24        php:fpm                          "docker-php-entrypoi…"   52 minutes ago      Up 52 minutes          9000/tcp             ecs-awseb-MultiDocker-env-qypupgjc3m-3-php-app-e6ebf193ecd0c1ec5300
+8817a33bd924        amazon/amazon-ecs-agent:latest   "/agent"                 2 hours ago         Up 2 hours (healthy)                        ecs-agent
+'docker ps' ran at Mon Jul 27 23:49:32 UTC 2020: 
+CONTAINER ID        IMAGE                            COMMAND             CREATED             STATUS                 PORTS               NAMES
+8817a33bd924        amazon/amazon-ecs-agent:latest   "/agent"            3 hours ago         Up 3 hours (healthy)                       ecs-agent
+
+
+
+-------------------------------------
+/var/log/containers/php-app-44e48c4896bf-stdouterr.log
+-------------------------------------
+[27-Jul-2020 20:50:14] NOTICE: fpm is running, pid 1
+[27-Jul-2020 20:50:14] NOTICE: ready to handle connections
+172.17.0.3 -  27/Jul/2020:20:57:48 +0000 "GET /index.php" 200
+172.17.0.3 -  27/Jul/2020:21:03:31 +0000 "GET /index.php" 200
+172.17.0.3 -  27/Jul/2020:21:27:04 +0000 "GET /index.php" 200
+172.17.0.3 -  27/Jul/2020:21:28:19 +0000 "GET /index.php" 200
+[27-Jul-2020 21:48:19] NOTICE: Finishing ...
+[27-Jul-2020 21:48:19] NOTICE: exiting, bye-bye!
+
+
+
+-------------------------------------
+/var/log/eb-commandprocessor.log
+-------------------------------------
+[2020-07-27T23:10:04.258Z] DEBUG [17595] : Loaded 5 actions for stage 0.
+[2020-07-27T23:10:04.258Z] INFO  [17595] : Running 1 of 5 actions: DownloadSourceBundle...
+[2020-07-27T23:10:04.664Z] INFO  [17595] : Running 2 of 5 actions: EbExtensionPreBuild...
+[2020-07-27T23:10:05.091Z] INFO  [17595] : Running 3 of 5 actions: AppDeployPreHook...
+[2020-07-27T23:10:07.191Z] INFO  [17595] : Running 4 of 5 actions: EbExtensionPostBuild...
+[2020-07-27T23:10:07.622Z] INFO  [17595] : Running 5 of 5 actions: InfraCleanEbextension...
+[2020-07-27T23:10:07.623Z] INFO  [17595] : Running stage 1 of command CMD-AppDeploy...
+[2020-07-27T23:10:07.623Z] DEBUG [17595] : Loaded 2 actions for stage 1.
+[2020-07-27T23:10:07.623Z] INFO  [17595] : Running 1 of 2 actions: AppDeployEnactHook...
+[2020-07-27T23:38:30.356Z] ERROR [17595] : Command execution failed: Activity failed. (ElasticBeanstalk::ActivityFatalError)
+caused by: + . /opt/elasticbeanstalk/hooks/common.sh
+  + RETRY=0
+  + initctl start eb-ecs EB_EVENT_FILE=/tmp/eventsfile20200727-17595-1pypklb
+  initctl: Job failed to start
+  + '[' -f /etc/elasticbeanstalk/.eb-ecs-start-no-retry ']'
+  + warn 'Failed to start ECS task, retrying...'
+  + echo 'Failed to start ECS task, retrying...'
+  Failed to start ECS task, retrying...
+  + eventHelper.py --msg 'Failed to start ECS task, retrying...' --severity WARN
+  + RETRY=1
+  + sleep 3
+  + '[' 1 -gt 1 ']'
+  + initctl start eb-ecs EB_EVENT_FILE=/tmp/eventsfile20200727-17595-1pypklb
+  initctl: Job failed to start
+  + '[' -f /etc/elasticbeanstalk/.eb-ecs-start-no-retry ']'
+  + warn 'Failed to start ECS task, retrying...'
+  + echo 'Failed to start ECS task, retrying...'
+  Failed to start ECS task, retrying...
+  + eventHelper.py --msg 'Failed to start ECS task, retrying...' --severity WARN
+  + RETRY=2
+  + sleep 3
+  + '[' 2 -gt 1 ']'
+  + error_exit 'Failed to start ECS task after retrying 2 times.' 1
+  + error 'Failed to start ECS task after retrying 2 times.'
+  + echo 'Failed to start ECS task after retrying 2 times.'
+  Failed to start ECS task after retrying 2 times.
+  + eventHelper.py --msg 'Failed to start ECS task after retrying 2 times.' --severity ERROR
+  + exit 1 (ElasticBeanstalk::ExternalInvocationError)
+caused by: + . /opt/elasticbeanstalk/hooks/common.sh
+  + RETRY=0
+  + initctl start eb-ecs EB_EVENT_FILE=/tmp/eventsfile20200727-17595-1pypklb
+  initctl: Job failed to start
+  + '[' -f /etc/elasticbeanstalk/.eb-ecs-start-no-retry ']'
+  + warn 'Failed to start ECS task, retrying...'
+  + echo 'Failed to start ECS task, retrying...'
+  Failed to start ECS task, retrying...
+  + eventHelper.py --msg 'Failed to start ECS task, retrying...' --severity WARN
+  + RETRY=1
+  + sleep 3
+  + '[' 1 -gt 1 ']'
+  + initctl start eb-ecs EB_EVENT_FILE=/tmp/eventsfile20200727-17595-1pypklb
+  initctl: Job failed to start
+  + '[' -f /etc/elasticbeanstalk/.eb-ecs-start-no-retry ']'
+  + warn 'Failed to start ECS task, retrying...'
+  + echo 'Failed to start ECS task, retrying...'
+  Failed to start ECS task, retrying...
+  + eventHelper.py --msg 'Failed to start ECS task, retrying...' --severity WARN
+  + RETRY=2
+  + sleep 3
+  + '[' 2 -gt 1 ']'
+  + error_exit 'Failed to start ECS task after retrying 2 times.' 1
+  + error 'Failed to start ECS task after retrying 2 times.'
+  + echo 'Failed to start ECS task after retrying 2 times.'
+  Failed to start ECS task after retrying 2 times.
+  + eventHelper.py --msg 'Failed to start ECS task after retrying 2 times.' --severity ERROR
+  + exit 1 (Executor::NonZeroExitStatus)
+
+
+[2020-07-27T23:38:30.356Z] ERROR [17595] : Command CMD-AppDeploy failed!
+[2020-07-27T23:38:30.358Z] INFO  [17595] : Command processor returning results: 
+{"status":"FAILURE","api_version":"1.0","results":[{"status":"FAILURE","msg":"(TRUNCATED)...ailed to start ECS task after retrying 2 times.'\n+ echo 'Failed to start ECS task after retrying 2 times.'\nFailed to start ECS task after retrying 2 times.\n+ eventHelper.py --msg 'Failed to start ECS task after retrying 2 times.' --severity ERROR\n+ exit 1. \nHook /opt/elasticbeanstalk/hooks/appdeploy/enact/03start-task.sh failed. For more detail, check /var/log/eb-activity.log using console or EB CLI","returncode":1,"events":[{"msg":"ECS task: arn:aws:ecs:us-west-2:276587239836:task/03723f40-6b85-4620-8374-0a2bfd216a89 is still PENDING after 840 seconds.","severity":"ERROR","timestamp":1595892254},{"msg":"ECS task: arn:aws:ecs:us-west-2:276587239836:task/d781cb51-4462-4182-b58e-45c91f23a710 is still PENDING after 840 seconds.","severity":"ERROR","timestamp":1595893107},{"msg":"Failed to start ECS task after retrying 2 times.","severity":"ERROR","timestamp":1595893110}]}],"truncated":"true"}
+[2020-07-27T23:49:32.367Z] DEBUG [25084] : Reading config file: /etc/elasticbeanstalk/.aws-eb-stack.properties
+[2020-07-27T23:49:32.367Z] DEBUG [25084] : Checking if the command processor should execute...
+[2020-07-27T23:49:32.369Z] DEBUG [25084] : Checking whether the command is applicable to instance (i-0646480bfc433485c)..
+[2020-07-27T23:49:32.369Z] INFO  [25084] : Command is applicable to this instance (i-0646480bfc433485c)..
+[2020-07-27T23:49:32.369Z] DEBUG [25084] : Checking if the received command stage is valid..
+[2020-07-27T23:49:32.369Z] INFO  [25084] : No stage_num in command. Valid stage..
+[2020-07-27T23:49:32.369Z] INFO  [25084] : Received command CMD-TailLogs: {"execution_data"=>"*", "instance_ids"=>["i-0646480bfc433485c"], "data"=>"34003dd9-f0a3-4f79-9eb8-293d4e600f32", "command_name"=>"CMD-TailLogs", "api_version"=>"1.0", "resource_name"=>"AWSEBAutoScalingGroup", "request_id"=>"34003dd9-f0a3-4f79-9eb8-293d4e600f32"}
+[2020-07-27T23:49:32.369Z] INFO  [25084] : Command processor should execute command.
+[2020-07-27T23:49:32.369Z] DEBUG [25084] : Storing current stage..
+[2020-07-27T23:49:32.369Z] DEBUG [25084] : Stage_num does not exist. Not saving null stage. Returning..
+[2020-07-27T23:49:32.369Z] DEBUG [25084] : Reading config file: /etc/elasticbeanstalk/.aws-eb-stack.properties
+[2020-07-27T23:49:32.369Z] DEBUG [25084] : Retrieving metadata for key: AWS::ElasticBeanstalk::Ext||_ContainerConfigFileContent||commands..
+[2020-07-27T23:49:32.370Z] DEBUG [25084] : Retrieving metadata for key: AWS::ElasticBeanstalk::Ext||_API||_Commands..
+[2020-07-27T23:49:32.371Z] INFO  [25084] : Found enabled addons: ["logpublish", "logstreaming"].
+[2020-07-27T23:49:32.372Z] INFO  [25084] : Updating Command definition of addon logpublish.
+[2020-07-27T23:49:32.372Z] INFO  [25084] : Updating Command definition of addon logstreaming.
+[2020-07-27T23:49:32.372Z] DEBUG [25084] : Loaded definition of Command CMD-TailLogs.
+[2020-07-27T23:49:32.372Z] INFO  [25084] : Executing CMD-TailLogs
+[2020-07-27T23:49:32.372Z] INFO  [25084] : Executing command: CMD-TailLogs...
+[2020-07-27T23:49:32.372Z] INFO  [25084] : Executing command CMD-TailLogs activities...
+[2020-07-27T23:49:32.372Z] DEBUG [25084] : Setting environment variables..
+[2020-07-27T23:49:32.372Z] INFO  [25084] : Running AddonsBefore for command CMD-TailLogs...
+[2020-07-27T23:49:32.373Z] DEBUG [25084] : Running stages of Command CMD-TailLogs from stage 0 to stage 1...
+[2020-07-27T23:49:32.373Z] INFO  [25084] : Running stage 0 of command CMD-TailLogs...
+[2020-07-27T23:49:32.373Z] DEBUG [25084] : Loaded 1 actions for stage 0.
+[2020-07-27T23:49:32.373Z] INFO  [25084] : Running 1 of 1 actions: DockerPS...
+[2020-07-27T23:49:32.438Z] INFO  [25084] : Running stage 1 of command CMD-TailLogs...
+[2020-07-27T23:49:32.438Z] DEBUG [25084] : Loaded 1 actions for stage 1.
+[2020-07-27T23:49:32.438Z] INFO  [25084] : Running 1 of 1 actions: TailLogs...
+
+
+
